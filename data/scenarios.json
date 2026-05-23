@@ -2,67 +2,12 @@
   "pools": {
     "A": {
       "pool": "A",
-      "n_remaining": 1,
-      "n_permutations": 2,
+      "n_remaining": 0,
+      "n_permutations": 1,
       "permutations": [
         {
           "id": 0,
-          "assumed_outcomes": [
-            {
-              "game_id": "A-09",
-              "winner_id": "ucsc",
-              "loser_id": "texas",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "oregon",
-            "ucsc",
-            "georgia-tech",
-            "texas",
-            "utah"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "georgia-tech",
-                "ucsc"
-              ],
-              "metric_values": {
-                "ucsc": 1.0,
-                "georgia-tech": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "texas",
-                "utah"
-              ],
-              "metric_values": {
-                "texas": 1.0,
-                "utah": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ],
-          "target_finish": 4
-        },
-        {
-          "id": 1,
-          "assumed_outcomes": [
-            {
-              "game_id": "A-09",
-              "winner_id": "texas",
-              "loser_id": "ucsc",
-              "winning_margin": 3
-            }
-          ],
+          "assumed_outcomes": [],
           "final_order": [
             "oregon",
             "georgia-tech",
@@ -345,18 +290,12 @@
     },
     "C": {
       "pool": "C",
-      "n_remaining": 3,
-      "n_permutations": 8,
+      "n_remaining": 2,
+      "n_permutations": 4,
       "permutations": [
         {
           "id": 0,
           "assumed_outcomes": [
-            {
-              "game_id": "C-28",
-              "winner_id": "carleton",
-              "loser_id": "mcgill",
-              "winning_margin": 3
-            },
             {
               "game_id": "C-29",
               "winner_id": "washington",
@@ -384,12 +323,6 @@
           "id": 1,
           "assumed_outcomes": [
             {
-              "game_id": "C-28",
-              "winner_id": "carleton",
-              "loser_id": "mcgill",
-              "winning_margin": 3
-            },
-            {
               "game_id": "C-29",
               "winner_id": "washington",
               "loser_id": "mcgill",
@@ -415,12 +348,6 @@
         {
           "id": 2,
           "assumed_outcomes": [
-            {
-              "game_id": "C-28",
-              "winner_id": "carleton",
-              "loser_id": "mcgill",
-              "winning_margin": 3
-            },
             {
               "game_id": "C-29",
               "winner_id": "mcgill",
@@ -448,12 +375,6 @@
           "id": 3,
           "assumed_outcomes": [
             {
-              "game_id": "C-28",
-              "winner_id": "carleton",
-              "loser_id": "mcgill",
-              "winning_margin": 3
-            },
-            {
               "game_id": "C-29",
               "winner_id": "mcgill",
               "loser_id": "washington",
@@ -475,242 +396,6 @@
           ],
           "margin_sensitive": false,
           "tiebreak_trace": []
-        },
-        {
-          "id": 4,
-          "assumed_outcomes": [
-            {
-              "game_id": "C-28",
-              "winner_id": "mcgill",
-              "loser_id": "carleton",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "C-29",
-              "winner_id": "washington",
-              "loser_id": "mcgill",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "C-30",
-              "winner_id": "cal-poly-slo",
-              "loser_id": "penn-state",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "carleton",
-            "cal-poly-slo",
-            "penn-state",
-            "washington",
-            "mcgill"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "cal-poly-slo",
-                "carleton"
-              ],
-              "metric_values": {
-                "carleton": 1.0,
-                "cal-poly-slo": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "mcgill",
-                "washington"
-              ],
-              "metric_values": {
-                "washington": 1.0,
-                "mcgill": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ]
-        },
-        {
-          "id": 5,
-          "assumed_outcomes": [
-            {
-              "game_id": "C-28",
-              "winner_id": "mcgill",
-              "loser_id": "carleton",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "C-29",
-              "winner_id": "washington",
-              "loser_id": "mcgill",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "C-30",
-              "winner_id": "penn-state",
-              "loser_id": "cal-poly-slo",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "carleton",
-            "penn-state",
-            "cal-poly-slo",
-            "washington",
-            "mcgill"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "carleton",
-                "penn-state"
-              ],
-              "metric_values": {
-                "carleton": 1.0,
-                "penn-state": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "mcgill",
-                "washington"
-              ],
-              "metric_values": {
-                "washington": 1.0,
-                "mcgill": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ]
-        },
-        {
-          "id": 6,
-          "assumed_outcomes": [
-            {
-              "game_id": "C-28",
-              "winner_id": "mcgill",
-              "loser_id": "carleton",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "C-29",
-              "winner_id": "mcgill",
-              "loser_id": "washington",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "C-30",
-              "winner_id": "cal-poly-slo",
-              "loser_id": "penn-state",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "carleton",
-            "cal-poly-slo",
-            "penn-state",
-            "mcgill",
-            "washington"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "cal-poly-slo",
-                "carleton"
-              ],
-              "metric_values": {
-                "carleton": 1.0,
-                "cal-poly-slo": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "mcgill",
-                "penn-state"
-              ],
-              "metric_values": {
-                "penn-state": 1.0,
-                "mcgill": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ]
-        },
-        {
-          "id": 7,
-          "assumed_outcomes": [
-            {
-              "game_id": "C-28",
-              "winner_id": "mcgill",
-              "loser_id": "carleton",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "C-29",
-              "winner_id": "mcgill",
-              "loser_id": "washington",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "C-30",
-              "winner_id": "penn-state",
-              "loser_id": "cal-poly-slo",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "carleton",
-            "penn-state",
-            "cal-poly-slo",
-            "mcgill",
-            "washington"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "carleton",
-                "penn-state"
-              ],
-              "metric_values": {
-                "carleton": 1.0,
-                "penn-state": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "cal-poly-slo",
-                "mcgill"
-              ],
-              "metric_values": {
-                "cal-poly-slo": 1.0,
-                "mcgill": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ]
         }
       ]
     },
@@ -736,14 +421,54 @@
             }
           ],
           "final_order": [
-            "pittsburgh",
             "massachusetts",
+            "pittsburgh",
             "north-carolina",
             "western-washington",
             "yale"
           ],
           "margin_sensitive": false,
-          "tiebreak_trace": []
+          "tiebreak_trace": [
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "massachusetts",
+                "pittsburgh"
+              ],
+              "metric_values": {
+                "pittsburgh": 0.0,
+                "massachusetts": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "massachusetts",
+                "pittsburgh"
+              ],
+              "metric_values": {
+                "pittsburgh": 0.0,
+                "massachusetts": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "massachusetts",
+                "pittsburgh"
+              ],
+              "metric_values": {
+                "pittsburgh": 13.0,
+                "massachusetts": 19.0
+              },
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
+            }
+          ]
         },
         {
           "id": 1,
@@ -762,14 +487,54 @@
             }
           ],
           "final_order": [
-            "pittsburgh",
             "massachusetts",
+            "pittsburgh",
             "north-carolina",
             "yale",
             "western-washington"
           ],
           "margin_sensitive": false,
-          "tiebreak_trace": []
+          "tiebreak_trace": [
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "massachusetts",
+                "pittsburgh"
+              ],
+              "metric_values": {
+                "pittsburgh": 0.0,
+                "massachusetts": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "massachusetts",
+                "pittsburgh"
+              ],
+              "metric_values": {
+                "pittsburgh": 0.0,
+                "massachusetts": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "massachusetts",
+                "pittsburgh"
+              ],
+              "metric_values": {
+                "pittsburgh": 13.0,
+                "massachusetts": 19.0
+              },
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
+            }
+          ]
         },
         {
           "id": 2,
@@ -788,14 +553,54 @@
             }
           ],
           "final_order": [
-            "pittsburgh",
             "massachusetts",
+            "pittsburgh",
             "western-washington",
             "north-carolina",
             "yale"
           ],
           "margin_sensitive": false,
-          "tiebreak_trace": []
+          "tiebreak_trace": [
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "massachusetts",
+                "pittsburgh"
+              ],
+              "metric_values": {
+                "pittsburgh": 0.0,
+                "massachusetts": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "massachusetts",
+                "pittsburgh"
+              ],
+              "metric_values": {
+                "pittsburgh": 0.0,
+                "massachusetts": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "massachusetts",
+                "pittsburgh"
+              ],
+              "metric_values": {
+                "pittsburgh": 13.0,
+                "massachusetts": 19.0
+              },
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
+            }
+          ]
         },
         {
           "id": 3,
@@ -814,14 +619,53 @@
             }
           ],
           "final_order": [
-            "pittsburgh",
             "massachusetts",
+            "pittsburgh",
             "north-carolina",
             "western-washington",
             "yale"
           ],
           "margin_sensitive": true,
           "tiebreak_trace": [
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "massachusetts",
+                "pittsburgh"
+              ],
+              "metric_values": {
+                "pittsburgh": 0.0,
+                "massachusetts": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "massachusetts",
+                "pittsburgh"
+              ],
+              "metric_values": {
+                "pittsburgh": 0.0,
+                "massachusetts": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "massachusetts",
+                "pittsburgh"
+              ],
+              "metric_values": {
+                "pittsburgh": 13.0,
+                "massachusetts": 19.0
+              },
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
+            },
             {
               "rule": 2,
               "tied_team_ids": [
@@ -860,21 +704,13 @@
   "target_summary": {
     "target_team_id": "texas",
     "finish_distribution": {
-      "3": 1,
-      "4": 1
+      "3": 1
     },
     "scenarios_by_finish": {
       "3": [
         {
-          "id": 1,
-          "assumed_outcomes": [
-            {
-              "game_id": "A-09",
-              "winner_id": "texas",
-              "loser_id": "ucsc",
-              "winning_margin": 3
-            }
-          ],
+          "id": 0,
+          "assumed_outcomes": [],
           "final_order": [
             "oregon",
             "georgia-tech",
@@ -912,56 +748,6 @@
             }
           ],
           "target_finish": 3
-        }
-      ],
-      "4": [
-        {
-          "id": 0,
-          "assumed_outcomes": [
-            {
-              "game_id": "A-09",
-              "winner_id": "ucsc",
-              "loser_id": "texas",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "oregon",
-            "ucsc",
-            "georgia-tech",
-            "texas",
-            "utah"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "georgia-tech",
-                "ucsc"
-              ],
-              "metric_values": {
-                "ucsc": 1.0,
-                "georgia-tech": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "texas",
-                "utah"
-              ],
-              "metric_values": {
-                "texas": 1.0,
-                "utah": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ],
-          "target_finish": 4
         }
       ]
     }
