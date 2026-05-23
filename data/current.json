@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T18:54:08+00:00",
+  "generated_at": "2026-05-23T18:56:08+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -262,8 +262,8 @@
       "pool": "A",
       "team1": "ucsc",
       "team2": "texas",
-      "score1": 9,
-      "score2": 7,
+      "score1": 10,
+      "score2": 8,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "219"
@@ -273,7 +273,7 @@
       "pool": "A",
       "team1": "oregon",
       "team2": "georgia-tech",
-      "score1": 13,
+      "score1": 14,
       "score2": 5,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -471,7 +471,7 @@
       "pool": "C",
       "team1": "carleton",
       "team2": "mcgill",
-      "score1": 8,
+      "score1": 9,
       "score2": 5,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -581,7 +581,7 @@
       "pool": "D",
       "team1": "massachusetts",
       "team2": "pittsburgh",
-      "score1": 8,
+      "score1": 9,
       "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -625,16 +625,16 @@
           "team_id": "oregon",
           "wins": 4,
           "losses": 0,
-          "pf": 58,
+          "pf": 59,
           "pa": 28,
-          "pd": 30
+          "pd": 31
         },
         "ucsc": {
           "team_id": "ucsc",
           "wins": 2,
           "losses": 2,
-          "pf": 43,
-          "pa": 47,
+          "pf": 44,
+          "pa": 48,
           "pd": -4
         },
         "georgia-tech": {
@@ -642,15 +642,15 @@
           "wins": 2,
           "losses": 2,
           "pf": 43,
-          "pa": 54,
-          "pd": -11
+          "pa": 55,
+          "pd": -12
         },
         "texas": {
           "team_id": "texas",
           "wins": 1,
           "losses": 3,
-          "pf": 36,
-          "pa": 46,
+          "pf": 37,
+          "pa": 47,
           "pd": -10
         },
         "utah": {
@@ -827,9 +827,9 @@
           "team_id": "carleton",
           "wins": 4,
           "losses": 0,
-          "pf": 53,
+          "pf": 54,
           "pa": 32,
-          "pd": 21
+          "pd": 22
         },
         "penn-state": {
           "team_id": "penn-state",
@@ -860,8 +860,8 @@
           "wins": 0,
           "losses": 3,
           "pf": 20,
-          "pa": 38,
-          "pd": -18
+          "pa": 39,
+          "pd": -19
         }
       },
       "tiebreak_trace": [
@@ -938,7 +938,7 @@
           ],
           "metric_values": {
             "washington": -7.0,
-            "mcgill": -18.0
+            "mcgill": -19.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -967,16 +967,16 @@
           "wins": 3,
           "losses": 1,
           "pf": 51,
-          "pa": 40,
-          "pd": 11
+          "pa": 41,
+          "pd": 10
         },
         "massachusetts": {
           "team_id": "massachusetts",
           "wins": 4,
           "losses": 0,
-          "pf": 53,
+          "pf": 54,
           "pa": 32,
-          "pd": 21
+          "pd": 22
         },
         "north-carolina": {
           "team_id": "north-carolina",
