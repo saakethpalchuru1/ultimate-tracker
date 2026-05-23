@@ -1,17 +1,7 @@
 {
   "target_team_id": "texas",
   "target_pool": "A",
-  "has_live_games": true,
+  "has_live_games": false,
   "live_games": [],
-  "other_live_games": [
-    {
-      "game_id": "A-07",
-      "team1": "ucsc",
-      "team2": "utah",
-      "score1": 10,
-      "score2": 14,
-      "scheduled_at": "Sat 5/23 8:30 AM",
-      "field": "210"
-    }
-  ]
+  "other_live_games": []
 }
