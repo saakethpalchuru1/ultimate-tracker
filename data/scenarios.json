@@ -59,12 +59,65 @@
           "final_order": [
             "colorado",
             "oregon-state",
+            "maryland",
             "michigan",
-            "brown",
-            "maryland"
+            "brown"
           ],
           "margin_sensitive": false,
-          "tiebreak_trace": []
+          "tiebreak_trace": [
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "colorado",
+                "oregon-state"
+              ],
+              "metric_values": {
+                "colorado": 1.0,
+                "oregon-state": 0.0
+              },
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
+            },
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "maryland",
+                "michigan"
+              ],
+              "metric_values": {
+                "maryland": 0.0,
+                "michigan": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "maryland",
+                "michigan"
+              ],
+              "metric_values": {
+                "maryland": 0.0,
+                "michigan": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "maryland",
+                "michigan"
+              ],
+              "metric_values": {
+                "maryland": -9.0,
+                "michigan": -10.0
+              },
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
+            }
+          ]
         }
       ]
     },
@@ -78,52 +131,13 @@
           "assumed_outcomes": [],
           "final_order": [
             "carleton",
-            "cal-poly-slo",
             "penn-state",
+            "cal-poly-slo",
             "washington",
             "mcgill"
           ],
           "margin_sensitive": false,
           "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "cal-poly-slo",
-                "penn-state"
-              ],
-              "metric_values": {
-                "penn-state": 0.0,
-                "cal-poly-slo": 0.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 3,
-              "tied_team_ids": [
-                "cal-poly-slo",
-                "penn-state"
-              ],
-              "metric_values": {
-                "penn-state": 0.0,
-                "cal-poly-slo": 0.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 4,
-              "tied_team_ids": [
-                "cal-poly-slo",
-                "penn-state"
-              ],
-              "metric_values": {
-                "penn-state": 0.0,
-                "cal-poly-slo": 4.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
             {
               "rule": 2,
               "tied_team_ids": [
