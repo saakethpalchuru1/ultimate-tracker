@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T18:24:07+00:00",
+  "generated_at": "2026-05-23T18:26:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -471,7 +471,7 @@
       "pool": "C",
       "team1": "carleton",
       "team2": "mcgill",
-      "score1": 4,
+      "score1": 5,
       "score2": 3,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -592,7 +592,7 @@
       "pool": "D",
       "team1": "north-carolina",
       "team2": "western-washington",
-      "score1": 4,
+      "score1": 5,
       "score2": 3,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -840,9 +840,9 @@
           "team_id": "carleton",
           "wins": 4,
           "losses": 0,
-          "pf": 49,
+          "pf": 50,
           "pa": 30,
-          "pd": 19
+          "pd": 20
         },
         "penn-state": {
           "team_id": "penn-state",
@@ -873,8 +873,8 @@
           "wins": 0,
           "losses": 3,
           "pf": 18,
-          "pa": 34,
-          "pd": -16
+          "pa": 35,
+          "pd": -17
         }
       },
       "tiebreak_trace": [
@@ -951,7 +951,7 @@
           ],
           "metric_values": {
             "washington": -7.0,
-            "mcgill": -16.0
+            "mcgill": -17.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -995,17 +995,17 @@
           "team_id": "north-carolina",
           "wins": 2,
           "losses": 2,
-          "pf": 41,
+          "pf": 42,
           "pa": 38,
-          "pd": 3
+          "pd": 4
         },
         "western-washington": {
           "team_id": "western-washington",
           "wins": 0,
           "losses": 3,
           "pf": 24,
-          "pa": 34,
-          "pd": -10
+          "pa": 35,
+          "pd": -11
         },
         "yale": {
           "team_id": "yale",
@@ -1050,7 +1050,7 @@
             "yale"
           ],
           "metric_values": {
-            "western-washington": -10.0,
+            "western-washington": -11.0,
             "yale": -25.0
           },
           "outcome": "split",
