@@ -59,8 +59,8 @@
           "final_order": [
             "colorado",
             "michigan",
-            "brown",
             "oregon-state",
+            "brown",
             "maryland"
           ],
           "margin_sensitive": false,
@@ -88,9 +88,9 @@
                 "oregon-state"
               ],
               "metric_values": {
-                "oregon-state": -1.0,
+                "oregon-state": 0.0,
                 "michigan": 1.0,
-                "brown": 0.0
+                "brown": -1.0
               },
               "outcome": "split",
               "note": "split into 3 subgroup(s)"
@@ -109,13 +109,52 @@
           "assumed_outcomes": [],
           "final_order": [
             "carleton",
-            "penn-state",
             "cal-poly-slo",
+            "penn-state",
             "washington",
             "mcgill"
           ],
           "margin_sensitive": false,
           "tiebreak_trace": [
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "cal-poly-slo",
+                "penn-state"
+              ],
+              "metric_values": {
+                "penn-state": 0.0,
+                "cal-poly-slo": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "cal-poly-slo",
+                "penn-state"
+              ],
+              "metric_values": {
+                "penn-state": 0.0,
+                "cal-poly-slo": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "cal-poly-slo",
+                "penn-state"
+              ],
+              "metric_values": {
+                "penn-state": 0.0,
+                "cal-poly-slo": 4.0
+              },
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
+            },
             {
               "rule": 2,
               "tied_team_ids": [
