@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T15:50:06+00:00",
+  "generated_at": "2026-05-23T15:52:09+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -251,8 +251,8 @@
       "pool": "A",
       "team1": "georgia-tech",
       "team2": "utah",
-      "score1": 5,
-      "score2": 4,
+      "score1": 6,
+      "score2": 5,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "219"
@@ -361,7 +361,7 @@
       "pool": "B",
       "team1": "oregon-state",
       "team2": "maryland",
-      "score1": 4,
+      "score1": 5,
       "score2": 4,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
@@ -641,8 +641,8 @@
           "team_id": "georgia-tech",
           "wins": 2,
           "losses": 1,
-          "pf": 28,
-          "pa": 31,
+          "pf": 29,
+          "pa": 32,
           "pd": -3
         },
         "texas": {
@@ -657,8 +657,8 @@
           "team_id": "utah",
           "wins": 1,
           "losses": 3,
-          "pf": 39,
-          "pa": 44,
+          "pf": 40,
+          "pa": 45,
           "pd": -5
         }
       },
@@ -731,19 +731,19 @@
         },
         "oregon-state": {
           "team_id": "oregon-state",
-          "wins": 1,
+          "wins": 2,
           "losses": 1,
-          "pf": 25,
+          "pf": 26,
           "pa": 31,
-          "pd": -6
+          "pd": -5
         },
         "maryland": {
           "team_id": "maryland",
           "wins": 1,
-          "losses": 1,
+          "losses": 2,
           "pf": 24,
-          "pa": 31,
-          "pd": -7
+          "pa": 32,
+          "pd": -8
         },
         "michigan": {
           "team_id": "michigan",
@@ -766,12 +766,27 @@
         {
           "rule": 2,
           "tied_team_ids": [
+            "brown",
             "maryland",
-            "oregon-state"
+            "michigan"
           ],
           "metric_values": {
-            "oregon-state": 0.0,
-            "maryland": 0.0
+            "maryland": 1.0,
+            "michigan": 1.0,
+            "brown": 0.0
+          },
+          "outcome": "split",
+          "note": "split into 2 subgroup(s)"
+        },
+        {
+          "rule": 2,
+          "tied_team_ids": [
+            "maryland",
+            "michigan"
+          ],
+          "metric_values": {
+            "maryland": 0.0,
+            "michigan": 0.0
           },
           "outcome": "all_still_tied",
           "note": ""
@@ -780,11 +795,11 @@
           "rule": 3,
           "tied_team_ids": [
             "maryland",
-            "oregon-state"
+            "michigan"
           ],
           "metric_values": {
-            "oregon-state": 0.0,
-            "maryland": 0.0
+            "maryland": 0.0,
+            "michigan": 0.0
           },
           "outcome": "all_still_tied",
           "note": ""
@@ -793,24 +808,11 @@
           "rule": 4,
           "tied_team_ids": [
             "maryland",
-            "oregon-state"
-          ],
-          "metric_values": {
-            "oregon-state": -7.0,
-            "maryland": -10.0
-          },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
-        },
-        {
-          "rule": 2,
-          "tied_team_ids": [
-            "brown",
             "michigan"
           ],
           "metric_values": {
-            "michigan": 1.0,
-            "brown": 0.0
+            "maryland": -8.0,
+            "michigan": -10.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
