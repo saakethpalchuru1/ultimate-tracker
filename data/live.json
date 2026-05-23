@@ -1,71 +1,7 @@
 {
   "target_team_id": "texas",
   "target_pool": "A",
-  "has_live_games": true,
-  "live_games": [
-    {
-      "game_id": "A-09",
-      "target_team_id": "texas",
-      "opponent_id": "ucsc",
-      "current": {
-        "target_score": 12,
-        "opponent_score": 14,
-        "target_lead_by": -2
-      },
-      "scheduled_at": "Sat 5/23 1:00 PM",
-      "field": "219",
-      "summary": [
-        {
-          "finish": 3,
-          "guaranteed_at_or_above_margin": 1,
-          "min_winning_margin_needed": 1,
-          "current_margin": -2,
-          "margin_delta_needed": 3,
-          "human_text": "Win by 1+ points to lock #3. Currently leading by -2; outscore opponent by 3+ from now.",
-          "example_score": [
-            15,
-            14
-          ]
-        }
-      ],
-      "matrix": [
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": -3,
-          "target_finish": 4,
-          "projected_final_target": 12,
-          "projected_final_opp": 15
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": -2,
-          "target_finish": 4,
-          "projected_final_target": 13,
-          "projected_final_opp": 15
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": -1,
-          "target_finish": 4,
-          "projected_final_target": 14,
-          "projected_final_opp": 15
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": 0,
-          "target_finish": 4,
-          "projected_final_target": 15,
-          "projected_final_opp": 15
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": 1,
-          "target_finish": 3,
-          "projected_final_target": 15,
-          "projected_final_opp": 14
-        }
-      ]
-    }
-  ],
+  "has_live_games": false,
+  "live_games": [],
   "other_live_games": []
 }
