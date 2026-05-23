@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T20:50:10+00:00",
+  "generated_at": "2026-05-23T20:52:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -383,8 +383,8 @@
       "pool": "B",
       "team1": "oregon-state",
       "team2": "brown",
-      "score1": 2,
-      "score2": 2,
+      "score1": 5,
+      "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
       "field": "205"
@@ -603,7 +603,7 @@
       "pool": "D",
       "team1": "western-washington",
       "team2": "yale",
-      "score1": 11,
+      "score1": 12,
       "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
@@ -702,8 +702,8 @@
       "pool": "B",
       "ordered_team_ids": [
         "colorado",
-        "oregon-state",
         "michigan",
+        "oregon-state",
         "brown",
         "maryland"
       ],
@@ -719,10 +719,10 @@
         "oregon-state": {
           "team_id": "oregon-state",
           "wins": 2,
-          "losses": 1,
-          "pf": 38,
-          "pa": 42,
-          "pd": -4
+          "losses": 2,
+          "pf": 41,
+          "pa": 46,
+          "pd": -5
         },
         "maryland": {
           "team_id": "maryland",
@@ -742,14 +742,45 @@
         },
         "brown": {
           "team_id": "brown",
-          "wins": 1,
+          "wins": 2,
           "losses": 2,
-          "pf": 42,
-          "pa": 41,
-          "pd": 1
+          "pf": 46,
+          "pa": 44,
+          "pd": 2
         }
       },
-      "tiebreak_trace": [],
+      "tiebreak_trace": [
+        {
+          "rule": 2,
+          "tied_team_ids": [
+            "brown",
+            "michigan",
+            "oregon-state"
+          ],
+          "metric_values": {
+            "oregon-state": 1.0,
+            "michigan": 1.0,
+            "brown": 1.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 3,
+          "tied_team_ids": [
+            "brown",
+            "michigan",
+            "oregon-state"
+          ],
+          "metric_values": {
+            "oregon-state": 0.0,
+            "michigan": 1.0,
+            "brown": -1.0
+          },
+          "outcome": "split",
+          "note": "split into 3 subgroup(s)"
+        }
+      ],
       "usau_tie_hints": {
         "colorado": "",
         "oregon-state": "",
@@ -856,17 +887,17 @@
           "team_id": "western-washington",
           "wins": 2,
           "losses": 2,
-          "pf": 47,
+          "pf": 48,
           "pa": 50,
-          "pd": -3
+          "pd": -2
         },
         "yale": {
           "team_id": "yale",
           "wins": 0,
           "losses": 4,
           "pf": 26,
-          "pa": 56,
-          "pd": -30
+          "pa": 57,
+          "pd": -31
         }
       },
       "tiebreak_trace": [],
