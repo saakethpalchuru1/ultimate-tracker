@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T16:58:06+00:00",
+  "generated_at": "2026-05-23T17:00:17+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -253,7 +253,7 @@
       "team2": "utah",
       "score1": 15,
       "score2": 14,
-      "status": "in_progress",
+      "status": "final",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "219"
     },
@@ -266,7 +266,7 @@
       "score2": null,
       "status": "scheduled",
       "scheduled_at": "Sat 5/23 1:00 PM",
-      "field": "202"
+      "field": "219"
     },
     {
       "game_id": "A-10",
@@ -705,10 +705,10 @@
       ],
       "usau_tie_hints": {
         "oregon": "",
-        "texas": "1-1,4[-8]",
-        "utah": "1-1,0 || 1-0,5[-4]",
-        "ucsc": "1-1,0 || 0-1,-5[-6]",
-        "georgia-tech": "1-1,-4[-4]"
+        "georgia-tech": "",
+        "texas": "1-0,5[-8]",
+        "utah": "1-1,0[-5]",
+        "ucsc": "0-1,-5[-6]"
       }
     },
     {
