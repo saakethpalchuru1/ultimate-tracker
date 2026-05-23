@@ -49,7 +49,7 @@
             },
             {
               "side": "away",
-              "team_id": "texas",
+              "team_id": "georgia-tech",
               "source": "Pool A #3"
             }
           ],
@@ -209,12 +209,5 @@
       ]
     }
   ],
-  "target_path": [
-    {
-      "round": "Prequarterfinals",
-      "game_id": "PQ3",
-      "opponent_team_id": "pittsburgh",
-      "opponent_source": "Pool D #2"
-    }
-  ]
+  "target_path": []
 }
