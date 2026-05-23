@@ -49,7 +49,7 @@
             },
             {
               "side": "away",
-              "team_id": "georgia-tech",
+              "team_id": "texas",
               "source": "Pool A #3"
             }
           ],
@@ -61,7 +61,7 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "ucsc",
+              "team_id": "georgia-tech",
               "source": "Pool A #2"
             },
             {
@@ -70,7 +70,7 @@
               "source": "Pool D #3"
             }
           ],
-          "projected_winner": "ucsc"
+          "projected_winner": "georgia-tech"
         }
       ]
     },
@@ -139,7 +139,7 @@
             },
             {
               "side": "away",
-              "team_id": "ucsc",
+              "team_id": "georgia-tech",
               "source": "Winner of PQ4"
             }
           ],
@@ -209,5 +209,12 @@
       ]
     }
   ],
-  "target_path": []
+  "target_path": [
+    {
+      "round": "Prequarterfinals",
+      "game_id": "PQ3",
+      "opponent_team_id": "pittsburgh",
+      "opponent_source": "Pool D #2"
+    }
+  ]
 }
