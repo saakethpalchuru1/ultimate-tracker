@@ -42,8 +42,8 @@
           "final_order": [
             "oregon",
             "ucsc",
-            "georgia-tech",
             "texas",
+            "georgia-tech",
             "utah"
           ],
           "margin_sensitive": false,
@@ -10564,8 +10564,8 @@
           "final_order": [
             "oregon",
             "ucsc",
-            "georgia-tech",
             "texas",
+            "georgia-tech",
             "utah"
           ],
           "margin_sensitive": false,
