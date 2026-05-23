@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T20:14:08+00:00",
+  "generated_at": "2026-05-23T20:16:08+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -373,7 +373,7 @@
       "team1": "michigan",
       "team2": "maryland",
       "score1": 2,
-      "score2": 2,
+      "score2": 3,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
       "field": "219"
@@ -384,7 +384,7 @@
       "team1": "oregon-state",
       "team2": "brown",
       "score1": 2,
-      "score2": 2,
+      "score2": 3,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
       "field": "205"
@@ -482,7 +482,7 @@
       "pool": "C",
       "team1": "washington",
       "team2": "mcgill",
-      "score1": 1,
+      "score1": 2,
       "score2": 3,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
@@ -704,8 +704,8 @@
         "colorado",
         "oregon-state",
         "maryland",
-        "michigan",
-        "brown"
+        "brown",
+        "michigan"
       ],
       "rows": {
         "colorado": {
@@ -719,34 +719,34 @@
         "oregon-state": {
           "team_id": "oregon-state",
           "wins": 2,
-          "losses": 1,
+          "losses": 2,
           "pf": 38,
-          "pa": 42,
-          "pd": -4
+          "pa": 43,
+          "pd": -5
         },
         "maryland": {
           "team_id": "maryland",
-          "wins": 1,
+          "wins": 2,
           "losses": 2,
-          "pf": 35,
+          "pf": 36,
           "pa": 44,
-          "pd": -9
+          "pd": -8
         },
         "michigan": {
           "team_id": "michigan",
           "wins": 1,
-          "losses": 2,
+          "losses": 3,
           "pf": 33,
-          "pa": 43,
-          "pd": -10
+          "pa": 44,
+          "pd": -11
         },
         "brown": {
           "team_id": "brown",
-          "wins": 1,
+          "wins": 2,
           "losses": 2,
-          "pf": 42,
+          "pf": 43,
           "pa": 41,
-          "pd": 1
+          "pd": 2
         }
       },
       "tiebreak_trace": [
@@ -755,12 +755,27 @@
           "tied_team_ids": [
             "brown",
             "maryland",
-            "michigan"
+            "oregon-state"
           ],
           "metric_values": {
+            "oregon-state": 1.0,
             "maryland": 1.0,
-            "michigan": 1.0,
-            "brown": 0.0
+            "brown": 1.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 3,
+          "tied_team_ids": [
+            "brown",
+            "maryland",
+            "oregon-state"
+          ],
+          "metric_values": {
+            "oregon-state": 1.0,
+            "maryland": 1.0,
+            "brown": -2.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -769,37 +784,11 @@
           "rule": 2,
           "tied_team_ids": [
             "maryland",
-            "michigan"
+            "oregon-state"
           ],
           "metric_values": {
             "maryland": 0.0,
-            "michigan": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 3,
-          "tied_team_ids": [
-            "maryland",
-            "michigan"
-          ],
-          "metric_values": {
-            "maryland": 0.0,
-            "michigan": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 4,
-          "tied_team_ids": [
-            "maryland",
-            "michigan"
-          ],
-          "metric_values": {
-            "maryland": -9.0,
-            "michigan": -10.0
+            "oregon-state": 1.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -851,17 +840,17 @@
           "team_id": "washington",
           "wins": 0,
           "losses": 4,
-          "pf": 38,
+          "pf": 39,
           "pa": 47,
-          "pd": -9
+          "pd": -8
         },
         "mcgill": {
           "team_id": "mcgill",
           "wins": 1,
           "losses": 3,
           "pf": 30,
-          "pa": 46,
-          "pd": -16
+          "pa": 47,
+          "pd": -17
         }
       },
       "tiebreak_trace": [],
