@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T21:28:07+00:00",
+  "generated_at": "2026-05-23T21:30:27+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -372,7 +372,7 @@
       "pool": "B",
       "team1": "michigan",
       "team2": "maryland",
-      "score1": 12,
+      "score1": 13,
       "score2": 14,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
@@ -482,7 +482,7 @@
       "pool": "C",
       "team1": "washington",
       "team2": "mcgill",
-      "score1": 13,
+      "score1": 14,
       "score2": 13,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
@@ -729,16 +729,16 @@
           "wins": 2,
           "losses": 2,
           "pf": 47,
-          "pa": 54,
-          "pd": -7
+          "pa": 55,
+          "pd": -8
         },
         "michigan": {
           "team_id": "michigan",
           "wins": 1,
           "losses": 3,
-          "pf": 43,
+          "pf": 44,
           "pa": 55,
-          "pd": -12
+          "pd": -11
         },
         "brown": {
           "team_id": "brown",
@@ -821,19 +821,19 @@
         },
         "washington": {
           "team_id": "washington",
-          "wins": 0,
+          "wins": 1,
           "losses": 3,
-          "pf": 50,
+          "pf": 51,
           "pa": 57,
-          "pd": -7
+          "pd": -6
         },
         "mcgill": {
           "team_id": "mcgill",
           "wins": 0,
-          "losses": 3,
+          "losses": 4,
           "pf": 40,
-          "pa": 58,
-          "pd": -18
+          "pa": 59,
+          "pd": -19
         }
       },
       "tiebreak_trace": [
@@ -872,45 +872,6 @@
           "metric_values": {
             "penn-state": 0.0,
             "cal-poly-slo": 4.0
-          },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
-        },
-        {
-          "rule": 2,
-          "tied_team_ids": [
-            "mcgill",
-            "washington"
-          ],
-          "metric_values": {
-            "washington": 0.0,
-            "mcgill": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 3,
-          "tied_team_ids": [
-            "mcgill",
-            "washington"
-          ],
-          "metric_values": {
-            "washington": 0.0,
-            "mcgill": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 4,
-          "tied_team_ids": [
-            "mcgill",
-            "washington"
-          ],
-          "metric_values": {
-            "washington": -7.0,
-            "mcgill": -18.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
