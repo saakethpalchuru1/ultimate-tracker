@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T16:18:07+00:00",
+  "generated_at": "2026-05-23T16:20:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -351,7 +351,7 @@
       "team1": "colorado",
       "team2": "brown",
       "score1": 6,
-      "score2": 9,
+      "score2": 10,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "203"
@@ -450,7 +450,7 @@
       "team1": "carleton",
       "team2": "penn-state",
       "score1": 11,
-      "score2": 4,
+      "score2": 5,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "202"
@@ -715,8 +715,8 @@
           "wins": 3,
           "losses": 1,
           "pf": 51,
-          "pa": 26,
-          "pd": 25
+          "pa": 27,
+          "pd": 24
         },
         "oregon-state": {
           "team_id": "oregon-state",
@@ -746,9 +746,9 @@
           "team_id": "brown",
           "wins": 1,
           "losses": 2,
-          "pf": 34,
+          "pf": 35,
           "pa": 36,
-          "pd": -2
+          "pd": -1
         }
       },
       "tiebreak_trace": [
@@ -840,16 +840,16 @@
           "wins": 3,
           "losses": 0,
           "pf": 41,
-          "pa": 24,
-          "pd": 17
+          "pa": 25,
+          "pd": 16
         },
         "penn-state": {
           "team_id": "penn-state",
           "wins": 2,
           "losses": 1,
-          "pf": 33,
+          "pf": 34,
           "pa": 32,
-          "pd": 1
+          "pd": 2
         },
         "cal-poly-slo": {
           "team_id": "cal-poly-slo",
