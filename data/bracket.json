@@ -15,7 +15,7 @@
             },
             {
               "side": "away",
-              "team_id": "penn-state",
+              "team_id": "cal-poly-slo",
               "source": "Pool C #3"
             }
           ],
@@ -27,7 +27,7 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "cal-poly-slo",
+              "team_id": "penn-state",
               "source": "Pool C #2"
             },
             {
@@ -36,7 +36,7 @@
               "source": "Pool B #3"
             }
           ],
-          "projected_winner": "cal-poly-slo"
+          "projected_winner": "penn-state"
         },
         {
           "id": "PQ3",
@@ -105,7 +105,7 @@
             },
             {
               "side": "away",
-              "team_id": "cal-poly-slo",
+              "team_id": "penn-state",
               "source": "Winner of PQ2"
             }
           ],
