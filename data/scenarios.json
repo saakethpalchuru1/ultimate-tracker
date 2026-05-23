@@ -645,8 +645,8 @@
           "final_order": [
             "oregon",
             "ucsc",
-            "georgia-tech",
             "texas",
+            "georgia-tech",
             "utah"
           ],
           "margin_sensitive": false,
@@ -655,11 +655,28 @@
               "rule": 2,
               "tied_team_ids": [
                 "georgia-tech",
+                "texas",
                 "ucsc"
               ],
               "metric_values": {
                 "ucsc": 1.0,
-                "georgia-tech": 0.0
+                "georgia-tech": 1.0,
+                "texas": 1.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "georgia-tech",
+                "texas",
+                "ucsc"
+              ],
+              "metric_values": {
+                "ucsc": 4.0,
+                "georgia-tech": -4.0,
+                "texas": 0.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
@@ -10756,8 +10773,8 @@
           "final_order": [
             "oregon",
             "ucsc",
-            "georgia-tech",
             "texas",
+            "georgia-tech",
             "utah"
           ],
           "margin_sensitive": false,
@@ -10766,11 +10783,28 @@
               "rule": 2,
               "tied_team_ids": [
                 "georgia-tech",
+                "texas",
                 "ucsc"
               ],
               "metric_values": {
                 "ucsc": 1.0,
-                "georgia-tech": 0.0
+                "georgia-tech": 1.0,
+                "texas": 1.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "georgia-tech",
+                "texas",
+                "ucsc"
+              ],
+              "metric_values": {
+                "ucsc": 4.0,
+                "georgia-tech": -4.0,
+                "texas": 0.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"

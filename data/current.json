@@ -616,8 +616,8 @@
       "ordered_team_ids": [
         "oregon",
         "ucsc",
-        "georgia-tech",
         "texas",
+        "georgia-tech",
         "utah"
       ],
       "rows": {
@@ -667,6 +667,7 @@
           "rule": 2,
           "tied_team_ids": [
             "georgia-tech",
+            "texas",
             "ucsc"
           ],
           "metric_values": {
@@ -688,7 +689,7 @@
             "ucsc": 1.0
           },
           "outcome": "split",
-          "note": "split into 2 subgroup(s)"
+          "note": "split into 3 subgroup(s)"
         }
       ],
       "usau_tie_hints": {
