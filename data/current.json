@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T18:46:08+00:00",
+  "generated_at": "2026-05-23T18:48:09+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -471,7 +471,7 @@
       "pool": "C",
       "team1": "carleton",
       "team2": "mcgill",
-      "score1": 8,
+      "score1": 9,
       "score2": 5,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -593,7 +593,7 @@
       "team1": "north-carolina",
       "team2": "western-washington",
       "score1": 8,
-      "score2": 5,
+      "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "202"
@@ -827,9 +827,9 @@
           "team_id": "carleton",
           "wins": 4,
           "losses": 0,
-          "pf": 53,
+          "pf": 54,
           "pa": 32,
-          "pd": 21
+          "pd": 22
         },
         "penn-state": {
           "team_id": "penn-state",
@@ -860,8 +860,8 @@
           "wins": 0,
           "losses": 3,
           "pf": 20,
-          "pa": 38,
-          "pd": -18
+          "pa": 39,
+          "pd": -19
         }
       },
       "tiebreak_trace": [
@@ -938,7 +938,7 @@
           ],
           "metric_values": {
             "washington": -7.0,
-            "mcgill": -18.0
+            "mcgill": -19.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -983,16 +983,16 @@
           "wins": 2,
           "losses": 2,
           "pf": 45,
-          "pa": 40,
-          "pd": 5
+          "pa": 41,
+          "pd": 4
         },
         "western-washington": {
           "team_id": "western-washington",
           "wins": 0,
           "losses": 3,
-          "pf": 26,
+          "pf": 27,
           "pa": 38,
-          "pd": -12
+          "pd": -11
         },
         "yale": {
           "team_id": "yale",
@@ -1037,7 +1037,7 @@
             "yale"
           ],
           "metric_values": {
-            "western-washington": -12.0,
+            "western-washington": -11.0,
             "yale": -25.0
           },
           "outcome": "split",
