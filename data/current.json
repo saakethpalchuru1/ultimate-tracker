@@ -177,8 +177,8 @@
       "score1": 15,
       "score2": 11,
       "status": "final",
-      "scheduled_at": "Fri 5/22 8:30 AM",
-      "field": "202"
+      "scheduled_at": null,
+      "field": null
     },
     {
       "game_id": "A-02",
@@ -188,8 +188,8 @@
       "score1": 12,
       "score2": 13,
       "status": "final",
-      "scheduled_at": "Fri 5/22 10:30 AM",
-      "field": "205"
+      "scheduled_at": null,
+      "field": null
     },
     {
       "game_id": "A-03",
@@ -199,8 +199,8 @@
       "score1": 15,
       "score2": 9,
       "status": "final",
-      "scheduled_at": "Fri 5/22 1:00 PM",
-      "field": "202"
+      "scheduled_at": null,
+      "field": null
     },
     {
       "game_id": "A-04",
@@ -210,8 +210,8 @@
       "score1": 14,
       "score2": 9,
       "status": "final",
-      "scheduled_at": "Fri 5/22 3:00 PM",
-      "field": "203"
+      "scheduled_at": null,
+      "field": null
     },
     {
       "game_id": "A-05",
@@ -221,8 +221,8 @@
       "score1": 15,
       "score2": 10,
       "status": "final",
-      "scheduled_at": "Fri 5/22 5:00 PM",
-      "field": "210"
+      "scheduled_at": null,
+      "field": null
     },
     {
       "game_id": "A-06",
@@ -485,8 +485,8 @@
       "score1": null,
       "score2": null,
       "status": "scheduled",
-      "scheduled_at": "Sat 5/23 3:00 PM",
-      "field": "206"
+      "scheduled_at": null,
+      "field": null
     },
     {
       "game_id": "C-30",
@@ -606,8 +606,8 @@
       "score1": null,
       "score2": null,
       "status": "scheduled",
-      "scheduled_at": "Sat 5/23 3:00 PM",
-      "field": "202"
+      "scheduled_at": null,
+      "field": null
     }
   ],
   "standings": [
@@ -667,7 +667,6 @@
           "rule": 2,
           "tied_team_ids": [
             "georgia-tech",
-            "texas",
             "ucsc"
           ],
           "metric_values": {
@@ -1052,8 +1051,8 @@
             "yale"
           ],
           "metric_values": {
-            "western-washington": 0.0,
-            "yale": 0.0
+            "pittsburgh": 0.0,
+            "massachusetts": 0.0
           },
           "outcome": "all_still_tied",
           "note": ""
@@ -1061,12 +1060,12 @@
         {
           "rule": 3,
           "tied_team_ids": [
-            "western-washington",
-            "yale"
+            "massachusetts",
+            "pittsburgh"
           ],
           "metric_values": {
-            "western-washington": 0.0,
-            "yale": 0.0
+            "pittsburgh": 0.0,
+            "massachusetts": 0.0
           },
           "outcome": "all_still_tied",
           "note": ""
@@ -1074,8 +1073,8 @@
         {
           "rule": 4,
           "tied_team_ids": [
-            "western-washington",
-            "yale"
+            "massachusetts",
+            "pittsburgh"
           ],
           "metric_values": {
             "western-washington": -4.0,

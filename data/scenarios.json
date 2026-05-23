@@ -173,7 +173,6 @@
               "rule": 2,
               "tied_team_ids": [
                 "georgia-tech",
-                "texas",
                 "ucsc"
               ],
               "metric_values": {
@@ -1607,7 +1606,7 @@
                 "texas": 1.0
               },
               "outcome": "split",
-              "note": "split into 3 subgroup(s)"
+              "note": "split into 2 subgroup(s)"
             }
           ],
           "target_finish": 3
@@ -8806,6 +8805,7 @@
             "oregon",
             "ucsc",
             "georgia-tech",
+            "texas",
             "utah"
           ],
           "margin_sensitive": false,
@@ -9353,7 +9353,6 @@
               "rule": 2,
               "tied_team_ids": [
                 "georgia-tech",
-                "texas",
                 "ucsc"
               ],
               "metric_values": {
@@ -10444,7 +10443,7 @@
                 "texas": 1.0
               },
               "outcome": "split",
-              "note": "split into 3 subgroup(s)"
+              "note": "split into 2 subgroup(s)"
             }
           ],
           "target_finish": 3
