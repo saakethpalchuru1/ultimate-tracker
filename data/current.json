@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T19:26:06+00:00",
+  "generated_at": "2026-05-23T19:28:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -262,7 +262,7 @@
       "pool": "A",
       "team1": "ucsc",
       "team2": "texas",
-      "score1": 13,
+      "score1": 14,
       "score2": 12,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -473,7 +473,7 @@
       "team2": "mcgill",
       "score1": 15,
       "score2": 12,
-      "status": "in_progress",
+      "status": "final",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "204"
     },
@@ -633,9 +633,9 @@
           "team_id": "ucsc",
           "wins": 2,
           "losses": 2,
-          "pf": 47,
+          "pf": 48,
           "pa": 52,
-          "pd": -5
+          "pd": -4
         },
         "georgia-tech": {
           "team_id": "georgia-tech",
@@ -650,8 +650,8 @@
           "wins": 1,
           "losses": 3,
           "pf": 41,
-          "pa": 50,
-          "pd": -9
+          "pa": 51,
+          "pd": -10
         },
         "utah": {
           "team_id": "utah",
@@ -948,8 +948,8 @@
         "carleton": "",
         "cal-poly-slo": "0-0,0[+4]",
         "penn-state": "0-0,0[0]",
-        "washington": "",
-        "mcgill": ""
+        "washington": "0-0,0",
+        "mcgill": "0-0,0"
       }
     },
     {
