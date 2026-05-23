@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T19:08:07+00:00",
+  "generated_at": "2026-05-23T19:10:13+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -581,7 +581,7 @@
       "pool": "D",
       "team1": "massachusetts",
       "team2": "pittsburgh",
-      "score1": 12,
+      "score1": 13,
       "score2": 8,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -592,7 +592,7 @@
       "pool": "D",
       "team1": "north-carolina",
       "team2": "western-washington",
-      "score1": 10,
+      "score1": 11,
       "score2": 10,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -980,32 +980,32 @@
           "wins": 3,
           "losses": 1,
           "pf": 53,
-          "pa": 44,
-          "pd": 9
+          "pa": 45,
+          "pd": 8
         },
         "massachusetts": {
           "team_id": "massachusetts",
           "wins": 4,
           "losses": 0,
-          "pf": 57,
+          "pf": 58,
           "pa": 34,
-          "pd": 23
+          "pd": 24
         },
         "north-carolina": {
           "team_id": "north-carolina",
-          "wins": 1,
+          "wins": 2,
           "losses": 2,
-          "pf": 47,
+          "pf": 48,
           "pa": 45,
-          "pd": 2
+          "pd": 3
         },
         "western-washington": {
           "team_id": "western-washington",
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "pf": 31,
-          "pa": 40,
-          "pd": -9
+          "pa": 41,
+          "pd": -10
         },
         "yale": {
           "team_id": "yale",
@@ -1016,7 +1016,47 @@
           "pd": -25
         }
       },
-      "tiebreak_trace": [],
+      "tiebreak_trace": [
+        {
+          "rule": 2,
+          "tied_team_ids": [
+            "western-washington",
+            "yale"
+          ],
+          "metric_values": {
+            "western-washington": 0.0,
+            "yale": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 3,
+          "tied_team_ids": [
+            "western-washington",
+            "yale"
+          ],
+          "metric_values": {
+            "western-washington": 0.0,
+            "yale": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 4,
+          "tied_team_ids": [
+            "western-washington",
+            "yale"
+          ],
+          "metric_values": {
+            "western-washington": -10.0,
+            "yale": -25.0
+          },
+          "outcome": "split",
+          "note": "split into 2 subgroup(s)"
+        }
+      ],
       "usau_tie_hints": {
         "massachusetts": "0-0,0[+19]",
         "pittsburgh": "0-0,0[+13]",
