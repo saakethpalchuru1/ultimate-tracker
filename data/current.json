@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T14:44:08+00:00",
+  "generated_at": "2026-05-23T14:46:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -559,7 +559,7 @@
       "pool": "D",
       "team1": "north-carolina",
       "team2": "pittsburgh",
-      "score1": 9,
+      "score1": 10,
       "score2": 12,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 8:30 AM",
@@ -572,7 +572,7 @@
       "team2": "yale",
       "score1": 15,
       "score2": 6,
-      "status": "in_progress",
+      "status": "final",
       "scheduled_at": "Sat 5/23 8:30 AM",
       "field": "207"
     },
@@ -954,8 +954,8 @@
           "wins": 3,
           "losses": 0,
           "pf": 42,
-          "pa": 29,
-          "pd": 13
+          "pa": 30,
+          "pd": 12
         },
         "massachusetts": {
           "team_id": "massachusetts",
@@ -969,9 +969,9 @@
           "team_id": "north-carolina",
           "wins": 1,
           "losses": 2,
-          "pf": 34,
+          "pf": 35,
           "pa": 32,
-          "pd": 2
+          "pd": 3
         },
         "western-washington": {
           "team_id": "western-washington",
@@ -1024,7 +1024,7 @@
             "pittsburgh"
           ],
           "metric_values": {
-            "pittsburgh": 13.0,
+            "pittsburgh": 12.0,
             "massachusetts": 19.0
           },
           "outcome": "split",
@@ -1032,11 +1032,11 @@
         }
       ],
       "usau_tie_hints": {
-        "pittsburgh": "0-0,0 || 0-0,0[+10]",
-        "massachusetts": "0-0,0 || 0-0,0[+10]",
+        "massachusetts": "",
+        "pittsburgh": "",
         "north-carolina": "",
-        "western-washington": "0-0,0",
-        "yale": "0-0,0"
+        "western-washington": "",
+        "yale": ""
       }
     }
   ]
