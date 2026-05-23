@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T21:18:06+00:00",
+  "generated_at": "2026-05-23T21:20:15+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -373,7 +373,7 @@
       "team1": "michigan",
       "team2": "maryland",
       "score1": 12,
-      "score2": 11,
+      "score2": 12,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
       "field": "219"
@@ -483,7 +483,7 @@
       "team1": "washington",
       "team2": "mcgill",
       "score1": 12,
-      "score2": 11,
+      "score2": 12,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
       "field": "203"
@@ -703,8 +703,8 @@
       "ordered_team_ids": [
         "colorado",
         "oregon-state",
-        "michigan",
         "maryland",
+        "michigan",
         "brown"
       ],
       "rows": {
@@ -727,18 +727,18 @@
         "maryland": {
           "team_id": "maryland",
           "wins": 1,
-          "losses": 3,
-          "pf": 44,
+          "losses": 2,
+          "pf": 45,
           "pa": 54,
-          "pd": -10
+          "pd": -9
         },
         "michigan": {
           "team_id": "michigan",
-          "wins": 2,
+          "wins": 1,
           "losses": 2,
           "pf": 43,
-          "pa": 52,
-          "pd": -9
+          "pa": 53,
+          "pd": -10
         },
         "brown": {
           "team_id": "brown",
@@ -766,12 +766,38 @@
         {
           "rule": 2,
           "tied_team_ids": [
-            "brown",
-            "maryland"
+            "maryland",
+            "michigan"
           ],
           "metric_values": {
-            "maryland": 1.0,
-            "brown": 0.0
+            "maryland": 0.0,
+            "michigan": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 3,
+          "tied_team_ids": [
+            "maryland",
+            "michigan"
+          ],
+          "metric_values": {
+            "maryland": 0.0,
+            "michigan": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 4,
+          "tied_team_ids": [
+            "maryland",
+            "michigan"
+          ],
+          "metric_values": {
+            "maryland": -9.0,
+            "michigan": -10.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -821,22 +847,62 @@
         },
         "washington": {
           "team_id": "washington",
-          "wins": 1,
+          "wins": 0,
           "losses": 3,
           "pf": 49,
-          "pa": 55,
-          "pd": -6
+          "pa": 56,
+          "pd": -7
         },
         "mcgill": {
           "team_id": "mcgill",
           "wins": 0,
-          "losses": 4,
-          "pf": 38,
+          "losses": 3,
+          "pf": 39,
           "pa": 57,
-          "pd": -19
+          "pd": -18
         }
       },
-      "tiebreak_trace": [],
+      "tiebreak_trace": [
+        {
+          "rule": 2,
+          "tied_team_ids": [
+            "mcgill",
+            "washington"
+          ],
+          "metric_values": {
+            "washington": 0.0,
+            "mcgill": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 3,
+          "tied_team_ids": [
+            "mcgill",
+            "washington"
+          ],
+          "metric_values": {
+            "washington": 0.0,
+            "mcgill": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 4,
+          "tied_team_ids": [
+            "mcgill",
+            "washington"
+          ],
+          "metric_values": {
+            "washington": -7.0,
+            "mcgill": -18.0
+          },
+          "outcome": "split",
+          "note": "split into 2 subgroup(s)"
+        }
+      ],
       "usau_tie_hints": {
         "carleton": "",
         "cal-poly-slo": "0-0,0[+4]",
