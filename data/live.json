@@ -8,9 +8,9 @@
       "target_team_id": "texas",
       "opponent_id": "ucsc",
       "current": {
-        "target_score": 8,
+        "target_score": 9,
         "opponent_score": 10,
-        "target_lead_by": -2
+        "target_lead_by": -1
       },
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "219",
@@ -19,9 +19,9 @@
           "finish": 3,
           "guaranteed_at_or_above_margin": 1,
           "min_winning_margin_needed": 1,
-          "current_margin": -2,
-          "margin_delta_needed": 3,
-          "human_text": "Win by 1+ points to lock #3. Currently leading by -2; outscore opponent by 3+ from now.",
+          "current_margin": -1,
+          "margin_delta_needed": 2,
+          "human_text": "Win by 1+ points to lock #3. Currently leading by -1; outscore opponent by 2+ from now.",
           "example_score": [
             15,
             14
@@ -29,13 +29,6 @@
         }
       ],
       "matrix": [
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": -7,
-          "target_finish": 4,
-          "projected_final_target": 8,
-          "projected_final_opp": 15
-        },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": -6,
@@ -129,7 +122,7 @@
       "team1": "oregon",
       "team2": "georgia-tech",
       "score1": 14,
-      "score2": 5,
+      "score2": 6,
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "210"
     }
