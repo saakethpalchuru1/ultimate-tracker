@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T19:36:09+00:00",
+  "generated_at": "2026-05-23T19:38:08+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -594,7 +594,7 @@
       "team2": "western-washington",
       "score1": 14,
       "score2": 15,
-      "status": "in_progress",
+      "status": "final",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "202"
     },
