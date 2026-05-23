@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T05:12:44+00:00",
+  "generated_at": "2026-05-23T05:13:19+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -504,8 +504,8 @@
       "pool": "A",
       "team1": "ucsc",
       "team2": "texas",
-      "score1": 4,
-      "score2": 5,
+      "score1": 7,
+      "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "202"
@@ -515,8 +515,8 @@
       "pool": "A",
       "team1": "oregon",
       "team2": "georgia-tech",
-      "score1": 6,
-      "score2": 3,
+      "score1": 7,
+      "score2": 5,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "210"
@@ -616,8 +616,8 @@
       "ordered_team_ids": [
         "oregon",
         "ucsc",
-        "texas",
         "georgia-tech",
+        "texas",
         "utah"
       ],
       "rows": {
@@ -625,33 +625,33 @@
           "team_id": "oregon",
           "wins": 4,
           "losses": 0,
-          "pf": 51,
-          "pa": 32,
-          "pd": 19
+          "pf": 52,
+          "pa": 34,
+          "pd": 18
         },
         "ucsc": {
           "team_id": "ucsc",
-          "wins": 2,
-          "losses": 2,
-          "pf": 43,
-          "pa": 40,
-          "pd": 3
+          "wins": 3,
+          "losses": 1,
+          "pf": 46,
+          "pa": 41,
+          "pd": 5
         },
         "georgia-tech": {
           "team_id": "georgia-tech",
           "wins": 2,
           "losses": 2,
-          "pf": 41,
-          "pa": 45,
-          "pd": -4
+          "pf": 43,
+          "pa": 46,
+          "pd": -3
         },
         "texas": {
           "team_id": "texas",
-          "wins": 2,
-          "losses": 2,
-          "pf": 40,
-          "pa": 41,
-          "pd": -1
+          "wins": 1,
+          "losses": 3,
+          "pf": 41,
+          "pa": 44,
+          "pd": -3
         },
         "utah": {
           "team_id": "utah",
@@ -662,38 +662,7 @@
           "pd": -17
         }
       },
-      "tiebreak_trace": [
-        {
-          "rule": 2,
-          "tied_team_ids": [
-            "georgia-tech",
-            "texas",
-            "ucsc"
-          ],
-          "metric_values": {
-            "ucsc": 1.0,
-            "georgia-tech": 1.0,
-            "texas": 1.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 3,
-          "tied_team_ids": [
-            "georgia-tech",
-            "texas",
-            "ucsc"
-          ],
-          "metric_values": {
-            "ucsc": 4.0,
-            "georgia-tech": -4.0,
-            "texas": 0.0
-          },
-          "outcome": "split",
-          "note": "split into 3 subgroup(s)"
-        }
-      ],
+      "tiebreak_trace": [],
       "usau_tie_hints": {}
     },
     {
