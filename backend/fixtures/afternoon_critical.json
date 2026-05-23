@@ -1,0 +1,375 @@
+{
+  "description": "Saturday 1:45 PM \u2014 Texas-UCSC clutch + Oregon-GT live",
+  "games": [
+    {
+      "pool": "A",
+      "team1": "oregon",
+      "team2": "utah",
+      "score1": 15,
+      "score2": 11,
+      "status": "final",
+      "scheduled_at": "Fri 5/22 8:30 AM",
+      "field": "202"
+    },
+    {
+      "pool": "A",
+      "team1": "texas",
+      "team2": "georgia-tech",
+      "score1": 12,
+      "score2": 13,
+      "status": "final",
+      "scheduled_at": "Fri 5/22 10:30 AM",
+      "field": "205"
+    },
+    {
+      "pool": "A",
+      "team1": "oregon",
+      "team2": "ucsc",
+      "score1": 15,
+      "score2": 9,
+      "status": "final",
+      "scheduled_at": "Fri 5/22 1:00 PM",
+      "field": "202"
+    },
+    {
+      "pool": "A",
+      "team1": "texas",
+      "team2": "utah",
+      "score1": 14,
+      "score2": 9,
+      "status": "final",
+      "scheduled_at": "Fri 5/22 3:00 PM",
+      "field": "203"
+    },
+    {
+      "pool": "A",
+      "team1": "ucsc",
+      "team2": "georgia-tech",
+      "score1": 15,
+      "score2": 10,
+      "status": "final",
+      "scheduled_at": "Fri 5/22 5:00 PM",
+      "field": "210"
+    },
+    {
+      "pool": "B",
+      "team1": "brown",
+      "team2": "maryland",
+      "score1": 12,
+      "score2": 15,
+      "status": "final"
+    },
+    {
+      "pool": "B",
+      "team1": "colorado",
+      "team2": "oregon-state",
+      "score1": 15,
+      "score2": 8,
+      "status": "final"
+    },
+    {
+      "pool": "B",
+      "team1": "brown",
+      "team2": "michigan",
+      "score1": 13,
+      "score2": 15,
+      "status": "final"
+    },
+    {
+      "pool": "B",
+      "team1": "colorado",
+      "team2": "maryland",
+      "score1": 15,
+      "score2": 5,
+      "status": "final"
+    },
+    {
+      "pool": "B",
+      "team1": "oregon-state",
+      "team2": "michigan",
+      "score1": 13,
+      "score2": 12,
+      "status": "final"
+    },
+    {
+      "pool": "C",
+      "team1": "cal-poly-slo",
+      "team2": "mcgill",
+      "score1": 15,
+      "score2": 7,
+      "status": "final"
+    },
+    {
+      "pool": "C",
+      "team1": "carleton",
+      "team2": "washington",
+      "score1": 15,
+      "score2": 10,
+      "status": "final"
+    },
+    {
+      "pool": "C",
+      "team1": "penn-state",
+      "team2": "mcgill",
+      "score1": 15,
+      "score2": 8,
+      "status": "final"
+    },
+    {
+      "pool": "C",
+      "team1": "carleton",
+      "team2": "cal-poly-slo",
+      "score1": 15,
+      "score2": 10,
+      "status": "final"
+    },
+    {
+      "pool": "C",
+      "team1": "penn-state",
+      "team2": "washington",
+      "score1": 14,
+      "score2": 13,
+      "status": "final"
+    },
+    {
+      "pool": "D",
+      "team1": "pittsburgh",
+      "team2": "yale",
+      "score1": 15,
+      "score2": 9,
+      "status": "final"
+    },
+    {
+      "pool": "D",
+      "team1": "massachusetts",
+      "team2": "western-washington",
+      "score1": 15,
+      "score2": 10,
+      "status": "final"
+    },
+    {
+      "pool": "D",
+      "team1": "north-carolina",
+      "team2": "yale",
+      "score1": 15,
+      "score2": 5,
+      "status": "final"
+    },
+    {
+      "pool": "D",
+      "team1": "pittsburgh",
+      "team2": "western-washington",
+      "score1": 15,
+      "score2": 11,
+      "status": "final"
+    },
+    {
+      "pool": "D",
+      "team1": "north-carolina",
+      "team2": "massachusetts",
+      "score1": 10,
+      "score2": 15,
+      "status": "final"
+    },
+    {
+      "pool": "A",
+      "team1": "oregon",
+      "team2": "texas",
+      "score1": 15,
+      "score2": 9,
+      "status": "final",
+      "scheduled_at": "Sat 5/23 8:30 AM",
+      "field": "203"
+    },
+    {
+      "pool": "A",
+      "team1": "ucsc",
+      "team2": "utah",
+      "score1": 15,
+      "score2": 10,
+      "status": "final",
+      "scheduled_at": "Sat 5/23 8:30 AM",
+      "field": "210"
+    },
+    {
+      "pool": "A",
+      "team1": "georgia-tech",
+      "team2": "utah",
+      "score1": 15,
+      "score2": 12,
+      "status": "final",
+      "scheduled_at": "Sat 5/23 10:30 AM",
+      "field": "219"
+    },
+    {
+      "pool": "A",
+      "team1": "ucsc",
+      "team2": "texas",
+      "score1": 8,
+      "score2": 10,
+      "status": "in_progress",
+      "scheduled_at": "Sat 5/23 1:00 PM",
+      "field": "202"
+    },
+    {
+      "pool": "A",
+      "team1": "oregon",
+      "team2": "georgia-tech",
+      "score1": 7,
+      "score2": 5,
+      "status": "in_progress",
+      "scheduled_at": "Sat 5/23 1:00 PM",
+      "field": "210"
+    },
+    {
+      "pool": "B",
+      "team1": "colorado",
+      "team2": "michigan",
+      "score1": 15,
+      "score2": 11,
+      "status": "final",
+      "scheduled_at": "Sat 5/23 8:30 AM",
+      "field": "202"
+    },
+    {
+      "pool": "B",
+      "team1": "colorado",
+      "team2": "brown",
+      "score1": 15,
+      "score2": 8,
+      "status": "final",
+      "scheduled_at": "Sat 5/23 10:30 AM",
+      "field": "203"
+    },
+    {
+      "pool": "B",
+      "team1": "oregon-state",
+      "team2": "maryland",
+      "score1": 13,
+      "score2": 11,
+      "status": "final",
+      "scheduled_at": "Sat 5/23 10:30 AM",
+      "field": "207"
+    },
+    {
+      "pool": "B",
+      "team1": "michigan",
+      "team2": "maryland",
+      "score1": null,
+      "score2": null,
+      "status": "scheduled",
+      "scheduled_at": "Sat 5/23 3:00 PM",
+      "field": "210"
+    },
+    {
+      "pool": "B",
+      "team1": "oregon-state",
+      "team2": "brown",
+      "score1": null,
+      "score2": null,
+      "status": "scheduled",
+      "scheduled_at": "Sat 5/23 3:00 PM",
+      "field": "205"
+    },
+    {
+      "pool": "C",
+      "team1": "carleton",
+      "team2": "penn-state",
+      "score1": 15,
+      "score2": 13,
+      "status": "final",
+      "scheduled_at": "Sat 5/23 10:30 AM",
+      "field": "202"
+    },
+    {
+      "pool": "C",
+      "team1": "cal-poly-slo",
+      "team2": "washington",
+      "score1": 15,
+      "score2": 11,
+      "status": "final",
+      "scheduled_at": "Sat 5/23 10:30 AM",
+      "field": "206"
+    },
+    {
+      "pool": "C",
+      "team1": "carleton",
+      "team2": "mcgill",
+      "score1": 12,
+      "score2": 4,
+      "status": "in_progress",
+      "scheduled_at": "Sat 5/23 1:00 PM",
+      "field": "204"
+    },
+    {
+      "pool": "C",
+      "team1": "washington",
+      "team2": "mcgill",
+      "score1": null,
+      "score2": null,
+      "status": "scheduled",
+      "scheduled_at": "Sat 5/23 3:00 PM",
+      "field": "206"
+    },
+    {
+      "pool": "C",
+      "team1": "cal-poly-slo",
+      "team2": "penn-state",
+      "score1": null,
+      "score2": null,
+      "status": "scheduled",
+      "scheduled_at": "Sat 5/23 3:00 PM",
+      "field": "219"
+    },
+    {
+      "pool": "D",
+      "team1": "north-carolina",
+      "team2": "pittsburgh",
+      "score1": 14,
+      "score2": 15,
+      "status": "final",
+      "scheduled_at": "Sat 5/23 8:30 AM",
+      "field": "219"
+    },
+    {
+      "pool": "D",
+      "team1": "massachusetts",
+      "team2": "yale",
+      "score1": 15,
+      "score2": 7,
+      "status": "final",
+      "scheduled_at": "Sat 5/23 8:30 AM",
+      "field": "207"
+    },
+    {
+      "pool": "D",
+      "team1": "massachusetts",
+      "team2": "pittsburgh",
+      "score1": 9,
+      "score2": 8,
+      "status": "in_progress",
+      "scheduled_at": "Sat 5/23 1:00 PM",
+      "field": "205"
+    },
+    {
+      "pool": "D",
+      "team1": "north-carolina",
+      "team2": "western-washington",
+      "score1": 11,
+      "score2": 5,
+      "status": "in_progress",
+      "scheduled_at": "Sat 5/23 1:00 PM",
+      "field": "208"
+    },
+    {
+      "pool": "D",
+      "team1": "western-washington",
+      "team2": "yale",
+      "score1": null,
+      "score2": null,
+      "status": "scheduled",
+      "scheduled_at": "Sat 5/23 3:00 PM",
+      "field": "202"
+    }
+  ]
+}

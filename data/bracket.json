@@ -10,16 +10,16 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "ucsc",
-              "source": "Pool A #2"
+              "team_id": "oregon-state",
+              "source": "Pool B #2"
             },
             {
               "side": "away",
-              "team_id": "michigan",
-              "source": "Pool B #3"
+              "team_id": "cal-poly-slo",
+              "source": "Pool C #3"
             }
           ],
-          "projected_winner": "ucsc"
+          "projected_winner": "oregon-state"
         },
         {
           "id": "PQ2",
@@ -27,16 +27,16 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "oregon-state",
-              "source": "Pool B #2"
+              "team_id": "penn-state",
+              "source": "Pool C #2"
             },
             {
               "side": "away",
-              "team_id": "texas",
-              "source": "Pool A #3"
+              "team_id": "michigan",
+              "source": "Pool B #3"
             }
           ],
-          "projected_winner": "oregon-state"
+          "projected_winner": "penn-state"
         },
         {
           "id": "PQ3",
@@ -44,16 +44,16 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "cal-poly-slo",
-              "source": "Pool C #2"
+              "team_id": "massachusetts",
+              "source": "Pool D #2"
             },
             {
               "side": "away",
-              "team_id": "north-carolina",
-              "source": "Pool D #3"
+              "team_id": "ucsc",
+              "source": "Pool A #3"
             }
           ],
-          "projected_winner": "cal-poly-slo"
+          "projected_winner": "massachusetts"
         },
         {
           "id": "PQ4",
@@ -61,16 +61,16 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "pittsburgh",
-              "source": "Pool D #2"
+              "team_id": "texas",
+              "source": "Pool A #2"
             },
             {
               "side": "away",
-              "team_id": "penn-state",
-              "source": "Pool C #3"
+              "team_id": "north-carolina",
+              "source": "Pool D #3"
             }
           ],
-          "projected_winner": "pittsburgh"
+          "projected_winner": "texas"
         }
       ]
     },
@@ -88,8 +88,8 @@
             },
             {
               "side": "away",
-              "team_id": "pittsburgh",
-              "source": "Winner of PQ4"
+              "team_id": "oregon-state",
+              "source": "Winner of PQ1"
             }
           ],
           "projected_winner": "oregon"
@@ -100,16 +100,16 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "massachusetts",
+              "team_id": "pittsburgh",
               "source": "Pool D #1"
             },
             {
               "side": "away",
-              "team_id": "ucsc",
-              "source": "Winner of PQ1"
+              "team_id": "penn-state",
+              "source": "Winner of PQ2"
             }
           ],
-          "projected_winner": "massachusetts"
+          "projected_winner": "pittsburgh"
         },
         {
           "id": "QF3",
@@ -122,8 +122,8 @@
             },
             {
               "side": "away",
-              "team_id": "oregon-state",
-              "source": "Winner of PQ2"
+              "team_id": "massachusetts",
+              "source": "Winner of PQ3"
             }
           ],
           "projected_winner": "carleton"
@@ -139,8 +139,8 @@
             },
             {
               "side": "away",
-              "team_id": "cal-poly-slo",
-              "source": "Winner of PQ3"
+              "team_id": "texas",
+              "source": "Winner of PQ4"
             }
           ],
           "projected_winner": "colorado"
@@ -161,7 +161,7 @@
             },
             {
               "side": "away",
-              "team_id": "massachusetts",
+              "team_id": "pittsburgh",
               "source": "Winner of QF2"
             }
           ],
@@ -212,9 +212,15 @@
   "target_path": [
     {
       "round": "Prequarterfinals",
-      "game_id": "PQ2",
-      "opponent_team_id": "oregon-state",
-      "opponent_source": "Pool B #2"
+      "game_id": "PQ4",
+      "opponent_team_id": "north-carolina",
+      "opponent_source": "Pool D #3"
+    },
+    {
+      "round": "Quarterfinals",
+      "game_id": "QF4",
+      "opponent_team_id": "colorado",
+      "opponent_source": "Pool B #1"
     }
   ]
 }
