@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T20:24:07+00:00",
+  "generated_at": "2026-05-23T20:26:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -493,7 +493,7 @@
       "pool": "C",
       "team1": "cal-poly-slo",
       "team2": "penn-state",
-      "score1": 3,
+      "score1": 4,
       "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
@@ -604,7 +604,7 @@
       "team1": "western-washington",
       "team2": "yale",
       "score1": 6,
-      "score2": 3,
+      "score2": 4,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
       "field": "202"
@@ -836,16 +836,16 @@
           "wins": 3,
           "losses": 1,
           "pf": 42,
-          "pa": 39,
-          "pd": 3
+          "pa": 40,
+          "pd": 2
         },
         "cal-poly-slo": {
           "team_id": "cal-poly-slo",
           "wins": 2,
           "losses": 2,
-          "pf": 43,
+          "pf": 44,
           "pa": 42,
-          "pd": 1
+          "pd": 2
         },
         "washington": {
           "team_id": "washington",
@@ -952,16 +952,16 @@
           "wins": 2,
           "losses": 2,
           "pf": 42,
-          "pa": 47,
-          "pd": -5
+          "pa": 48,
+          "pd": -6
         },
         "yale": {
           "team_id": "yale",
           "wins": 0,
           "losses": 4,
-          "pf": 23,
+          "pf": 24,
           "pa": 51,
-          "pd": -28
+          "pd": -27
         }
       },
       "tiebreak_trace": [],
