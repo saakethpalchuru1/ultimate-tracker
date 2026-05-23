@@ -204,9 +204,9 @@
                 "utah"
               ],
               "metric_values": {
-                "georgia-tech": 0.0,
+                "georgia-tech": -1.0,
                 "texas": 4.0,
-                "utah": -4.0
+                "utah": -3.0
               },
               "outcome": "split",
               "note": "split into 3 subgroup(s)"
@@ -462,7 +462,7 @@
               "metric_values": {
                 "oregon-state": -6.0,
                 "maryland": -7.0,
-                "brown": 2.0
+                "brown": 3.0
               },
               "outcome": "split",
               "note": "split into 3 subgroup(s)"
@@ -1386,9 +1386,9 @@
                 "utah"
               ],
               "metric_values": {
-                "georgia-tech": 0.0,
+                "georgia-tech": -1.0,
                 "texas": 4.0,
-                "utah": -4.0
+                "utah": -3.0
               },
               "outcome": "split",
               "note": "split into 3 subgroup(s)"
