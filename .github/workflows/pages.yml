@@ -1,11 +1,13 @@
 # Build the Next.js static export and publish it to GitHub Pages.
 #
-# IMPORTANT: this workflow only fires when FRONTEND CODE or the workflow
-# itself changes. It does NOT fire on the cron's data/*.json pushes --
-# those changes are picked up at runtime because the frontend fetches
-# JSON directly from raw.githubusercontent.com (which auto-updates on
-# every cron commit). This avoids the cancel-in-progress loop where a
-# Next.js build (~60-90s) gets interrupted by the next 5-min cron tick.
+# Workflow only fires on FRONTEND CODE changes (not data/*.json) -- the
+# frontend fetches JSON directly from jsdelivr's CDN at runtime, so cron
+# data pushes show up live without rebuilding the site.
+#
+# WHY jsdelivr instead of raw.githubusercontent.com: raw.gh has a 5-minute
+# CDN cache that ignores query-string cache-busters, which breaks any
+# faster-than-5-min update cadence (e.g. live in-game polling). jsdelivr
+# supports an explicit purge API so pushes propagate within seconds.
 
 name: Deploy frontend to GitHub Pages
 
@@ -52,10 +54,7 @@ jobs:
         working-directory: frontend
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-          # Tell the frontend where to fetch live data from. We use the
-          # raw.githubusercontent.com CDN so the latest cron commit is
-          # always visible without rebuilding the static site.
-          NEXT_PUBLIC_DATA_BASE_URL: https://raw.githubusercontent.com/saakethpalchuru1/ultimate-tracker/main/data
+          NEXT_PUBLIC_DATA_BASE_URL: https://cdn.jsdelivr.net/gh/saakethpalchuru1/ultimate-tracker@main/data
         run: npm run build
 
       - name: Upload artifact
