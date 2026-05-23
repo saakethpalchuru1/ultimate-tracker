@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T14:02:08+00:00",
+  "generated_at": "2026-05-23T14:04:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -241,7 +241,7 @@
       "team1": "ucsc",
       "team2": "utah",
       "score1": 5,
-      "score2": 6,
+      "score2": 7,
       "status": "scheduled",
       "scheduled_at": "Sat 5/23 8:30 AM",
       "field": "210"
@@ -339,7 +339,7 @@
       "pool": "B",
       "team1": "colorado",
       "team2": "michigan",
-      "score1": 8,
+      "score1": 9,
       "score2": 3,
       "status": "scheduled",
       "scheduled_at": "Sat 5/23 8:30 AM",
@@ -570,7 +570,7 @@
       "pool": "D",
       "team1": "massachusetts",
       "team2": "yale",
-      "score1": 6,
+      "score1": 7,
       "score2": 2,
       "status": "scheduled",
       "scheduled_at": "Sat 5/23 8:30 AM",
