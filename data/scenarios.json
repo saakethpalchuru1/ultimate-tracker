@@ -2,8 +2,8 @@
   "pools": {
     "A": {
       "pool": "A",
-      "n_remaining": 2,
-      "n_permutations": 4,
+      "n_remaining": 1,
+      "n_permutations": 2,
       "permutations": [
         {
           "id": 0,
@@ -12,12 +12,6 @@
               "game_id": "A-09",
               "winner_id": "ucsc",
               "loser_id": "texas",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "A-10",
-              "winner_id": "oregon",
-              "loser_id": "georgia-tech",
               "winning_margin": 3
             }
           ],
@@ -64,68 +58,8 @@
           "assumed_outcomes": [
             {
               "game_id": "A-09",
-              "winner_id": "ucsc",
-              "loser_id": "texas",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "A-10",
-              "winner_id": "georgia-tech",
-              "loser_id": "oregon",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "georgia-tech",
-            "oregon",
-            "ucsc",
-            "texas",
-            "utah"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "georgia-tech",
-                "oregon"
-              ],
-              "metric_values": {
-                "oregon": 0.0,
-                "georgia-tech": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "texas",
-                "utah"
-              ],
-              "metric_values": {
-                "texas": 1.0,
-                "utah": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ],
-          "target_finish": 4
-        },
-        {
-          "id": 2,
-          "assumed_outcomes": [
-            {
-              "game_id": "A-09",
               "winner_id": "texas",
               "loser_id": "ucsc",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "A-10",
-              "winner_id": "oregon",
-              "loser_id": "georgia-tech",
               "winning_margin": 3
             }
           ],
@@ -147,60 +81,6 @@
               "metric_values": {
                 "georgia-tech": 1.0,
                 "texas": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "ucsc",
-                "utah"
-              ],
-              "metric_values": {
-                "ucsc": 0.0,
-                "utah": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ],
-          "target_finish": 3
-        },
-        {
-          "id": 3,
-          "assumed_outcomes": [
-            {
-              "game_id": "A-09",
-              "winner_id": "texas",
-              "loser_id": "ucsc",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "A-10",
-              "winner_id": "georgia-tech",
-              "loser_id": "oregon",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "georgia-tech",
-            "oregon",
-            "texas",
-            "utah",
-            "ucsc"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "georgia-tech",
-                "oregon"
-              ],
-              "metric_values": {
-                "oregon": 0.0,
-                "georgia-tech": 1.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
@@ -836,18 +716,12 @@
     },
     "D": {
       "pool": "D",
-      "n_remaining": 3,
-      "n_permutations": 8,
+      "n_remaining": 2,
+      "n_permutations": 4,
       "permutations": [
         {
           "id": 0,
           "assumed_outcomes": [
-            {
-              "game_id": "D-38",
-              "winner_id": "massachusetts",
-              "loser_id": "pittsburgh",
-              "winning_margin": 3
-            },
             {
               "game_id": "D-39",
               "winner_id": "north-carolina",
@@ -862,8 +736,8 @@
             }
           ],
           "final_order": [
-            "massachusetts",
             "pittsburgh",
+            "massachusetts",
             "north-carolina",
             "western-washington",
             "yale"
@@ -875,12 +749,6 @@
           "id": 1,
           "assumed_outcomes": [
             {
-              "game_id": "D-38",
-              "winner_id": "massachusetts",
-              "loser_id": "pittsburgh",
-              "winning_margin": 3
-            },
-            {
               "game_id": "D-39",
               "winner_id": "north-carolina",
               "loser_id": "western-washington",
@@ -894,8 +762,8 @@
             }
           ],
           "final_order": [
-            "massachusetts",
             "pittsburgh",
+            "massachusetts",
             "north-carolina",
             "yale",
             "western-washington"
@@ -907,12 +775,6 @@
           "id": 2,
           "assumed_outcomes": [
             {
-              "game_id": "D-38",
-              "winner_id": "massachusetts",
-              "loser_id": "pittsburgh",
-              "winning_margin": 3
-            },
-            {
               "game_id": "D-39",
               "winner_id": "western-washington",
               "loser_id": "north-carolina",
@@ -926,8 +788,8 @@
             }
           ],
           "final_order": [
-            "massachusetts",
             "pittsburgh",
+            "massachusetts",
             "western-washington",
             "north-carolina",
             "yale"
@@ -938,171 +800,6 @@
         {
           "id": 3,
           "assumed_outcomes": [
-            {
-              "game_id": "D-38",
-              "winner_id": "massachusetts",
-              "loser_id": "pittsburgh",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "D-39",
-              "winner_id": "western-washington",
-              "loser_id": "north-carolina",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "D-40",
-              "winner_id": "yale",
-              "loser_id": "western-washington",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "massachusetts",
-            "pittsburgh",
-            "north-carolina",
-            "western-washington",
-            "yale"
-          ],
-          "margin_sensitive": true,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "north-carolina",
-                "western-washington",
-                "yale"
-              ],
-              "metric_values": {
-                "north-carolina": 1.0,
-                "western-washington": 1.0,
-                "yale": 1.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 3,
-              "tied_team_ids": [
-                "north-carolina",
-                "western-washington",
-                "yale"
-              ],
-              "metric_values": {
-                "north-carolina": 7.0,
-                "western-washington": 0.0,
-                "yale": -7.0
-              },
-              "outcome": "split",
-              "note": "split into 3 subgroup(s)"
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "assumed_outcomes": [
-            {
-              "game_id": "D-38",
-              "winner_id": "pittsburgh",
-              "loser_id": "massachusetts",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "D-39",
-              "winner_id": "north-carolina",
-              "loser_id": "western-washington",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "D-40",
-              "winner_id": "western-washington",
-              "loser_id": "yale",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "pittsburgh",
-            "massachusetts",
-            "north-carolina",
-            "western-washington",
-            "yale"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": []
-        },
-        {
-          "id": 5,
-          "assumed_outcomes": [
-            {
-              "game_id": "D-38",
-              "winner_id": "pittsburgh",
-              "loser_id": "massachusetts",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "D-39",
-              "winner_id": "north-carolina",
-              "loser_id": "western-washington",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "D-40",
-              "winner_id": "yale",
-              "loser_id": "western-washington",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "pittsburgh",
-            "massachusetts",
-            "north-carolina",
-            "yale",
-            "western-washington"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": []
-        },
-        {
-          "id": 6,
-          "assumed_outcomes": [
-            {
-              "game_id": "D-38",
-              "winner_id": "pittsburgh",
-              "loser_id": "massachusetts",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "D-39",
-              "winner_id": "western-washington",
-              "loser_id": "north-carolina",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "D-40",
-              "winner_id": "western-washington",
-              "loser_id": "yale",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "pittsburgh",
-            "massachusetts",
-            "western-washington",
-            "north-carolina",
-            "yale"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": []
-        },
-        {
-          "id": 7,
-          "assumed_outcomes": [
-            {
-              "game_id": "D-38",
-              "winner_id": "pittsburgh",
-              "loser_id": "massachusetts",
-              "winning_margin": 3
-            },
             {
               "game_id": "D-39",
               "winner_id": "western-washington",
@@ -1163,24 +860,18 @@
   "target_summary": {
     "target_team_id": "texas",
     "finish_distribution": {
-      "3": 2,
-      "4": 2
+      "3": 1,
+      "4": 1
     },
     "scenarios_by_finish": {
       "3": [
         {
-          "id": 2,
+          "id": 1,
           "assumed_outcomes": [
             {
               "game_id": "A-09",
               "winner_id": "texas",
               "loser_id": "ucsc",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "A-10",
-              "winner_id": "oregon",
-              "loser_id": "georgia-tech",
               "winning_margin": 3
             }
           ],
@@ -1221,60 +912,6 @@
             }
           ],
           "target_finish": 3
-        },
-        {
-          "id": 3,
-          "assumed_outcomes": [
-            {
-              "game_id": "A-09",
-              "winner_id": "texas",
-              "loser_id": "ucsc",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "A-10",
-              "winner_id": "georgia-tech",
-              "loser_id": "oregon",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "georgia-tech",
-            "oregon",
-            "texas",
-            "utah",
-            "ucsc"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "georgia-tech",
-                "oregon"
-              ],
-              "metric_values": {
-                "oregon": 0.0,
-                "georgia-tech": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "ucsc",
-                "utah"
-              ],
-              "metric_values": {
-                "ucsc": 0.0,
-                "utah": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ],
-          "target_finish": 3
         }
       ],
       "4": [
@@ -1285,12 +922,6 @@
               "game_id": "A-09",
               "winner_id": "ucsc",
               "loser_id": "texas",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "A-10",
-              "winner_id": "oregon",
-              "loser_id": "georgia-tech",
               "winning_margin": 3
             }
           ],
@@ -1312,60 +943,6 @@
               "metric_values": {
                 "ucsc": 1.0,
                 "georgia-tech": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "texas",
-                "utah"
-              ],
-              "metric_values": {
-                "texas": 1.0,
-                "utah": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ],
-          "target_finish": 4
-        },
-        {
-          "id": 1,
-          "assumed_outcomes": [
-            {
-              "game_id": "A-09",
-              "winner_id": "ucsc",
-              "loser_id": "texas",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "A-10",
-              "winner_id": "georgia-tech",
-              "loser_id": "oregon",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "georgia-tech",
-            "oregon",
-            "ucsc",
-            "texas",
-            "utah"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "georgia-tech",
-                "oregon"
-              ],
-              "metric_values": {
-                "oregon": 0.0,
-                "georgia-tech": 1.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
