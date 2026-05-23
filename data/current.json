@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T14:32:10+00:00",
+  "generated_at": "2026-05-23T14:34:08+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -240,7 +240,7 @@
       "pool": "A",
       "team1": "ucsc",
       "team2": "utah",
-      "score1": 6,
+      "score1": 7,
       "score2": 10,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 8:30 AM",
@@ -571,7 +571,7 @@
       "team1": "massachusetts",
       "team2": "yale",
       "score1": 12,
-      "score2": 5,
+      "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 8:30 AM",
       "field": "207"
@@ -633,9 +633,9 @@
           "team_id": "ucsc",
           "wins": 1,
           "losses": 2,
-          "pf": 30,
+          "pf": 31,
           "pa": 35,
-          "pd": -5
+          "pd": -4
         },
         "georgia-tech": {
           "team_id": "georgia-tech",
@@ -658,8 +658,8 @@
           "wins": 1,
           "losses": 2,
           "pf": 30,
-          "pa": 35,
-          "pd": -5
+          "pa": 36,
+          "pd": -6
         }
       },
       "tiebreak_trace": [
@@ -962,8 +962,8 @@
           "wins": 3,
           "losses": 0,
           "pf": 42,
-          "pa": 25,
-          "pd": 17
+          "pa": 26,
+          "pd": 16
         },
         "north-carolina": {
           "team_id": "north-carolina",
@@ -985,9 +985,9 @@
           "team_id": "yale",
           "wins": 0,
           "losses": 3,
-          "pf": 19,
+          "pf": 20,
           "pa": 42,
-          "pd": -23
+          "pd": -22
         }
       },
       "tiebreak_trace": [
@@ -1025,7 +1025,7 @@
           ],
           "metric_values": {
             "pittsburgh": 11.0,
-            "massachusetts": 17.0
+            "massachusetts": 16.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
