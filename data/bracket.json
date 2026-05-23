@@ -10,7 +10,7 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "michigan",
+              "team_id": "brown",
               "source": "Pool B #2"
             },
             {
@@ -19,7 +19,7 @@
               "source": "Pool C #3"
             }
           ],
-          "projected_winner": "michigan"
+          "projected_winner": "brown"
         },
         {
           "id": "PQ2",
@@ -88,7 +88,7 @@
             },
             {
               "side": "away",
-              "team_id": "michigan",
+              "team_id": "brown",
               "source": "Winner of PQ1"
             }
           ],
