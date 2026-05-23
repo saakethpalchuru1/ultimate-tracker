@@ -100,15 +100,28 @@ export type LiveSnapshot = {
     field?: string | null;
     summary: Array<{
       finish: number;
-      achievable_min_margin: number | null;
       guaranteed_at_or_above_margin: number | null;
+      min_winning_margin_needed: number | null;
       current_margin: number;
       margin_delta_needed: number | null;
+      human_text: string;
+      example_score: [number, number] | null;
     }>;
     matrix: Array<{
       combo: string;
       target_final_margin: number;
       target_finish: number;
+      projected_final_target: number;
+      projected_final_opp: number;
     }>;
+  }>;
+  other_live_games?: Array<{
+    game_id: string;
+    team1: string;
+    team2: string;
+    score1: number;
+    score2: number;
+    scheduled_at?: string | null;
+    field?: string | null;
   }>;
 };

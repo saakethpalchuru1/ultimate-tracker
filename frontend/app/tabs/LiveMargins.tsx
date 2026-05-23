@@ -15,14 +15,15 @@ export default function LiveMargins({
 }: { live: LiveSnapshot; current: CurrentSnapshot }) {
   const tmap = teamMap(current);
   const target = current.target_team_id;
+  const targetName = tmap[target]?.name ?? target;
 
   if (!live.has_live_games) {
     return (
       <div className="card">
-        <h2 className="text-base font-semibold">No live games for {tmap[target]?.name ?? target}</h2>
+        <h2 className="text-base font-semibold">No live games right now</h2>
         <p className="mt-1 text-sm text-zinc-400">
-          This tab fills in automatically once a {tmap[target]?.name ?? target} game flips to "In Progress" on the USAU page.
-          The scraper updates every 5 minutes; running scores power the margin calculations.
+          This tab fills in once a game flips to "In Progress" on the USAU page.
+          Snapshots refresh every 30 seconds during games.
         </p>
       </div>
     );
@@ -31,68 +32,93 @@ export default function LiveMargins({
   return (
     <div className="space-y-4">
       {live.live_games.map(g => {
-        const opp = tmap[g.opponent_id]?.name ?? g.opponent_id;
+        const oppName = tmap[g.opponent_id]?.name ?? g.opponent_id;
         const lead = g.current.target_lead_by;
+        const leadLabel =
+          lead > 0 ? `${targetName} leading by ${lead}` :
+          lead < 0 ? `${targetName} trailing by ${-lead}` :
+          "Tied";
         return (
           <section key={g.game_id} className="card">
-            <header className="mb-2 flex items-baseline justify-between">
+            <header className="mb-3">
               <h2 className="text-base font-semibold">
-                {tmap[target]?.name ?? target} vs {opp}
+                {targetName} vs {oppName}
+                <span className="ml-2 text-xs text-zinc-500">Field {g.field} · {g.scheduled_at}</span>
               </h2>
-              <span className={"pill " + (lead > 0 ? "bg-favorable/20 text-favorable" : lead < 0 ? "bg-bad/20 text-bad" : "bg-zinc-700")}>
-                {g.current.target_score}-{g.current.opponent_score} ({lead > 0 ? `+${lead}` : lead})
-              </span>
+              <div className="mt-2 flex items-baseline gap-3">
+                <span className="text-2xl font-bold tabular-nums">
+                  {g.current.target_score} – {g.current.opponent_score}
+                </span>
+                <span className={"pill " + (lead > 0 ? "bg-favorable/20 text-favorable" : lead < 0 ? "bg-bad/20 text-bad" : "bg-zinc-700")}>
+                  {leadLabel}
+                </span>
+              </div>
             </header>
 
-            <p className="text-xs text-zinc-500">
-              Field {g.field} · {g.scheduled_at}
-            </p>
-
-            <div className="mt-3 space-y-2">
-              {g.summary.map(s => (
-                <div key={s.finish} className="rounded border border-zinc-800 p-2">
-                  <div className="flex items-baseline justify-between">
-                    <span className={"font-semibold " + (FINISH_COLOR[s.finish] ?? "text-zinc-300")}>
-                      Finish #{s.finish}
-                    </span>
-                    <span className="text-xs text-zinc-500">
-                      min margin: {fmt(s.achievable_min_margin)}
-                    </span>
-                  </div>
-                  <p className="mt-1 text-sm">
-                    {s.guaranteed_at_or_above_margin === null ? (
-                      <span className="text-zinc-400">
-                        Not guaranteed at any final margin (depends on other unfinished games).
+            <div className="space-y-2">
+              {g.summary.map(s => {
+                const finishColor = FINISH_COLOR[s.finish] ?? "text-zinc-300";
+                const clinch = s.guaranteed_at_or_above_margin;
+                const need = s.margin_delta_needed;
+                const ex = s.example_score;
+                return (
+                  <div key={s.finish} className="rounded border border-zinc-800 p-3">
+                    <div className="flex items-baseline justify-between">
+                      <span className={"font-semibold text-base " + finishColor}>
+                        Finish #{s.finish}
                       </span>
-                    ) : (
-                      <>
-                        Guaranteed at final margin{" "}
-                        <span className="font-mono text-target">≥ {fmt(s.guaranteed_at_or_above_margin)}</span>
-                        {s.margin_delta_needed !== null && s.margin_delta_needed > 0 && (
-                          <> · need to extend lead by <span className="font-mono">+{s.margin_delta_needed}</span> from here</>
-                        )}
-                        {s.margin_delta_needed !== null && s.margin_delta_needed <= 0 && (
-                          <> · <span className="text-favorable">already there</span></>
-                        )}
-                      </>
-                    )}
-                  </p>
-                </div>
-              ))}
+                      {ex && (
+                        <span className="text-xs text-zinc-500">
+                          e.g. final {ex[0]}–{ex[1]}
+                        </span>
+                      )}
+                    </div>
+                    <p className="mt-1 text-sm leading-relaxed">
+                      {clinch === null && (
+                        <span className="text-zinc-400">{s.human_text}</span>
+                      )}
+                      {clinch !== null && clinch > 0 && (
+                        <>
+                          <span className="text-zinc-300">Beat {oppName} by </span>
+                          <span className="font-bold text-target">{clinch}+ points</span>
+                          <span className="text-zinc-300"> to clinch #{s.finish}.</span>
+                          {need !== null && need > 0 && (
+                            <div className="mt-1 text-xs text-zinc-400">
+                              Currently {lead > 0 ? `+${lead}` : lead}; need to outscore {oppName} by
+                              <span className="text-target font-semibold"> {need} more</span> the rest of the game.
+                            </div>
+                          )}
+                          {need !== null && need <= 0 && (
+                            <div className="mt-1 text-xs text-favorable">Already there — just hold the lead.</div>
+                          )}
+                        </>
+                      )}
+                      {clinch !== null && clinch === 0 && (
+                        <span className="text-zinc-300">Any win (or even a draw) locks #{s.finish}.</span>
+                      )}
+                      {clinch !== null && clinch < 0 && (
+                        <span className="text-zinc-300">
+                          Even losing by up to <span className="font-bold">{-clinch} points</span> still locks #{s.finish}.
+                        </span>
+                      )}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
 
             <details className="mt-3 text-xs text-zinc-400">
-              <summary className="cursor-pointer">Show full margin matrix ({g.matrix.length} rows)</summary>
+              <summary className="cursor-pointer">Show full margin/combo matrix ({g.matrix.length} rows)</summary>
               <div className="mt-2 max-h-80 overflow-auto">
                 <table className="w-full text-xs">
                   <thead className="text-zinc-500">
-                    <tr><th className="text-left">Other games</th><th>Final margin</th><th>Finish</th></tr>
+                    <tr><th className="text-left">Other-games combo</th><th>Final score</th><th>{targetName} finish</th></tr>
                   </thead>
                   <tbody>
                     {g.matrix.map((row, i) => (
                       <tr key={i} className="border-t border-zinc-800/60">
                         <td className="py-0.5 pr-2 text-zinc-500">{row.combo}</td>
-                        <td className="text-center font-mono">{row.target_final_margin >= 0 ? `+${row.target_final_margin}` : row.target_final_margin}</td>
+                        <td className="text-center font-mono">{row.projected_final_target}–{row.projected_final_opp}</td>
                         <td className={"text-center font-semibold " + (FINISH_COLOR[row.target_finish] ?? "")}>#{row.target_finish}</td>
                       </tr>
                     ))}
@@ -103,11 +129,37 @@ export default function LiveMargins({
           </section>
         );
       })}
+
+      {live.other_live_games && live.other_live_games.length > 0 && (
+        <section className="card">
+          <h2 className="mb-2 text-base font-semibold">
+            Other live games in Pool {live.target_pool}
+          </h2>
+          <p className="mb-2 text-xs text-zinc-500">
+            These games affect {targetName}'s pool finish but don't involve {targetName} directly.
+            Watch them — their outcomes shift {targetName}'s margin requirements above.
+          </p>
+          <ul className="space-y-2">
+            {live.other_live_games.map(g => {
+              const t1Name = tmap[g.team1]?.name ?? g.team1;
+              const t2Name = tmap[g.team2]?.name ?? g.team2;
+              const diff = g.score1 - g.score2;
+              return (
+                <li key={g.game_id} className="rounded border border-zinc-800 p-2">
+                  <div className="flex items-baseline justify-between">
+                    <span className="text-sm">{t1Name} vs {t2Name}</span>
+                    <span className="font-mono tabular-nums">{g.score1} – {g.score2}</span>
+                  </div>
+                  <div className="text-xs text-zinc-500">
+                    {diff > 0 ? `${t1Name} leads by ${diff}` : diff < 0 ? `${t2Name} leads by ${-diff}` : "Tied"}
+                    {" · Field "}{g.field} · {g.scheduled_at}
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
     </div>
   );
-}
-
-function fmt(n: number | null): string {
-  if (n === null || n === undefined) return "—";
-  return n > 0 ? `+${n}` : String(n);
 }
