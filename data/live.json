@@ -9,8 +9,8 @@
       "opponent_id": "ucsc",
       "current": {
         "target_score": 1,
-        "opponent_score": 0,
-        "target_lead_by": 1
+        "opponent_score": 1,
+        "target_lead_by": 0
       },
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "219",
@@ -19,9 +19,9 @@
           "finish": 3,
           "guaranteed_at_or_above_margin": 1,
           "min_winning_margin_needed": 1,
-          "current_margin": 1,
-          "margin_delta_needed": 0,
-          "human_text": "Already locked: at the current score you're projected to finish #3. Just don't lose the lead.",
+          "current_margin": 0,
+          "margin_delta_needed": 1,
+          "human_text": "Win by 1+ points to lock #3. Currently leading by 0; outscore opponent by 1+ from now.",
           "example_score": [
             15,
             14
@@ -240,7 +240,7 @@
       "game_id": "A-10",
       "team1": "oregon",
       "team2": "georgia-tech",
-      "score1": 1,
+      "score1": 2,
       "score2": 0,
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "210"
