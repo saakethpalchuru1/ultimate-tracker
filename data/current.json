@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T21:36:06+00:00",
+  "generated_at": "2026-05-23T21:38:06+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -374,7 +374,7 @@
       "team2": "maryland",
       "score1": 14,
       "score2": 15,
-      "status": "in_progress",
+      "status": "final",
       "scheduled_at": "Sat 5/23 3:00 PM",
       "field": "219"
     },
@@ -383,7 +383,7 @@
       "pool": "B",
       "team1": "oregon-state",
       "team2": "brown",
-      "score1": 14,
+      "score1": 15,
       "score2": 14,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
@@ -704,8 +704,8 @@
         "colorado",
         "oregon-state",
         "maryland",
-        "brown",
-        "michigan"
+        "michigan",
+        "brown"
       ],
       "rows": {
         "colorado": {
@@ -718,11 +718,11 @@
         },
         "oregon-state": {
           "team_id": "oregon-state",
-          "wins": 2,
+          "wins": 3,
           "losses": 1,
-          "pf": 50,
+          "pf": 51,
           "pa": 54,
-          "pd": -4
+          "pd": -3
         },
         "maryland": {
           "team_id": "maryland",
@@ -743,19 +743,46 @@
         "brown": {
           "team_id": "brown",
           "wins": 1,
-          "losses": 2,
+          "losses": 3,
           "pf": 54,
-          "pa": 53,
-          "pd": 1
+          "pa": 54,
+          "pd": 0
         }
       },
-      "tiebreak_trace": [],
+      "tiebreak_trace": [
+        {
+          "rule": 2,
+          "tied_team_ids": [
+            "colorado",
+            "oregon-state"
+          ],
+          "metric_values": {
+            "colorado": 1.0,
+            "oregon-state": 0.0
+          },
+          "outcome": "split",
+          "note": "split into 2 subgroup(s)"
+        },
+        {
+          "rule": 2,
+          "tied_team_ids": [
+            "brown",
+            "michigan"
+          ],
+          "metric_values": {
+            "michigan": 1.0,
+            "brown": 0.0
+          },
+          "outcome": "split",
+          "note": "split into 2 subgroup(s)"
+        }
+      ],
       "usau_tie_hints": {
         "colorado": "",
         "oregon-state": "",
-        "maryland": "1-0,3[-9]",
-        "michigan": "1-0,2[-10]",
-        "brown": "0-2,-5[+1]"
+        "maryland": "",
+        "brown": "",
+        "michigan": ""
       }
     },
     {
