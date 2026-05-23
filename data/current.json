@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T16:06:07+00:00",
+  "generated_at": "2026-05-23T16:08:06+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -449,7 +449,7 @@
       "pool": "C",
       "team1": "carleton",
       "team2": "penn-state",
-      "score1": 8,
+      "score1": 9,
       "score2": 2,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
@@ -461,7 +461,7 @@
       "team1": "cal-poly-slo",
       "team2": "washington",
       "score1": 6,
-      "score2": 4,
+      "score2": 5,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "206"
@@ -829,33 +829,33 @@
           "team_id": "carleton",
           "wins": 3,
           "losses": 0,
-          "pf": 38,
+          "pf": 39,
           "pa": 22,
-          "pd": 16
+          "pd": 17
         },
         "penn-state": {
           "team_id": "penn-state",
           "wins": 2,
           "losses": 1,
           "pf": 31,
-          "pa": 29,
-          "pd": 2
+          "pa": 30,
+          "pd": 1
         },
         "cal-poly-slo": {
           "team_id": "cal-poly-slo",
           "wins": 2,
           "losses": 1,
           "pf": 31,
-          "pa": 26,
-          "pd": 5
+          "pa": 27,
+          "pd": 4
         },
         "washington": {
           "team_id": "washington",
           "wins": 0,
           "losses": 3,
-          "pf": 27,
+          "pf": 28,
           "pa": 35,
-          "pd": -8
+          "pd": -7
         },
         "mcgill": {
           "team_id": "mcgill",
@@ -900,8 +900,8 @@
             "penn-state"
           ],
           "metric_values": {
-            "penn-state": 2.0,
-            "cal-poly-slo": 5.0
+            "penn-state": 1.0,
+            "cal-poly-slo": 4.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
