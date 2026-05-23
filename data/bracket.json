@@ -44,16 +44,16 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "massachusetts",
+              "team_id": "pittsburgh",
               "source": "Pool D #2"
             },
             {
               "side": "away",
-              "team_id": "ucsc",
+              "team_id": "texas",
               "source": "Pool A #3"
             }
           ],
-          "projected_winner": "massachusetts"
+          "projected_winner": "pittsburgh"
         },
         {
           "id": "PQ4",
@@ -100,7 +100,7 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "pittsburgh",
+              "team_id": "massachusetts",
               "source": "Pool D #1"
             },
             {
@@ -109,7 +109,7 @@
               "source": "Winner of PQ2"
             }
           ],
-          "projected_winner": "pittsburgh"
+          "projected_winner": "massachusetts"
         },
         {
           "id": "QF3",
@@ -122,7 +122,7 @@
             },
             {
               "side": "away",
-              "team_id": "massachusetts",
+              "team_id": "pittsburgh",
               "source": "Winner of PQ3"
             }
           ],
@@ -161,7 +161,7 @@
             },
             {
               "side": "away",
-              "team_id": "pittsburgh",
+              "team_id": "massachusetts",
               "source": "Winner of QF2"
             }
           ],
@@ -209,5 +209,12 @@
       ]
     }
   ],
-  "target_path": []
+  "target_path": [
+    {
+      "round": "Prequarterfinals",
+      "game_id": "PQ3",
+      "opponent_team_id": "pittsburgh",
+      "opponent_source": "Pool D #2"
+    }
+  ]
 }
