@@ -1,7 +1,105 @@
 {
   "target_team_id": "texas",
   "target_pool": "A",
-  "has_live_games": false,
-  "live_games": [],
-  "other_live_games": []
+  "has_live_games": true,
+  "live_games": [
+    {
+      "game_id": "A-31",
+      "target_team_id": "texas",
+      "opponent_id": "ucsc",
+      "current": {
+        "target_score": 14,
+        "opponent_score": 12,
+        "target_lead_by": 2
+      },
+      "scheduled_at": "Sat 5/23 1:00 PM",
+      "field": "202",
+      "summary": [
+        {
+          "finish": 2,
+          "guaranteed_at_or_above_margin": 3,
+          "min_winning_margin_needed": 3,
+          "current_margin": 2,
+          "margin_delta_needed": 1,
+          "human_text": "Win by 3+ points to lock #2. Currently leading by 2; outscore opponent by 1+ from now.",
+          "example_score": [
+            15,
+            12
+          ]
+        },
+        {
+          "finish": 3,
+          "guaranteed_at_or_above_margin": 1,
+          "min_winning_margin_needed": 1,
+          "current_margin": 2,
+          "margin_delta_needed": -1,
+          "human_text": "Already locked: at the current score you're projected to finish #3. Just don't lose the lead.",
+          "example_score": [
+            15,
+            14
+          ]
+        },
+        {
+          "finish": 4,
+          "guaranteed_at_or_above_margin": -1,
+          "min_winning_margin_needed": null,
+          "current_margin": 2,
+          "margin_delta_needed": 1,
+          "human_text": "Even a loss by 1 or less locks #4.",
+          "example_score": [
+            14,
+            15
+          ]
+        }
+      ],
+      "matrix": [
+        {
+          "combo": "(no scheduled games remaining)",
+          "target_final_margin": -1,
+          "target_finish": 4,
+          "projected_final_target": 14,
+          "projected_final_opp": 15
+        },
+        {
+          "combo": "(no scheduled games remaining)",
+          "target_final_margin": 0,
+          "target_finish": 4,
+          "projected_final_target": 15,
+          "projected_final_opp": 15
+        },
+        {
+          "combo": "(no scheduled games remaining)",
+          "target_final_margin": 1,
+          "target_finish": 3,
+          "projected_final_target": 15,
+          "projected_final_opp": 14
+        },
+        {
+          "combo": "(no scheduled games remaining)",
+          "target_final_margin": 2,
+          "target_finish": 3,
+          "projected_final_target": 15,
+          "projected_final_opp": 13
+        },
+        {
+          "combo": "(no scheduled games remaining)",
+          "target_final_margin": 3,
+          "target_finish": 2,
+          "projected_final_target": 15,
+          "projected_final_opp": 12
+        }
+      ]
+    }
+  ],
+  "other_live_games": [
+    {
+      "game_id": "A-32",
+      "team1": "oregon",
+      "team2": "georgia-tech",
+      "score1": 14,
+      "score2": 10,
+      "scheduled_at": "Sat 5/23 1:00 PM",
+      "field": "210"
+    }
+  ]
 }
