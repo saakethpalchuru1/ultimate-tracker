@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T14:54:09+00:00",
+  "generated_at": "2026-05-23T14:56:35+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -240,7 +240,7 @@
       "pool": "A",
       "team1": "ucsc",
       "team2": "utah",
-      "score1": 9,
+      "score1": 10,
       "score2": 14,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 8:30 AM",
@@ -560,7 +560,7 @@
       "team1": "north-carolina",
       "team2": "pittsburgh",
       "score1": 11,
-      "score2": 13,
+      "score2": 14,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 8:30 AM",
       "field": "219"
@@ -633,9 +633,9 @@
           "team_id": "ucsc",
           "wins": 1,
           "losses": 2,
-          "pf": 33,
+          "pf": 34,
           "pa": 39,
-          "pd": -6
+          "pd": -5
         },
         "georgia-tech": {
           "team_id": "georgia-tech",
@@ -658,8 +658,8 @@
           "wins": 1,
           "losses": 2,
           "pf": 34,
-          "pa": 38,
-          "pd": -4
+          "pa": 39,
+          "pd": -5
         }
       },
       "tiebreak_trace": [
@@ -953,9 +953,9 @@
           "team_id": "pittsburgh",
           "wins": 3,
           "losses": 0,
-          "pf": 43,
+          "pf": 44,
           "pa": 31,
-          "pd": 12
+          "pd": 13
         },
         "massachusetts": {
           "team_id": "massachusetts",
@@ -970,8 +970,8 @@
           "wins": 1,
           "losses": 2,
           "pf": 36,
-          "pa": 33,
-          "pd": 3
+          "pa": 34,
+          "pd": 2
         },
         "western-washington": {
           "team_id": "western-washington",
@@ -1024,7 +1024,7 @@
             "pittsburgh"
           ],
           "metric_values": {
-            "pittsburgh": 12.0,
+            "pittsburgh": 13.0,
             "massachusetts": 19.0
           },
           "outcome": "split",
