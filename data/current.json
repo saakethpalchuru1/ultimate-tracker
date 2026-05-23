@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T16:28:06+00:00",
+  "generated_at": "2026-05-23T16:30:05+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -251,7 +251,7 @@
       "pool": "A",
       "team1": "georgia-tech",
       "team2": "utah",
-      "score1": 9,
+      "score1": 10,
       "score2": 11,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
@@ -449,7 +449,7 @@
       "pool": "C",
       "team1": "carleton",
       "team2": "penn-state",
-      "score1": 13,
+      "score1": 14,
       "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
@@ -460,7 +460,7 @@
       "pool": "C",
       "team1": "cal-poly-slo",
       "team2": "washington",
-      "score1": 6,
+      "score1": 7,
       "score2": 9,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
@@ -641,9 +641,9 @@
           "team_id": "georgia-tech",
           "wins": 1,
           "losses": 2,
-          "pf": 32,
+          "pf": 33,
           "pa": 38,
-          "pd": -6
+          "pd": -5
         },
         "texas": {
           "team_id": "texas",
@@ -658,8 +658,8 @@
           "wins": 2,
           "losses": 2,
           "pf": 46,
-          "pa": 48,
-          "pd": -2
+          "pa": 49,
+          "pd": -3
         }
       },
       "tiebreak_trace": [
@@ -829,33 +829,33 @@
           "team_id": "carleton",
           "wins": 3,
           "losses": 0,
-          "pf": 43,
+          "pf": 44,
           "pa": 26,
-          "pd": 17
+          "pd": 18
         },
         "penn-state": {
           "team_id": "penn-state",
           "wins": 2,
           "losses": 1,
           "pf": 35,
-          "pa": 34,
-          "pd": 1
+          "pa": 35,
+          "pd": 0
         },
         "cal-poly-slo": {
           "team_id": "cal-poly-slo",
           "wins": 1,
           "losses": 2,
-          "pf": 31,
+          "pf": 32,
           "pa": 31,
-          "pd": 0
+          "pd": 1
         },
         "washington": {
           "team_id": "washington",
           "wins": 1,
           "losses": 2,
           "pf": 32,
-          "pa": 35,
-          "pd": -3
+          "pa": 36,
+          "pd": -4
         },
         "mcgill": {
           "team_id": "mcgill",
