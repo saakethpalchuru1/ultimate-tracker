@@ -9,8 +9,8 @@
       "opponent_id": "ucsc",
       "current": {
         "target_score": 10,
-        "opponent_score": 10,
-        "target_lead_by": 0
+        "opponent_score": 11,
+        "target_lead_by": -1
       },
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "219",
@@ -19,9 +19,9 @@
           "finish": 3,
           "guaranteed_at_or_above_margin": 1,
           "min_winning_margin_needed": 1,
-          "current_margin": 0,
-          "margin_delta_needed": 1,
-          "human_text": "Win by 1+ points to lock #3. Currently leading by 0; outscore opponent by 1+ from now.",
+          "current_margin": -1,
+          "margin_delta_needed": 2,
+          "human_text": "Win by 1+ points to lock #3. Currently leading by -1; outscore opponent by 2+ from now.",
           "example_score": [
             15,
             14
@@ -98,13 +98,6 @@
           "target_finish": 3,
           "projected_final_target": 15,
           "projected_final_opp": 11
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": 5,
-          "target_finish": 3,
-          "projected_final_target": 15,
-          "projected_final_opp": 10
         }
       ]
     }
