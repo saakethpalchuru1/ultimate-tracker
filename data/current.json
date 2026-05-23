@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T16:08:06+00:00",
+  "generated_at": "2026-05-23T16:10:17+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -361,7 +361,7 @@
       "pool": "B",
       "team1": "oregon-state",
       "team2": "maryland",
-      "score1": 7,
+      "score1": 8,
       "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
@@ -449,7 +449,7 @@
       "pool": "C",
       "team1": "carleton",
       "team2": "penn-state",
-      "score1": 9,
+      "score1": 10,
       "score2": 2,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
@@ -461,7 +461,7 @@
       "team1": "cal-poly-slo",
       "team2": "washington",
       "score1": 6,
-      "score2": 5,
+      "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "206"
@@ -722,17 +722,17 @@
           "team_id": "oregon-state",
           "wins": 2,
           "losses": 1,
-          "pf": 28,
+          "pf": 29,
           "pa": 33,
-          "pd": -5
+          "pd": -4
         },
         "maryland": {
           "team_id": "maryland",
           "wins": 1,
           "losses": 2,
           "pf": 26,
-          "pa": 34,
-          "pd": -8
+          "pa": 35,
+          "pd": -9
         },
         "michigan": {
           "team_id": "michigan",
@@ -800,7 +800,7 @@
             "michigan"
           ],
           "metric_values": {
-            "maryland": -8.0,
+            "maryland": -9.0,
             "michigan": -10.0
           },
           "outcome": "split",
@@ -819,43 +819,43 @@
       "pool": "C",
       "ordered_team_ids": [
         "carleton",
-        "cal-poly-slo",
         "penn-state",
-        "mcgill",
-        "washington"
+        "cal-poly-slo",
+        "washington",
+        "mcgill"
       ],
       "rows": {
         "carleton": {
           "team_id": "carleton",
           "wins": 3,
           "losses": 0,
-          "pf": 39,
+          "pf": 40,
           "pa": 22,
-          "pd": 17
+          "pd": 18
         },
         "penn-state": {
           "team_id": "penn-state",
           "wins": 2,
           "losses": 1,
           "pf": 31,
-          "pa": 30,
-          "pd": 1
+          "pa": 31,
+          "pd": 0
         },
         "cal-poly-slo": {
           "team_id": "cal-poly-slo",
-          "wins": 2,
+          "wins": 1,
           "losses": 1,
           "pf": 31,
-          "pa": 27,
-          "pd": 4
+          "pa": 28,
+          "pd": 3
         },
         "washington": {
           "team_id": "washington",
           "wins": 0,
-          "losses": 3,
-          "pf": 28,
+          "losses": 2,
+          "pf": 29,
           "pa": 35,
-          "pd": -7
+          "pd": -6
         },
         "mcgill": {
           "team_id": "mcgill",
@@ -870,12 +870,12 @@
         {
           "rule": 2,
           "tied_team_ids": [
-            "cal-poly-slo",
-            "penn-state"
+            "mcgill",
+            "washington"
           ],
           "metric_values": {
-            "penn-state": 0.0,
-            "cal-poly-slo": 0.0
+            "washington": 0.0,
+            "mcgill": 0.0
           },
           "outcome": "all_still_tied",
           "note": ""
@@ -883,12 +883,12 @@
         {
           "rule": 3,
           "tied_team_ids": [
-            "cal-poly-slo",
-            "penn-state"
+            "mcgill",
+            "washington"
           ],
           "metric_values": {
-            "penn-state": 0.0,
-            "cal-poly-slo": 0.0
+            "washington": 0.0,
+            "mcgill": 0.0
           },
           "outcome": "all_still_tied",
           "note": ""
@@ -896,12 +896,12 @@
         {
           "rule": 4,
           "tied_team_ids": [
-            "cal-poly-slo",
-            "penn-state"
+            "mcgill",
+            "washington"
           ],
           "metric_values": {
-            "penn-state": 1.0,
-            "cal-poly-slo": 4.0
+            "washington": -1.0,
+            "mcgill": -15.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
