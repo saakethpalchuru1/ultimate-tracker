@@ -10,16 +10,16 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "oregon-state",
+              "team_id": "michigan",
               "source": "Pool B #2"
             },
             {
               "side": "away",
-              "team_id": "penn-state",
+              "team_id": "cal-poly-slo",
               "source": "Pool C #3"
             }
           ],
-          "projected_winner": "oregon-state"
+          "projected_winner": "michigan"
         },
         {
           "id": "PQ2",
@@ -27,16 +27,16 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "cal-poly-slo",
+              "team_id": "penn-state",
               "source": "Pool C #2"
             },
             {
               "side": "away",
-              "team_id": "michigan",
+              "team_id": "oregon-state",
               "source": "Pool B #3"
             }
           ],
-          "projected_winner": "cal-poly-slo"
+          "projected_winner": "penn-state"
         },
         {
           "id": "PQ3",
@@ -88,7 +88,7 @@
             },
             {
               "side": "away",
-              "team_id": "oregon-state",
+              "team_id": "michigan",
               "source": "Winner of PQ1"
             }
           ],
@@ -105,7 +105,7 @@
             },
             {
               "side": "away",
-              "team_id": "cal-poly-slo",
+              "team_id": "penn-state",
               "source": "Winner of PQ2"
             }
           ],
