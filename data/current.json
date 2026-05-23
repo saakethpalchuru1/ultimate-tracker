@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T20:00:29+00:00",
+  "generated_at": "2026-05-23T20:02:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -383,9 +383,9 @@
       "pool": "B",
       "team1": "oregon-state",
       "team2": "brown",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
+      "score1": 0,
+      "score2": 1,
+      "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
       "field": "205"
     },
@@ -702,10 +702,10 @@
       "pool": "B",
       "ordered_team_ids": [
         "colorado",
+        "brown",
         "oregon-state",
         "maryland",
-        "michigan",
-        "brown"
+        "michigan"
       ],
       "rows": {
         "colorado": {
@@ -719,10 +719,10 @@
         "oregon-state": {
           "team_id": "oregon-state",
           "wins": 2,
-          "losses": 1,
+          "losses": 2,
           "pf": 36,
-          "pa": 40,
-          "pd": -4
+          "pa": 41,
+          "pd": -5
         },
         "maryland": {
           "team_id": "maryland",
@@ -742,11 +742,11 @@
         },
         "brown": {
           "team_id": "brown",
-          "wins": 1,
+          "wins": 2,
           "losses": 2,
-          "pf": 40,
+          "pf": 41,
           "pa": 39,
-          "pd": 1
+          "pd": 2
         }
       },
       "tiebreak_trace": [
@@ -754,13 +754,11 @@
           "rule": 2,
           "tied_team_ids": [
             "brown",
-            "maryland",
-            "michigan"
+            "oregon-state"
           ],
           "metric_values": {
-            "maryland": 1.0,
-            "michigan": 1.0,
-            "brown": 0.0
+            "oregon-state": 0.0,
+            "brown": 1.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
