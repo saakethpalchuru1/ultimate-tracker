@@ -1,0 +1,213 @@
+{
+  "bracket_id": "17.4",
+  "rounds": [
+    {
+      "name": "Prequarterfinals",
+      "games": [
+        {
+          "id": "PQ1",
+          "round": "Prequarterfinals",
+          "participants": [
+            {
+              "side": "home",
+              "team_id": "ucsc",
+              "source": "Pool A #2"
+            },
+            {
+              "side": "away",
+              "team_id": "maryland",
+              "source": "Pool B #3"
+            }
+          ],
+          "projected_winner": "ucsc"
+        },
+        {
+          "id": "PQ2",
+          "round": "Prequarterfinals",
+          "participants": [
+            {
+              "side": "home",
+              "team_id": "oregon-state",
+              "source": "Pool B #2"
+            },
+            {
+              "side": "away",
+              "team_id": "georgia-tech",
+              "source": "Pool A #3"
+            }
+          ],
+          "projected_winner": "oregon-state"
+        },
+        {
+          "id": "PQ3",
+          "round": "Prequarterfinals",
+          "participants": [
+            {
+              "side": "home",
+              "team_id": "penn-state",
+              "source": "Pool C #2"
+            },
+            {
+              "side": "away",
+              "team_id": "north-carolina",
+              "source": "Pool D #3"
+            }
+          ],
+          "projected_winner": "penn-state"
+        },
+        {
+          "id": "PQ4",
+          "round": "Prequarterfinals",
+          "participants": [
+            {
+              "side": "home",
+              "team_id": "pittsburgh",
+              "source": "Pool D #2"
+            },
+            {
+              "side": "away",
+              "team_id": "cal-poly-slo",
+              "source": "Pool C #3"
+            }
+          ],
+          "projected_winner": "pittsburgh"
+        }
+      ]
+    },
+    {
+      "name": "Quarterfinals",
+      "games": [
+        {
+          "id": "QF1",
+          "round": "Quarterfinals",
+          "participants": [
+            {
+              "side": "home",
+              "team_id": "oregon",
+              "source": "Pool A #1"
+            },
+            {
+              "side": "away",
+              "team_id": "pittsburgh",
+              "source": "Winner of PQ4"
+            }
+          ],
+          "projected_winner": "oregon"
+        },
+        {
+          "id": "QF2",
+          "round": "Quarterfinals",
+          "participants": [
+            {
+              "side": "home",
+              "team_id": "massachusetts",
+              "source": "Pool D #1"
+            },
+            {
+              "side": "away",
+              "team_id": "ucsc",
+              "source": "Winner of PQ1"
+            }
+          ],
+          "projected_winner": "massachusetts"
+        },
+        {
+          "id": "QF3",
+          "round": "Quarterfinals",
+          "participants": [
+            {
+              "side": "home",
+              "team_id": "carleton",
+              "source": "Pool C #1"
+            },
+            {
+              "side": "away",
+              "team_id": "oregon-state",
+              "source": "Winner of PQ2"
+            }
+          ],
+          "projected_winner": "carleton"
+        },
+        {
+          "id": "QF4",
+          "round": "Quarterfinals",
+          "participants": [
+            {
+              "side": "home",
+              "team_id": "colorado",
+              "source": "Pool B #1"
+            },
+            {
+              "side": "away",
+              "team_id": "penn-state",
+              "source": "Winner of PQ3"
+            }
+          ],
+          "projected_winner": "colorado"
+        }
+      ]
+    },
+    {
+      "name": "Semifinals",
+      "games": [
+        {
+          "id": "SF1",
+          "round": "Semifinals",
+          "participants": [
+            {
+              "side": "home",
+              "team_id": "oregon",
+              "source": "Winner of QF1"
+            },
+            {
+              "side": "away",
+              "team_id": "massachusetts",
+              "source": "Winner of QF2"
+            }
+          ],
+          "projected_winner": "oregon"
+        },
+        {
+          "id": "SF2",
+          "round": "Semifinals",
+          "participants": [
+            {
+              "side": "home",
+              "team_id": "carleton",
+              "source": "Winner of QF3"
+            },
+            {
+              "side": "away",
+              "team_id": "colorado",
+              "source": "Winner of QF4"
+            }
+          ],
+          "projected_winner": "carleton"
+        }
+      ]
+    },
+    {
+      "name": "Final",
+      "games": [
+        {
+          "id": "F",
+          "round": "Final",
+          "participants": [
+            {
+              "side": "home",
+              "team_id": "oregon",
+              "source": "Winner of SF1"
+            },
+            {
+              "side": "away",
+              "team_id": "carleton",
+              "source": "Winner of SF2"
+            }
+          ],
+          "projected_winner": "oregon"
+        }
+      ]
+    }
+  ],
+  "target_path": []
+}
