@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ultimate Tracker — Local Viewer</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 16px;
+  background: #0b0d10; color: #f5f7fa;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  max-width: 760px; margin-left: auto; margin-right: auto;
+  line-height: 1.45;
+}
+h1 { font-size: 18px; margin: 0 0 4px; }
+h2 { font-size: 16px; margin: 0 0 6px; }
+h3 { font-size: 14px; margin: 12px 0 6px; }
+.meta { font-size: 12px; color: #888; margin-bottom: 16px; }
+.flash { transition: background .25s; }
+.flash.on { background: rgba(34,197,94,.18); border-radius: 8px; }
+.card { background: #18181b; border: 1px solid #27272a; border-radius: 10px; padding: 12px; margin-bottom: 12px; }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid #27272a; margin-bottom: 12px; position: sticky; top: 0; background: #0b0d10; padding-top: 8px; padding-bottom: 0; z-index: 5; }
+.tab { background: none; border: 0; color: #888; padding: 8px 12px; font-size: 14px; cursor: pointer; border-bottom: 2px solid transparent; }
+.tab.active { color: #fff; border-bottom-color: #bf5700; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; margin-left: 6px; }
+.pill.good { background: rgba(34,197,94,.22); color: #4ade80; }
+.pill.bad  { background: rgba(220,38,38,.22); color: #fca5a5; }
+.pill.warn { background: rgba(202,138,4,.22); color: #fde68a; }
+.pill.neutral { background: #3f3f46; color: #ddd; }
+.score { font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.target { color: #bf5700; }
+.favorable { color: #4ade80; }
+.sensitive { color: #fde68a; }
+.bad { color: #fca5a5; }
+.row { display: flex; justify-content: space-between; align-items: baseline; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { padding: 4px 6px; text-align: left; }
+tr + tr td { border-top: 1px solid #27272a; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.row-target { background: rgba(191,87,0,.10); }
+small { color: #888; font-size: 12px; }
+.btn { background: #27272a; color: #ddd; border: 0; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 12px; }
+.summary-box { border: 1px solid #27272a; border-radius: 8px; padding: 10px; margin-top: 6px; }
+.spacer { height: 8px; }
+.error { color: #fca5a5; font-size: 13px; }
+.no-live { color: #aaa; }
+</style>
+</head>
+<body>
+<div id="root">Loading…</div>
+
+<script>
+const POLL_MS = 3000;       // 3-second polling (this is local, no rate limit)
+const DATA_BASE = "data";   // relative -- same origin as the page
+let activeTab = "live";     // start on Live for sim watching
+let lastGenAt = null;
+
+async function jget(name) {
+  const r = await fetch(`${DATA_BASE}/${name}?t=${Date.now()}`, { cache: "no-store" });
+  if (!r.ok) throw new Error(`${name}: HTTP ${r.status}`);
+  return r.json();
+}
+
+function teamMap(snap) {
+  const m = {};
+  for (const t of snap.teams) m[t.id] = t;
+  return m;
+}
+
+function el(tag, attrs = {}, ...children) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v;
+    else if (k === "onclick") e.onclick = v;
+    else if (v !== false && v !== null && v !== undefined) e.setAttribute(k, v);
+  }
+  for (const c of children.flat()) {
+    if (c == null || c === false) continue;
+    e.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+  }
+  return e;
+}
+
+function fmtTime(iso) {
+  if (!iso) return "—";
+  const d = new Date(iso);
+  return d.toLocaleTimeString();
+}
+
+function flashHeader(header) {
+  header.classList.add("on");
+  setTimeout(() => header.classList.remove("on"), 600);
+}
+
+// --- Renderers per tab ---
+
+function renderPools(current) {
+  const tm = teamMap(current);
+  const target = current.target_team_id;
+  const root = el("div");
+  for (const ps of current.standings) {
+    const card = el("section", { class: "card" });
+    card.append(el("h2", {}, `Pool ${ps.pool}`));
+    const table = el("table");
+    const thead = el("thead");
+    thead.append(el("tr", {},
+      el("th", {}, "#"), el("th", {}, "Team"),
+      el("th", { class: "num" }, "W-L"), el("th", { class: "num" }, "PD")
+    ));
+    table.append(thead);
+    const tbody = el("tbody");
+    ps.ordered_team_ids.forEach((tid, i) => {
+      const r = ps.rows[tid];
+      const isTarget = tid === target;
+      const tr = el("tr", { class: isTarget ? "row-target" : "" });
+      tr.append(
+        el("td", {}, String(i + 1)),
+        el("td", {}, `${tm[tid]?.name ?? tid} (${tm[tid]?.seed ?? "?"})`),
+        el("td", { class: "num" }, `${r.wins}-${r.losses}`),
+        el("td", { class: "num " + (r.pd > 0 ? "favorable" : r.pd < 0 ? "bad" : "") }, r.pd > 0 ? `+${r.pd}` : String(r.pd))
+      );
+      tbody.append(tr);
+    });
+    table.append(tbody);
+    card.append(table);
+    root.append(card);
+  }
+  return root;
+}
+
+function renderLive(live, current) {
+  const tm = teamMap(current);
+  const target = current.target_team_id;
+  const targetName = tm[target]?.name ?? target;
+  const root = el("div");
+
+  if (!live.has_live_games) {
+    root.append(el("div", { class: "card no-live" }, "No live games right now. Live data appears here when a game flips to In Progress."));
+    return root;
+  }
+
+  for (const g of live.live_games || []) {
+    const oppName = tm[g.opponent_id]?.name ?? g.opponent_id;
+    const lead = g.current.target_lead_by;
+    const leadPill = lead > 0
+      ? el("span", { class: "pill good" }, `${targetName} leading by ${lead}`)
+      : lead < 0
+      ? el("span", { class: "pill bad" }, `${targetName} trailing by ${-lead}`)
+      : el("span", { class: "pill neutral" }, "Tied");
+
+    const card = el("section", { class: "card" });
+    card.append(el("h2", {}, `${targetName} vs ${oppName}`));
+    card.append(el("small", {}, `Field ${g.field ?? "—"} · ${g.scheduled_at ?? ""}`));
+    card.append(el("div", { class: "spacer" }));
+    card.append(el("div", { class: "row" },
+      el("span", { class: "score" }, `${g.current.target_score} – ${g.current.opponent_score}`),
+      leadPill
+    ));
+
+    for (const s of g.summary || []) {
+      const colorClass = s.finish <= 2 ? "favorable" : s.finish === 3 ? "sensitive" : "bad";
+      const box = el("div", { class: "summary-box" });
+      box.append(el("div", { class: "row" },
+        el("span", { class: colorClass, style: "font-weight:700; font-size:15px;" }, `Finish #${s.finish}`),
+        s.example_score ? el("small", {}, `e.g. ${s.example_score[0]}–${s.example_score[1]} final`) : ""
+      ));
+      const msg = el("div", { style: "margin-top:4px; font-size:14px;" });
+      if (s.guaranteed_at_or_above_margin === null) {
+        msg.append(el("span", { class: "no-live" }, s.human_text));
+      } else if (s.guaranteed_at_or_above_margin > 0) {
+        const c = s.guaranteed_at_or_above_margin;
+        msg.append(`Beat ${oppName} by `, el("b", { class: "target" }, `${c}+ points`), ` to clinch #${s.finish}.`);
+        if (s.margin_delta_needed !== null && s.margin_delta_needed > 0) {
+          msg.append(el("div", { style: "margin-top:4px; font-size:12px; color:#aaa;" },
+            `Currently ${lead > 0 ? "+" + lead : lead}; need to outscore ${oppName} by `,
+            el("b", { class: "target" }, `${s.margin_delta_needed} more`), " the rest of the game."
+          ));
+        } else if (s.margin_delta_needed !== null && s.margin_delta_needed <= 0) {
+          msg.append(el("div", { class: "favorable", style: "margin-top:4px; font-size:12px;" }, "Already there — just hold the lead."));
+        }
+      } else if (s.guaranteed_at_or_above_margin === 0) {
+        msg.append(`Any win (or even a draw) locks #${s.finish}.`);
+      } else {
+        msg.append(`Even losing by up to `, el("b", {}, `${-s.guaranteed_at_or_above_margin} points`), ` still locks #${s.finish}.`);
+      }
+      box.append(msg);
+      card.append(box);
+    }
+    root.append(card);
+  }
+
+  if (live.other_live_games && live.other_live_games.length > 0) {
+    const card = el("section", { class: "card" });
+    card.append(el("h2", {}, `Other live games in Pool ${live.target_pool}`));
+    card.append(el("small", {}, "These games affect Texas's pool finish but don't involve Texas directly."));
+    card.append(el("div", { class: "spacer" }));
+    for (const og of live.other_live_games) {
+      const t1Name = tm[og.team1]?.name ?? og.team1;
+      const t2Name = tm[og.team2]?.name ?? og.team2;
+      const diff = og.score1 - og.score2;
+      const sub = diff > 0 ? `${t1Name} leads by ${diff}` :
+                  diff < 0 ? `${t2Name} leads by ${-diff}` : "Tied";
+      const row = el("div", { class: "summary-box" });
+      row.append(el("div", { class: "row" },
+        el("span", {}, `${t1Name} vs ${t2Name}`),
+        el("span", { style: "font-family:ui-monospace,monospace; font-variant-numeric:tabular-nums;" }, `${og.score1} – ${og.score2}`)
+      ));
+      row.append(el("div", { style: "margin-top:2px; font-size:12px; color:#aaa;" }, sub));
+      card.append(row);
+    }
+    root.append(card);
+  }
+
+  return root;
+}
+
+function renderBracket(bracket, current) {
+  const tm = teamMap(current);
+  const target = current.target_team_id;
+  const root = el("div");
+
+  // Build feeds-into map
+  const feedsInto = {};
+  for (const rnd of bracket.rounds) {
+    for (const g of rnd.games) {
+      for (const p of g.participants) {
+        const m = (p.source || "").match(/Winner of (\S+)/);
+        if (m) feedsInto[m[1]] = g.id;
+      }
+    }
+  }
+
+  root.append(el("p", { style: "font-size:12px; color:#888; margin-bottom:10px;" },
+    "Pool finishes feed left → right. Downstream rounds show 'Winner of X' until the feeding game finalizes."));
+
+  const flow = el("div", { style: "display:flex; gap:12px; overflow-x:auto; padding-bottom:10px; min-height:620px;" });
+  bracket.rounds.forEach((rnd, idx) => {
+    const col = el("div", { style: "display:flex; flex-direction:column; min-width:220px; flex-shrink:0; margin-top:" + (idx * 14) + "px;" });
+    col.append(el("h2", { style: "font-size:12px; text-transform:uppercase; letter-spacing:0.05em; color:#aaa; text-align:center; margin-bottom:8px;" }, rnd.name));
+    const inner = el("div", { style: "flex:1; display:flex; flex-direction:column; justify-content:space-around; gap:12px;" });
+    for (const g of rnd.games) {
+      const card = el("div", { style: "background:#18181b; border:1px solid #27272a; border-radius:8px; padding:8px;" });
+      const head = el("div", { style: "display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;" });
+      head.append(el("span", { style: "font-size:10px; text-transform:uppercase; letter-spacing:0.05em; color:#888;" }, g.id));
+      if (feedsInto[g.id]) {
+        head.append(el("span", { style: "font-size:10px; color:#888;" }, "→ " + feedsInto[g.id]));
+      } else {
+        head.append(el("span", { style: "font-size:10px; color:#4ade80;" }, "🏆 Champion"));
+      }
+      card.append(head);
+      for (const p of g.participants) {
+        const isWinnerSrc = (p.source || "").startsWith("Winner of");
+        if (isWinnerSrc) {
+          card.append(el("div", { style: "font-size:13px; font-style:italic; color:#888; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" }, p.source));
+          continue;
+        }
+        const isTarget = p.team_id === target;
+        const name = p.team_id ? (tm[p.team_id]?.name ?? p.team_id) : null;
+        const row = el("div", { style: "display:flex; justify-content:space-between; align-items:baseline; font-size:13px;" });
+        const nameSpan = name
+          ? el("span", { style: "overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" + (isTarget ? " color:#bf5700; font-weight:600;" : " color:#ddd;") }, name)
+          : el("i", { style: "color:#888; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" }, p.source);
+        row.append(nameSpan, el("span", { style: "margin-left:8px; flex-shrink:0; font-size:10px; color:#888;" }, p.source));
+        card.append(row);
+      }
+      inner.append(card);
+    }
+    col.append(inner);
+    flow.append(col);
+  });
+  root.append(flow);
+  return root;
+}
+
+// --- Main loop ---
+
+async function reload() {
+  const header = document.getElementById("header");
+  try {
+    const [current, bracket, live] = await Promise.all([jget("current.json"), jget("bracket.json"), jget("live.json")]);
+    if (lastGenAt && lastGenAt !== current.generated_at && header) flashHeader(header);
+    lastGenAt = current.generated_at;
+    render(current, bracket, live, null);
+  } catch (e) {
+    render(null, null, null, e.message);
+  }
+}
+
+function render(current, bracket, live, errMsg) {
+  const root = document.getElementById("root");
+  root.innerHTML = "";
+
+  const header = el("div", { class: "flash", id: "header" });
+  const tm = current ? teamMap(current) : {};
+  const targetName = current ? (tm[current.target_team_id]?.name ?? current.target_team_id) : "—";
+  header.append(el("div", { class: "row" },
+    el("h1", {}, "Ultimate Tracker · Local Viewer"),
+    el("button", { class: "btn", onclick: reload }, "↻ refresh")
+  ));
+  if (current) {
+    const liveCount = (live?.live_games?.length ?? 0) + (live?.other_live_games?.length ?? 0);
+    header.append(el("div", { class: "meta" },
+      `Snapshot ${fmtTime(current.generated_at)} · Target: `,
+      el("span", { class: "target" }, targetName),
+      live?.has_live_games ? el("span", { class: "favorable" }, `  ·  🔴 ${liveCount} game${liveCount > 1 ? "s" : ""} live`) : "",
+      `  ·  polling every ${POLL_MS/1000}s`
+    ));
+  } else if (errMsg) {
+    header.append(el("div", { class: "error" }, `Error: ${errMsg}`));
+  }
+  root.append(header);
+
+  // Tabs
+  const tabs = el("div", { class: "tabs" });
+  for (const [id, label] of [["pools","Pools"], ["live","Live" + (live?.has_live_games ? " 🔴" : "")], ["bracket","Bracket"]]) {
+    const btn = el("button", { class: "tab" + (activeTab === id ? " active" : ""), onclick: () => { activeTab = id; render(current, bracket, live, errMsg); } }, label);
+    tabs.append(btn);
+  }
+  root.append(tabs);
+
+  if (!current) {
+    root.append(el("div", { class: "card" }, "Waiting for data… make sure simulate_live is running and data/*.json files exist."));
+    return;
+  }
+
+  if (activeTab === "pools") root.append(renderPools(current));
+  else if (activeTab === "live") root.append(renderLive(live, current));
+  else if (activeTab === "bracket") root.append(renderBracket(bracket, current));
+}
+
+reload();
+setInterval(reload, POLL_MS);
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") reload(); });
+</script>
+</body>
+</html>
