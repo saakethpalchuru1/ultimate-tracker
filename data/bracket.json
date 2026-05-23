@@ -10,7 +10,7 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "oregon-state",
+              "team_id": "maryland",
               "source": "Pool B #2"
             },
             {
@@ -19,7 +19,7 @@
               "source": "Pool C #3"
             }
           ],
-          "projected_winner": "oregon-state"
+          "projected_winner": "maryland"
         },
         {
           "id": "PQ2",
@@ -32,7 +32,7 @@
             },
             {
               "side": "away",
-              "team_id": "maryland",
+              "team_id": "oregon-state",
               "source": "Pool B #3"
             }
           ],
@@ -88,7 +88,7 @@
             },
             {
               "side": "away",
-              "team_id": "oregon-state",
+              "team_id": "maryland",
               "source": "Winner of PQ1"
             }
           ],
