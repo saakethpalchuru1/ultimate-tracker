@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T18:00:06+00:00",
+  "generated_at": "2026-05-23T18:02:08+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -273,9 +273,9 @@
       "pool": "A",
       "team1": "oregon",
       "team2": "georgia-tech",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
+      "score1": 1,
+      "score2": 0,
+      "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "210"
     },
@@ -486,7 +486,7 @@
       "score2": null,
       "status": "scheduled",
       "scheduled_at": "Sat 5/23 3:00 PM",
-      "field": "206"
+      "field": "203"
     },
     {
       "game_id": "C-30",
@@ -581,9 +581,9 @@
       "pool": "D",
       "team1": "massachusetts",
       "team2": "pittsburgh",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
+      "score1": 0,
+      "score2": 1,
+      "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "205"
     },
@@ -623,11 +623,11 @@
       "rows": {
         "oregon": {
           "team_id": "oregon",
-          "wins": 3,
+          "wins": 4,
           "losses": 0,
-          "pf": 45,
+          "pf": 46,
           "pa": 23,
-          "pd": 22
+          "pd": 23
         },
         "ucsc": {
           "team_id": "ucsc",
@@ -640,10 +640,10 @@
         "georgia-tech": {
           "team_id": "georgia-tech",
           "wins": 2,
-          "losses": 1,
+          "losses": 2,
           "pf": 38,
-          "pa": 41,
-          "pd": -3
+          "pa": 42,
+          "pd": -4
         },
         "texas": {
           "team_id": "texas",
@@ -929,8 +929,8 @@
     {
       "pool": "D",
       "ordered_team_ids": [
-        "massachusetts",
         "pittsburgh",
+        "massachusetts",
         "north-carolina",
         "western-washington",
         "yale"
@@ -938,19 +938,19 @@
       "rows": {
         "pittsburgh": {
           "team_id": "pittsburgh",
-          "wins": 3,
+          "wins": 4,
           "losses": 0,
-          "pf": 45,
+          "pf": 46,
           "pa": 32,
-          "pd": 13
+          "pd": 14
         },
         "massachusetts": {
           "team_id": "massachusetts",
           "wins": 3,
-          "losses": 0,
+          "losses": 1,
           "pf": 45,
-          "pa": 26,
-          "pd": 19
+          "pa": 27,
+          "pd": 18
         },
         "north-carolina": {
           "team_id": "north-carolina",
@@ -977,47 +977,7 @@
           "pd": -25
         }
       },
-      "tiebreak_trace": [
-        {
-          "rule": 2,
-          "tied_team_ids": [
-            "massachusetts",
-            "pittsburgh"
-          ],
-          "metric_values": {
-            "pittsburgh": 0.0,
-            "massachusetts": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 3,
-          "tied_team_ids": [
-            "massachusetts",
-            "pittsburgh"
-          ],
-          "metric_values": {
-            "pittsburgh": 0.0,
-            "massachusetts": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 4,
-          "tied_team_ids": [
-            "massachusetts",
-            "pittsburgh"
-          ],
-          "metric_values": {
-            "pittsburgh": 13.0,
-            "massachusetts": 19.0
-          },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
-        }
-      ],
+      "tiebreak_trace": [],
       "usau_tie_hints": {
         "massachusetts": "0-0,0[+19]",
         "pittsburgh": "0-0,0[+13]",
