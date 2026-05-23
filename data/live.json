@@ -9,8 +9,8 @@
       "opponent_id": "ucsc",
       "current": {
         "target_score": 6,
-        "opponent_score": 7,
-        "target_lead_by": -1
+        "opponent_score": 8,
+        "target_lead_by": -2
       },
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "219",
@@ -19,9 +19,9 @@
           "finish": 3,
           "guaranteed_at_or_above_margin": 1,
           "min_winning_margin_needed": 1,
-          "current_margin": -1,
-          "margin_delta_needed": 2,
-          "human_text": "Win by 1+ points to lock #3. Currently leading by -1; outscore opponent by 2+ from now.",
+          "current_margin": -2,
+          "margin_delta_needed": 3,
+          "human_text": "Win by 1+ points to lock #3. Currently leading by -2; outscore opponent by 3+ from now.",
           "example_score": [
             15,
             14
@@ -147,13 +147,6 @@
           "target_finish": 3,
           "projected_final_target": 15,
           "projected_final_opp": 8
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": 8,
-          "target_finish": 3,
-          "projected_final_target": 15,
-          "projected_final_opp": 7
         }
       ]
     }
@@ -163,7 +156,7 @@
       "game_id": "A-10",
       "team1": "oregon",
       "team2": "georgia-tech",
-      "score1": 9,
+      "score1": 10,
       "score2": 3,
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "210"
