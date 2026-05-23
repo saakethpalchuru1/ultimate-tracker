@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T14:12:08+00:00",
+  "generated_at": "2026-05-23T14:14:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -229,7 +229,7 @@
       "pool": "A",
       "team1": "oregon",
       "team2": "texas",
-      "score1": 10,
+      "score1": 11,
       "score2": 1,
       "status": "scheduled",
       "scheduled_at": "Sat 5/23 8:30 AM",
