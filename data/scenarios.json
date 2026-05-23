@@ -40,9 +40,9 @@
                 "ucsc"
               ],
               "metric_values": {
-                "ucsc": 4.0,
+                "ucsc": 3.0,
                 "georgia-tech": -4.0,
-                "texas": 0.0
+                "texas": 1.0
               },
               "outcome": "split",
               "note": "split into 3 subgroup(s)"
@@ -696,9 +696,9 @@
                 "ucsc"
               ],
               "metric_values": {
-                "ucsc": 4.0,
+                "ucsc": 3.0,
                 "georgia-tech": -4.0,
-                "texas": 0.0
+                "texas": 1.0
               },
               "outcome": "split",
               "note": "split into 3 subgroup(s)"

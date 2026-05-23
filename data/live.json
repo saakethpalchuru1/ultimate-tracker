@@ -8,9 +8,9 @@
       "target_team_id": "texas",
       "opponent_id": "ucsc",
       "current": {
-        "target_score": 11,
-        "opponent_score": 10,
-        "target_lead_by": 1
+        "target_score": 13,
+        "opponent_score": 11,
+        "target_lead_by": 2
       },
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "202",
@@ -19,35 +19,25 @@
           "finish": 2,
           "achievable_min_margin": 3,
           "guaranteed_at_or_above_margin": 3,
-          "current_margin": 1,
-          "margin_delta_needed": 2
+          "current_margin": 2,
+          "margin_delta_needed": 1
         },
         {
           "finish": 3,
           "achievable_min_margin": 1,
           "guaranteed_at_or_above_margin": 1,
-          "current_margin": 1,
-          "margin_delta_needed": 0
+          "current_margin": 2,
+          "margin_delta_needed": -1
         },
         {
           "finish": 4,
-          "achievable_min_margin": -4,
-          "guaranteed_at_or_above_margin": -4,
-          "current_margin": 1,
-          "margin_delta_needed": -5
+          "achievable_min_margin": -2,
+          "guaranteed_at_or_above_margin": -2,
+          "current_margin": 2,
+          "margin_delta_needed": -4
         }
       ],
       "matrix": [
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": -4,
-          "target_finish": 4
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": -3,
-          "target_finish": 4
-        },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": -2,
@@ -81,11 +71,6 @@
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 4,
-          "target_finish": 2
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": 5,
           "target_finish": 2
         }
       ]
