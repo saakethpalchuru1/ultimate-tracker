@@ -24,9 +24,9 @@
           "final_order": [
             "oregon",
             "ucsc",
+            "utah",
             "georgia-tech",
-            "texas",
-            "utah"
+            "texas"
           ],
           "margin_sensitive": false,
           "tiebreak_trace": [
@@ -34,30 +34,43 @@
               "rule": 2,
               "tied_team_ids": [
                 "georgia-tech",
-                "ucsc"
-              ],
-              "metric_values": {
-                "ucsc": 1.0,
-                "georgia-tech": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "texas",
                 "utah"
               ],
               "metric_values": {
-                "texas": 1.0,
+                "georgia-tech": 0.0,
                 "utah": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "georgia-tech",
+                "utah"
+              ],
+              "metric_values": {
+                "georgia-tech": 0.0,
+                "utah": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "georgia-tech",
+                "utah"
+              ],
+              "metric_values": {
+                "georgia-tech": -7.0,
+                "utah": -4.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
             }
           ],
-          "target_finish": 4
+          "target_finish": 5
         },
         {
           "id": 1,
@@ -76,42 +89,15 @@
             }
           ],
           "final_order": [
-            "georgia-tech",
             "oregon",
+            "georgia-tech",
             "ucsc",
-            "texas",
-            "utah"
+            "utah",
+            "texas"
           ],
           "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "georgia-tech",
-                "oregon"
-              ],
-              "metric_values": {
-                "oregon": 0.0,
-                "georgia-tech": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "texas",
-                "utah"
-              ],
-              "metric_values": {
-                "texas": 1.0,
-                "utah": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ],
-          "target_finish": 4
+          "tiebreak_trace": [],
+          "target_finish": 5
         },
         {
           "id": 2,
@@ -131,9 +117,9 @@
           ],
           "final_order": [
             "oregon",
-            "georgia-tech",
             "texas",
             "utah",
+            "georgia-tech",
             "ucsc"
           ],
           "margin_sensitive": false,
@@ -142,30 +128,43 @@
               "rule": 2,
               "tied_team_ids": [
                 "georgia-tech",
-                "texas"
-              ],
-              "metric_values": {
-                "georgia-tech": 1.0,
-                "texas": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "ucsc",
                 "utah"
               ],
               "metric_values": {
-                "ucsc": 0.0,
-                "utah": 1.0
+                "georgia-tech": 0.0,
+                "utah": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "georgia-tech",
+                "utah"
+              ],
+              "metric_values": {
+                "georgia-tech": 0.0,
+                "utah": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "georgia-tech",
+                "utah"
+              ],
+              "metric_values": {
+                "georgia-tech": -7.0,
+                "utah": -4.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
             }
           ],
-          "target_finish": 3
+          "target_finish": 2
         },
         {
           "id": 3,
@@ -184,242 +183,27 @@
             }
           ],
           "final_order": [
-            "georgia-tech",
             "oregon",
+            "georgia-tech",
             "texas",
             "utah",
             "ucsc"
           ],
           "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "georgia-tech",
-                "oregon"
-              ],
-              "metric_values": {
-                "oregon": 0.0,
-                "georgia-tech": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "ucsc",
-                "utah"
-              ],
-              "metric_values": {
-                "ucsc": 0.0,
-                "utah": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ],
+          "tiebreak_trace": [],
           "target_finish": 3
         }
       ]
     },
     "B": {
       "pool": "B",
-      "n_remaining": 3,
-      "n_permutations": 8,
+      "n_remaining": 2,
+      "n_permutations": 4,
       "permutations": [
         {
           "id": 0,
           "assumed_outcomes": [
             {
-              "game_id": "B-18",
-              "winner_id": "oregon-state",
-              "loser_id": "maryland",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "B-19",
-              "winner_id": "michigan",
-              "loser_id": "maryland",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "B-20",
-              "winner_id": "oregon-state",
-              "loser_id": "brown",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "colorado",
-            "oregon-state",
-            "michigan",
-            "maryland",
-            "brown"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": []
-        },
-        {
-          "id": 1,
-          "assumed_outcomes": [
-            {
-              "game_id": "B-18",
-              "winner_id": "oregon-state",
-              "loser_id": "maryland",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "B-19",
-              "winner_id": "michigan",
-              "loser_id": "maryland",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "B-20",
-              "winner_id": "brown",
-              "loser_id": "oregon-state",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "colorado",
-            "oregon-state",
-            "michigan",
-            "maryland",
-            "brown"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "michigan",
-                "oregon-state"
-              ],
-              "metric_values": {
-                "oregon-state": 1.0,
-                "michigan": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "brown",
-                "maryland"
-              ],
-              "metric_values": {
-                "maryland": 1.0,
-                "brown": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "assumed_outcomes": [
-            {
-              "game_id": "B-18",
-              "winner_id": "oregon-state",
-              "loser_id": "maryland",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "B-19",
-              "winner_id": "maryland",
-              "loser_id": "michigan",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "B-20",
-              "winner_id": "oregon-state",
-              "loser_id": "brown",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "colorado",
-            "oregon-state",
-            "maryland",
-            "michigan",
-            "brown"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": []
-        },
-        {
-          "id": 3,
-          "assumed_outcomes": [
-            {
-              "game_id": "B-18",
-              "winner_id": "oregon-state",
-              "loser_id": "maryland",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "B-19",
-              "winner_id": "maryland",
-              "loser_id": "michigan",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "B-20",
-              "winner_id": "brown",
-              "loser_id": "oregon-state",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "colorado",
-            "oregon-state",
-            "maryland",
-            "michigan",
-            "brown"
-          ],
-          "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "maryland",
-                "oregon-state"
-              ],
-              "metric_values": {
-                "oregon-state": 1.0,
-                "maryland": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "brown",
-                "michigan"
-              ],
-              "metric_values": {
-                "michigan": 1.0,
-                "brown": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "assumed_outcomes": [
-            {
-              "game_id": "B-18",
-              "winner_id": "maryland",
-              "loser_id": "oregon-state",
-              "winning_margin": 3
-            },
-            {
               "game_id": "B-19",
               "winner_id": "michigan",
               "loser_id": "maryland",
@@ -435,8 +219,8 @@
           "final_order": [
             "colorado",
             "michigan",
-            "maryland",
             "oregon-state",
+            "maryland",
             "brown"
           ],
           "margin_sensitive": true,
@@ -464,8 +248,8 @@
                 "oregon-state"
               ],
               "metric_values": {
-                "oregon-state": -2.0,
-                "maryland": 0.0,
+                "oregon-state": 0.0,
+                "maryland": -2.0,
                 "michigan": 2.0
               },
               "outcome": "split",
@@ -474,14 +258,8 @@
           ]
         },
         {
-          "id": 5,
+          "id": 1,
           "assumed_outcomes": [
-            {
-              "game_id": "B-18",
-              "winner_id": "maryland",
-              "loser_id": "oregon-state",
-              "winning_margin": 3
-            },
             {
               "game_id": "B-19",
               "winner_id": "michigan",
@@ -533,14 +311,8 @@
           ]
         },
         {
-          "id": 6,
+          "id": 2,
           "assumed_outcomes": [
-            {
-              "game_id": "B-18",
-              "winner_id": "maryland",
-              "loser_id": "oregon-state",
-              "winning_margin": 3
-            },
             {
               "game_id": "B-19",
               "winner_id": "maryland",
@@ -565,14 +337,8 @@
           "tiebreak_trace": []
         },
         {
-          "id": 7,
+          "id": 3,
           "assumed_outcomes": [
-            {
-              "game_id": "B-18",
-              "winner_id": "maryland",
-              "loser_id": "oregon-state",
-              "winning_margin": 3
-            },
             {
               "game_id": "B-19",
               "winner_id": "maryland",
@@ -1342,11 +1108,12 @@
   "target_summary": {
     "target_team_id": "texas",
     "finish_distribution": {
-      "3": 2,
-      "4": 2
+      "2": 1,
+      "3": 1,
+      "5": 2
     },
     "scenarios_by_finish": {
-      "3": [
+      "2": [
         {
           "id": 2,
           "assumed_outcomes": [
@@ -1365,9 +1132,9 @@
           ],
           "final_order": [
             "oregon",
-            "georgia-tech",
             "texas",
             "utah",
+            "georgia-tech",
             "ucsc"
           ],
           "margin_sensitive": false,
@@ -1376,31 +1143,46 @@
               "rule": 2,
               "tied_team_ids": [
                 "georgia-tech",
-                "texas"
-              ],
-              "metric_values": {
-                "georgia-tech": 1.0,
-                "texas": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "ucsc",
                 "utah"
               ],
               "metric_values": {
-                "ucsc": 0.0,
-                "utah": 1.0
+                "georgia-tech": 0.0,
+                "utah": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "georgia-tech",
+                "utah"
+              ],
+              "metric_values": {
+                "georgia-tech": 0.0,
+                "utah": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "georgia-tech",
+                "utah"
+              ],
+              "metric_values": {
+                "georgia-tech": -7.0,
+                "utah": -4.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
             }
           ],
-          "target_finish": 3
-        },
+          "target_finish": 2
+        }
+      ],
+      "3": [
         {
           "id": 3,
           "assumed_outcomes": [
@@ -1418,45 +1200,18 @@
             }
           ],
           "final_order": [
-            "georgia-tech",
             "oregon",
+            "georgia-tech",
             "texas",
             "utah",
             "ucsc"
           ],
           "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "georgia-tech",
-                "oregon"
-              ],
-              "metric_values": {
-                "oregon": 0.0,
-                "georgia-tech": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "ucsc",
-                "utah"
-              ],
-              "metric_values": {
-                "ucsc": 0.0,
-                "utah": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ],
+          "tiebreak_trace": [],
           "target_finish": 3
         }
       ],
-      "4": [
+      "5": [
         {
           "id": 0,
           "assumed_outcomes": [
@@ -1476,9 +1231,9 @@
           "final_order": [
             "oregon",
             "ucsc",
+            "utah",
             "georgia-tech",
-            "texas",
-            "utah"
+            "texas"
           ],
           "margin_sensitive": false,
           "tiebreak_trace": [
@@ -1486,30 +1241,43 @@
               "rule": 2,
               "tied_team_ids": [
                 "georgia-tech",
-                "ucsc"
-              ],
-              "metric_values": {
-                "ucsc": 1.0,
-                "georgia-tech": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "texas",
                 "utah"
               ],
               "metric_values": {
-                "texas": 1.0,
+                "georgia-tech": 0.0,
                 "utah": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "georgia-tech",
+                "utah"
+              ],
+              "metric_values": {
+                "georgia-tech": 0.0,
+                "utah": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "georgia-tech",
+                "utah"
+              ],
+              "metric_values": {
+                "georgia-tech": -7.0,
+                "utah": -4.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
             }
           ],
-          "target_finish": 4
+          "target_finish": 5
         },
         {
           "id": 1,
@@ -1528,42 +1296,15 @@
             }
           ],
           "final_order": [
-            "georgia-tech",
             "oregon",
+            "georgia-tech",
             "ucsc",
-            "texas",
-            "utah"
+            "utah",
+            "texas"
           ],
           "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "georgia-tech",
-                "oregon"
-              ],
-              "metric_values": {
-                "oregon": 0.0,
-                "georgia-tech": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "texas",
-                "utah"
-              ],
-              "metric_values": {
-                "texas": 1.0,
-                "utah": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ],
-          "target_finish": 4
+          "tiebreak_trace": [],
+          "target_finish": 5
         }
       ]
     }
