@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T20:30:19+00:00",
+  "generated_at": "2026-05-23T20:32:09+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -372,7 +372,7 @@
       "pool": "B",
       "team1": "michigan",
       "team2": "maryland",
-      "score1": 5,
+      "score1": 6,
       "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
@@ -383,7 +383,7 @@
       "pool": "B",
       "team1": "oregon-state",
       "team2": "brown",
-      "score1": 4,
+      "score1": 5,
       "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
@@ -482,7 +482,7 @@
       "pool": "C",
       "team1": "washington",
       "team2": "mcgill",
-      "score1": 4,
+      "score1": 5,
       "score2": 5,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
@@ -604,7 +604,7 @@
       "team1": "western-washington",
       "team2": "yale",
       "score1": 7,
-      "score2": 4,
+      "score2": 5,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
       "field": "202"
@@ -702,9 +702,9 @@
       "pool": "B",
       "ordered_team_ids": [
         "colorado",
-        "maryland",
-        "oregon-state",
         "brown",
+        "oregon-state",
+        "maryland",
         "michigan"
       ],
       "rows": {
@@ -720,33 +720,33 @@
           "team_id": "oregon-state",
           "wins": 2,
           "losses": 2,
-          "pf": 40,
+          "pf": 41,
           "pa": 46,
-          "pd": -6
+          "pd": -5
         },
         "maryland": {
           "team_id": "maryland",
-          "wins": 2,
+          "wins": 1,
           "losses": 2,
           "pf": 39,
-          "pa": 47,
-          "pd": -8
+          "pa": 48,
+          "pd": -9
         },
         "michigan": {
           "team_id": "michigan",
           "wins": 1,
-          "losses": 3,
-          "pf": 36,
+          "losses": 2,
+          "pf": 37,
           "pa": 47,
-          "pd": -11
+          "pd": -10
         },
         "brown": {
           "team_id": "brown",
           "wins": 2,
           "losses": 2,
           "pf": 46,
-          "pa": 43,
-          "pd": 3
+          "pa": 44,
+          "pd": 2
         }
       },
       "tiebreak_trace": [
@@ -754,13 +754,24 @@
           "rule": 2,
           "tied_team_ids": [
             "brown",
-            "maryland",
             "oregon-state"
           ],
           "metric_values": {
-            "oregon-state": 1.0,
-            "maryland": 1.0,
+            "oregon-state": 0.0,
             "brown": 1.0
+          },
+          "outcome": "split",
+          "note": "split into 2 subgroup(s)"
+        },
+        {
+          "rule": 2,
+          "tied_team_ids": [
+            "maryland",
+            "michigan"
+          ],
+          "metric_values": {
+            "maryland": 0.0,
+            "michigan": 0.0
           },
           "outcome": "all_still_tied",
           "note": ""
@@ -768,17 +779,28 @@
         {
           "rule": 3,
           "tied_team_ids": [
-            "brown",
             "maryland",
-            "oregon-state"
+            "michigan"
           ],
           "metric_values": {
-            "oregon-state": 0.0,
-            "maryland": 1.0,
-            "brown": -1.0
+            "maryland": 0.0,
+            "michigan": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 4,
+          "tied_team_ids": [
+            "maryland",
+            "michigan"
+          ],
+          "metric_values": {
+            "maryland": -9.0,
+            "michigan": -10.0
           },
           "outcome": "split",
-          "note": "split into 3 subgroup(s)"
+          "note": "split into 2 subgroup(s)"
         }
       ],
       "usau_tie_hints": {
@@ -795,8 +817,8 @@
         "carleton",
         "penn-state",
         "cal-poly-slo",
-        "mcgill",
-        "washington"
+        "washington",
+        "mcgill"
       ],
       "rows": {
         "carleton": {
@@ -826,21 +848,61 @@
         "washington": {
           "team_id": "washington",
           "wins": 0,
-          "losses": 4,
-          "pf": 41,
+          "losses": 3,
+          "pf": 42,
           "pa": 49,
-          "pd": -8
+          "pd": -7
         },
         "mcgill": {
           "team_id": "mcgill",
-          "wins": 1,
+          "wins": 0,
           "losses": 3,
           "pf": 32,
-          "pa": 49,
-          "pd": -17
+          "pa": 50,
+          "pd": -18
         }
       },
-      "tiebreak_trace": [],
+      "tiebreak_trace": [
+        {
+          "rule": 2,
+          "tied_team_ids": [
+            "mcgill",
+            "washington"
+          ],
+          "metric_values": {
+            "washington": 0.0,
+            "mcgill": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 3,
+          "tied_team_ids": [
+            "mcgill",
+            "washington"
+          ],
+          "metric_values": {
+            "washington": 0.0,
+            "mcgill": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 4,
+          "tied_team_ids": [
+            "mcgill",
+            "washington"
+          ],
+          "metric_values": {
+            "washington": -7.0,
+            "mcgill": -18.0
+          },
+          "outcome": "split",
+          "note": "split into 2 subgroup(s)"
+        }
+      ],
       "usau_tie_hints": {
         "carleton": "",
         "cal-poly-slo": "0-0,0[+4]",
@@ -888,16 +950,16 @@
           "wins": 2,
           "losses": 2,
           "pf": 43,
-          "pa": 48,
-          "pd": -5
+          "pa": 49,
+          "pd": -6
         },
         "yale": {
           "team_id": "yale",
           "wins": 0,
           "losses": 4,
-          "pf": 24,
+          "pf": 25,
           "pa": 52,
-          "pd": -28
+          "pd": -27
         }
       },
       "tiebreak_trace": [],
