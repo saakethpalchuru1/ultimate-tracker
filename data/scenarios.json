@@ -50,8 +50,8 @@
     },
     "B": {
       "pool": "B",
-      "n_remaining": 2,
-      "n_permutations": 4,
+      "n_remaining": 1,
+      "n_permutations": 2,
       "permutations": [
         {
           "id": 0,
@@ -61,48 +61,46 @@
               "winner_id": "michigan",
               "loser_id": "maryland",
               "winning_margin": 3
-            },
-            {
-              "game_id": "B-20",
-              "winner_id": "oregon-state",
-              "loser_id": "brown",
-              "winning_margin": 3
             }
           ],
           "final_order": [
             "colorado",
-            "oregon-state",
             "michigan",
-            "maryland",
-            "brown"
+            "oregon-state",
+            "brown",
+            "maryland"
           ],
           "margin_sensitive": false,
           "tiebreak_trace": [
             {
               "rule": 2,
               "tied_team_ids": [
-                "colorado",
+                "brown",
+                "michigan",
                 "oregon-state"
               ],
               "metric_values": {
-                "colorado": 1.0,
-                "oregon-state": 0.0
+                "oregon-state": 1.0,
+                "michigan": 1.0,
+                "brown": 1.0
               },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
+              "outcome": "all_still_tied",
+              "note": ""
             },
             {
-              "rule": 2,
+              "rule": 3,
               "tied_team_ids": [
                 "brown",
-                "maryland"
+                "michigan",
+                "oregon-state"
               ],
               "metric_values": {
-                "maryland": 1.0,
-                "brown": 0.0
+                "oregon-state": 0.0,
+                "michigan": 1.0,
+                "brown": -1.0
               },
               "outcome": "split",
-              "note": "split into 2 subgroup(s)"
+              "note": "split into 3 subgroup(s)"
             }
           ]
         },
@@ -111,84 +109,8 @@
           "assumed_outcomes": [
             {
               "game_id": "B-19",
-              "winner_id": "michigan",
-              "loser_id": "maryland",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "B-20",
-              "winner_id": "brown",
-              "loser_id": "oregon-state",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "colorado",
-            "michigan",
-            "brown",
-            "oregon-state",
-            "maryland"
-          ],
-          "margin_sensitive": true,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "brown",
-                "michigan",
-                "oregon-state"
-              ],
-              "metric_values": {
-                "oregon-state": 1.0,
-                "michigan": 1.0,
-                "brown": 1.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 3,
-              "tied_team_ids": [
-                "brown",
-                "michigan",
-                "oregon-state"
-              ],
-              "metric_values": {
-                "oregon-state": -2.0,
-                "michigan": 1.0,
-                "brown": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "brown",
-                "michigan"
-              ],
-              "metric_values": {
-                "brown": 0.0,
-                "michigan": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "assumed_outcomes": [
-            {
-              "game_id": "B-19",
               "winner_id": "maryland",
               "loser_id": "michigan",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "B-20",
-              "winner_id": "oregon-state",
-              "loser_id": "brown",
               "winning_margin": 3
             }
           ],
@@ -196,67 +118,14 @@
             "colorado",
             "oregon-state",
             "maryland",
-            "michigan",
-            "brown"
+            "brown",
+            "michigan"
           ],
           "margin_sensitive": false,
           "tiebreak_trace": [
             {
               "rule": 2,
               "tied_team_ids": [
-                "colorado",
-                "oregon-state"
-              ],
-              "metric_values": {
-                "colorado": 1.0,
-                "oregon-state": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "brown",
-                "michigan"
-              ],
-              "metric_values": {
-                "michigan": 1.0,
-                "brown": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "assumed_outcomes": [
-            {
-              "game_id": "B-19",
-              "winner_id": "maryland",
-              "loser_id": "michigan",
-              "winning_margin": 3
-            },
-            {
-              "game_id": "B-20",
-              "winner_id": "brown",
-              "loser_id": "oregon-state",
-              "winning_margin": 3
-            }
-          ],
-          "final_order": [
-            "colorado",
-            "maryland",
-            "brown",
-            "oregon-state",
-            "michigan"
-          ],
-          "margin_sensitive": true,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
                 "brown",
                 "maryland",
                 "oregon-state"
@@ -277,12 +146,25 @@
                 "oregon-state"
               ],
               "metric_values": {
-                "oregon-state": -1.0,
+                "oregon-state": 1.0,
                 "maryland": 1.0,
-                "brown": 0.0
+                "brown": -2.0
               },
               "outcome": "split",
-              "note": "split into 3 subgroup(s)"
+              "note": "split into 2 subgroup(s)"
+            },
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "maryland",
+                "oregon-state"
+              ],
+              "metric_values": {
+                "maryland": 0.0,
+                "oregon-state": 1.0
+              },
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
             }
           ]
         }
