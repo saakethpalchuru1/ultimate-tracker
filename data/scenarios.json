@@ -462,7 +462,7 @@
               "metric_values": {
                 "oregon-state": -6.0,
                 "maryland": -7.0,
-                "brown": 1.0
+                "brown": 2.0
               },
               "outcome": "split",
               "note": "split into 3 subgroup(s)"
