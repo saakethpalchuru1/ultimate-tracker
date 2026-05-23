@@ -150,45 +150,6 @@
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "mcgill",
-                "washington"
-              ],
-              "metric_values": {
-                "washington": 0.0,
-                "mcgill": 0.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 3,
-              "tied_team_ids": [
-                "mcgill",
-                "washington"
-              ],
-              "metric_values": {
-                "washington": 0.0,
-                "mcgill": 0.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 4,
-              "tied_team_ids": [
-                "mcgill",
-                "washington"
-              ],
-              "metric_values": {
-                "washington": -7.0,
-                "mcgill": -18.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
             }
           ]
         }
