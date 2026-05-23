@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T19:12:09+00:00",
+  "generated_at": "2026-05-23T19:14:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -263,7 +263,7 @@
       "team1": "ucsc",
       "team2": "texas",
       "score1": 11,
-      "score2": 10,
+      "score2": 11,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "219"
@@ -471,7 +471,7 @@
       "pool": "C",
       "team1": "carleton",
       "team2": "mcgill",
-      "score1": 12,
+      "score1": 13,
       "score2": 9,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -582,7 +582,7 @@
       "team1": "massachusetts",
       "team2": "pittsburgh",
       "score1": 14,
-      "score2": 8,
+      "score2": 9,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "205"
@@ -615,8 +615,8 @@
       "pool": "A",
       "ordered_team_ids": [
         "oregon",
-        "ucsc",
         "georgia-tech",
+        "ucsc",
         "texas",
         "utah"
       ],
@@ -631,11 +631,11 @@
         },
         "ucsc": {
           "team_id": "ucsc",
-          "wins": 2,
+          "wins": 1,
           "losses": 2,
           "pf": 45,
-          "pa": 50,
-          "pd": -5
+          "pa": 51,
+          "pd": -6
         },
         "georgia-tech": {
           "team_id": "georgia-tech",
@@ -648,10 +648,10 @@
         "texas": {
           "team_id": "texas",
           "wins": 1,
-          "losses": 3,
-          "pf": 39,
+          "losses": 2,
+          "pf": 40,
           "pa": 48,
-          "pd": -9
+          "pd": -8
         },
         "utah": {
           "team_id": "utah",
@@ -666,25 +666,38 @@
         {
           "rule": 2,
           "tied_team_ids": [
-            "georgia-tech",
+            "texas",
             "ucsc"
           ],
           "metric_values": {
-            "ucsc": 1.0,
-            "georgia-tech": 0.0
+            "ucsc": 0.0,
+            "texas": 0.0
           },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
+          "outcome": "all_still_tied",
+          "note": ""
         },
         {
-          "rule": 2,
+          "rule": 3,
           "tied_team_ids": [
             "texas",
-            "utah"
+            "ucsc"
           ],
           "metric_values": {
-            "texas": 1.0,
-            "utah": 0.0
+            "ucsc": 0.0,
+            "texas": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 4,
+          "tied_team_ids": [
+            "texas",
+            "ucsc"
+          ],
+          "metric_values": {
+            "ucsc": -6.0,
+            "texas": -8.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -827,9 +840,9 @@
           "team_id": "carleton",
           "wins": 4,
           "losses": 0,
-          "pf": 57,
+          "pf": 58,
           "pa": 36,
-          "pd": 21
+          "pd": 22
         },
         "penn-state": {
           "team_id": "penn-state",
@@ -860,8 +873,8 @@
           "wins": 0,
           "losses": 3,
           "pf": 24,
-          "pa": 42,
-          "pd": -18
+          "pa": 43,
+          "pd": -19
         }
       },
       "tiebreak_trace": [
@@ -938,7 +951,7 @@
           ],
           "metric_values": {
             "washington": -7.0,
-            "mcgill": -18.0
+            "mcgill": -19.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -966,17 +979,17 @@
           "team_id": "pittsburgh",
           "wins": 3,
           "losses": 1,
-          "pf": 53,
+          "pf": 54,
           "pa": 46,
-          "pd": 7
+          "pd": 8
         },
         "massachusetts": {
           "team_id": "massachusetts",
           "wins": 4,
           "losses": 0,
           "pf": 59,
-          "pa": 34,
-          "pd": 25
+          "pa": 35,
+          "pd": 24
         },
         "north-carolina": {
           "team_id": "north-carolina",
