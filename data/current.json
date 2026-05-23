@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T14:18:10+00:00",
+  "generated_at": "2026-05-23T14:20:20+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -229,7 +229,7 @@
       "pool": "A",
       "team1": "oregon",
       "team2": "texas",
-      "score1": 11,
+      "score1": 12,
       "score2": 2,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 8:30 AM",
@@ -240,7 +240,7 @@
       "pool": "A",
       "team1": "ucsc",
       "team2": "utah",
-      "score1": 5,
+      "score1": 6,
       "score2": 8,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 8:30 AM",
@@ -339,7 +339,7 @@
       "pool": "B",
       "team1": "colorado",
       "team2": "michigan",
-      "score1": 12,
+      "score1": 13,
       "score2": 3,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 8:30 AM",
@@ -560,7 +560,7 @@
       "team1": "north-carolina",
       "team2": "pittsburgh",
       "score1": 6,
-      "score2": 8,
+      "score2": 9,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 8:30 AM",
       "field": "219"
@@ -570,7 +570,7 @@
       "pool": "D",
       "team1": "massachusetts",
       "team2": "yale",
-      "score1": 8,
+      "score1": 9,
       "score2": 3,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 8:30 AM",
@@ -625,17 +625,17 @@
           "team_id": "oregon",
           "wins": 3,
           "losses": 0,
-          "pf": 41,
+          "pf": 42,
           "pa": 22,
-          "pd": 19
+          "pd": 20
         },
         "ucsc": {
           "team_id": "ucsc",
           "wins": 1,
           "losses": 2,
-          "pf": 29,
+          "pf": 30,
           "pa": 33,
-          "pd": -4
+          "pd": -3
         },
         "georgia-tech": {
           "team_id": "georgia-tech",
@@ -650,16 +650,16 @@
           "wins": 1,
           "losses": 2,
           "pf": 28,
-          "pa": 33,
-          "pd": -5
+          "pa": 34,
+          "pd": -6
         },
         "utah": {
           "team_id": "utah",
           "wins": 1,
           "losses": 2,
           "pf": 28,
-          "pa": 34,
-          "pd": -6
+          "pa": 35,
+          "pd": -7
         }
       },
       "tiebreak_trace": [
@@ -714,9 +714,9 @@
           "team_id": "colorado",
           "wins": 3,
           "losses": 0,
-          "pf": 42,
+          "pf": 43,
           "pa": 16,
-          "pd": 26
+          "pd": 27
         },
         "oregon-state": {
           "team_id": "oregon-state",
@@ -739,8 +739,8 @@
           "wins": 1,
           "losses": 2,
           "pf": 30,
-          "pa": 38,
-          "pd": -8
+          "pa": 39,
+          "pd": -9
         },
         "brown": {
           "team_id": "brown",
@@ -953,25 +953,25 @@
           "team_id": "pittsburgh",
           "wins": 3,
           "losses": 0,
-          "pf": 38,
+          "pf": 39,
           "pa": 26,
-          "pd": 12
+          "pd": 13
         },
         "massachusetts": {
           "team_id": "massachusetts",
           "wins": 3,
           "losses": 0,
-          "pf": 38,
+          "pf": 39,
           "pa": 23,
-          "pd": 15
+          "pd": 16
         },
         "north-carolina": {
           "team_id": "north-carolina",
           "wins": 1,
           "losses": 2,
           "pf": 31,
-          "pa": 28,
-          "pd": 3
+          "pa": 29,
+          "pd": 2
         },
         "western-washington": {
           "team_id": "western-washington",
@@ -986,8 +986,8 @@
           "wins": 0,
           "losses": 3,
           "pf": 17,
-          "pa": 38,
-          "pd": -21
+          "pa": 39,
+          "pd": -22
         }
       },
       "tiebreak_trace": [
@@ -1024,8 +1024,8 @@
             "pittsburgh"
           ],
           "metric_values": {
-            "pittsburgh": 12.0,
-            "massachusetts": 15.0
+            "pittsburgh": 13.0,
+            "massachusetts": 16.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
