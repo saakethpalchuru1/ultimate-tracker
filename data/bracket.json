@@ -15,7 +15,7 @@
             },
             {
               "side": "away",
-              "team_id": "penn-state",
+              "team_id": "cal-poly-slo",
               "source": "Pool C #3"
             }
           ],
@@ -27,16 +27,16 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "cal-poly-slo",
+              "team_id": "penn-state",
               "source": "Pool C #2"
             },
             {
               "side": "away",
-              "team_id": "michigan",
+              "team_id": "maryland",
               "source": "Pool B #3"
             }
           ],
-          "projected_winner": "cal-poly-slo"
+          "projected_winner": "penn-state"
         },
         {
           "id": "PQ3",
@@ -49,7 +49,7 @@
             },
             {
               "side": "away",
-              "team_id": "ucsc",
+              "team_id": "georgia-tech",
               "source": "Pool A #3"
             }
           ],
@@ -61,7 +61,7 @@
           "participants": [
             {
               "side": "home",
-              "team_id": "texas",
+              "team_id": "ucsc",
               "source": "Pool A #2"
             },
             {
@@ -70,7 +70,7 @@
               "source": "Pool D #3"
             }
           ],
-          "projected_winner": "texas"
+          "projected_winner": "ucsc"
         }
       ]
     },
@@ -105,7 +105,7 @@
             },
             {
               "side": "away",
-              "team_id": "cal-poly-slo",
+              "team_id": "penn-state",
               "source": "Winner of PQ2"
             }
           ],
@@ -139,7 +139,7 @@
             },
             {
               "side": "away",
-              "team_id": "texas",
+              "team_id": "ucsc",
               "source": "Winner of PQ4"
             }
           ],
@@ -209,18 +209,5 @@
       ]
     }
   ],
-  "target_path": [
-    {
-      "round": "Prequarterfinals",
-      "game_id": "PQ4",
-      "opponent_team_id": "north-carolina",
-      "opponent_source": "Pool D #3"
-    },
-    {
-      "round": "Quarterfinals",
-      "game_id": "QF4",
-      "opponent_team_id": "colorado",
-      "opponent_source": "Pool B #1"
-    }
-  ]
+  "target_path": []
 }
