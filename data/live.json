@@ -8,9 +8,9 @@
       "target_team_id": "texas",
       "opponent_id": "ucsc",
       "current": {
-        "target_score": 5,
-        "opponent_score": 4,
-        "target_lead_by": 1
+        "target_score": 6,
+        "opponent_score": 7,
+        "target_lead_by": -1
       },
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "202",
@@ -19,30 +19,25 @@
           "finish": 2,
           "achievable_min_margin": 3,
           "guaranteed_at_or_above_margin": 3,
-          "current_margin": 1,
-          "margin_delta_needed": 2
+          "current_margin": -1,
+          "margin_delta_needed": 4
         },
         {
           "finish": 3,
           "achievable_min_margin": 1,
           "guaranteed_at_or_above_margin": 1,
-          "current_margin": 1,
-          "margin_delta_needed": 0
+          "current_margin": -1,
+          "margin_delta_needed": 2
         },
         {
           "finish": 4,
-          "achievable_min_margin": -10,
-          "guaranteed_at_or_above_margin": -10,
-          "current_margin": 1,
-          "margin_delta_needed": -11
+          "achievable_min_margin": -9,
+          "guaranteed_at_or_above_margin": -9,
+          "current_margin": -1,
+          "margin_delta_needed": -8
         }
       ],
       "matrix": [
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": -10,
-          "target_finish": 4
-        },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": -9,
@@ -131,21 +126,6 @@
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 8,
-          "target_finish": 2
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": 9,
-          "target_finish": 2
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": 10,
-          "target_finish": 2
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": 11,
           "target_finish": 2
         }
       ]
