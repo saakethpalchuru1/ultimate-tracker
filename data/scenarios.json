@@ -445,8 +445,8 @@
                 "oregon-state"
               ],
               "metric_values": {
-                "oregon-state": -1.0,
-                "maryland": 1.0,
+                "oregon-state": -2.0,
+                "maryland": 2.0,
                 "brown": 0.0
               },
               "outcome": "split",
