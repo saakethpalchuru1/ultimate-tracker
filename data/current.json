@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T19:06:07+00:00",
+  "generated_at": "2026-05-23T19:08:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -472,7 +472,7 @@
       "team1": "carleton",
       "team2": "mcgill",
       "score1": 12,
-      "score2": 7,
+      "score2": 8,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "204"
@@ -582,7 +582,7 @@
       "team1": "massachusetts",
       "team2": "pittsburgh",
       "score1": 12,
-      "score2": 7,
+      "score2": 8,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "205"
@@ -841,8 +841,8 @@
           "wins": 4,
           "losses": 0,
           "pf": 57,
-          "pa": 34,
-          "pd": 23
+          "pa": 35,
+          "pd": 22
         },
         "penn-state": {
           "team_id": "penn-state",
@@ -872,9 +872,9 @@
           "team_id": "mcgill",
           "wins": 0,
           "losses": 3,
-          "pf": 22,
+          "pf": 23,
           "pa": 42,
-          "pd": -20
+          "pd": -19
         }
       },
       "tiebreak_trace": [
@@ -951,7 +951,7 @@
           ],
           "metric_values": {
             "washington": -7.0,
-            "mcgill": -20.0
+            "mcgill": -19.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -979,17 +979,17 @@
           "team_id": "pittsburgh",
           "wins": 3,
           "losses": 1,
-          "pf": 52,
+          "pf": 53,
           "pa": 44,
-          "pd": 8
+          "pd": 9
         },
         "massachusetts": {
           "team_id": "massachusetts",
           "wins": 4,
           "losses": 0,
           "pf": 57,
-          "pa": 33,
-          "pd": 24
+          "pa": 34,
+          "pd": 23
         },
         "north-carolina": {
           "team_id": "north-carolina",
