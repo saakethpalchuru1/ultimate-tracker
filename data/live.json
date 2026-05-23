@@ -1,7 +1,17 @@
 {
   "target_team_id": "texas",
   "target_pool": "A",
-  "has_live_games": false,
+  "has_live_games": true,
   "live_games": [],
-  "other_live_games": []
+  "other_live_games": [
+    {
+      "game_id": "A-08",
+      "team1": "georgia-tech",
+      "team2": "utah",
+      "score1": 1,
+      "score2": 0,
+      "scheduled_at": "Sat 5/23 10:30 AM",
+      "field": "219"
+    }
+  ]
 }
