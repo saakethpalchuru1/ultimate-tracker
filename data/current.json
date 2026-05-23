@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T18:52:13+00:00",
+  "generated_at": "2026-05-23T18:54:08+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -274,7 +274,7 @@
       "team1": "oregon",
       "team2": "georgia-tech",
       "score1": 13,
-      "score2": 4,
+      "score2": 5,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "210"
@@ -471,8 +471,8 @@
       "pool": "C",
       "team1": "carleton",
       "team2": "mcgill",
-      "score1": 9,
-      "score2": 6,
+      "score1": 8,
+      "score2": 5,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "204"
@@ -626,8 +626,8 @@
           "wins": 4,
           "losses": 0,
           "pf": 58,
-          "pa": 27,
-          "pd": 31
+          "pa": 28,
+          "pd": 30
         },
         "ucsc": {
           "team_id": "ucsc",
@@ -641,9 +641,9 @@
           "team_id": "georgia-tech",
           "wins": 2,
           "losses": 2,
-          "pf": 42,
+          "pf": 43,
           "pa": 54,
-          "pd": -12
+          "pd": -11
         },
         "texas": {
           "team_id": "texas",
@@ -827,8 +827,8 @@
           "team_id": "carleton",
           "wins": 4,
           "losses": 0,
-          "pf": 54,
-          "pa": 33,
+          "pf": 53,
+          "pa": 32,
           "pd": 21
         },
         "penn-state": {
@@ -859,8 +859,8 @@
           "team_id": "mcgill",
           "wins": 0,
           "losses": 3,
-          "pf": 21,
-          "pa": 39,
+          "pf": 20,
+          "pa": 38,
           "pd": -18
         }
       },
