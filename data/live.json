@@ -8,8 +8,8 @@
       "target_team_id": "texas",
       "opponent_id": "ucsc",
       "current": {
-        "target_score": 3,
-        "opponent_score": 2,
+        "target_score": 5,
+        "opponent_score": 4,
         "target_lead_by": 1
       },
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -41,32 +41,18 @@
         },
         {
           "finish": 4,
-          "guaranteed_at_or_above_margin": -12,
+          "guaranteed_at_or_above_margin": -10,
           "min_winning_margin_needed": null,
           "current_margin": 1,
-          "margin_delta_needed": 12,
-          "human_text": "Even a loss by 12 or less locks #4.",
+          "margin_delta_needed": 10,
+          "human_text": "Even a loss by 10 or less locks #4.",
           "example_score": [
-            3,
+            5,
             15
           ]
         }
       ],
       "matrix": [
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": -12,
-          "target_finish": 4,
-          "projected_final_target": 3,
-          "projected_final_opp": 15
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": -11,
-          "target_finish": 4,
-          "projected_final_target": 4,
-          "projected_final_opp": 15
-        },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": -10,
@@ -220,20 +206,6 @@
           "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 4
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": 12,
-          "target_finish": 2,
-          "projected_final_target": 15,
-          "projected_final_opp": 3
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": 13,
-          "target_finish": 2,
-          "projected_final_target": 15,
-          "projected_final_opp": 2
         }
       ]
     }
@@ -243,8 +215,8 @@
       "game_id": "A-32",
       "team1": "oregon",
       "team2": "georgia-tech",
-      "score1": 4,
-      "score2": 1,
+      "score1": 6,
+      "score2": 3,
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "210"
     }
