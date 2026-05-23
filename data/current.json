@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T04:55:10+00:00",
+  "generated_at": "2026-05-23T04:55:43+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -177,8 +177,8 @@
       "score1": 15,
       "score2": 11,
       "status": "final",
-      "scheduled_at": "Fri 5/22 8:30 AM",
-      "field": "202"
+      "scheduled_at": null,
+      "field": null
     },
     {
       "game_id": "A-02",
@@ -188,8 +188,8 @@
       "score1": 12,
       "score2": 13,
       "status": "final",
-      "scheduled_at": "Fri 5/22 10:30 AM",
-      "field": "205"
+      "scheduled_at": null,
+      "field": null
     },
     {
       "game_id": "A-03",
@@ -199,8 +199,8 @@
       "score1": 15,
       "score2": 9,
       "status": "final",
-      "scheduled_at": "Fri 5/22 1:00 PM",
-      "field": "202"
+      "scheduled_at": null,
+      "field": null
     },
     {
       "game_id": "A-04",
@@ -210,8 +210,8 @@
       "score1": 14,
       "score2": 9,
       "status": "final",
-      "scheduled_at": "Fri 5/22 3:00 PM",
-      "field": "203"
+      "scheduled_at": null,
+      "field": null
     },
     {
       "game_id": "A-05",
@@ -221,382 +221,382 @@
       "score1": 15,
       "score2": 10,
       "status": "final",
-      "scheduled_at": "Fri 5/22 5:00 PM",
-      "field": "210"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "A-06",
-      "pool": "A",
-      "team1": "oregon",
-      "team2": "texas",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 8:30 AM",
-      "field": "203"
-    },
-    {
-      "game_id": "A-07",
-      "pool": "A",
-      "team1": "ucsc",
-      "team2": "utah",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 8:30 AM",
-      "field": "210"
-    },
-    {
-      "game_id": "A-08",
-      "pool": "A",
-      "team1": "georgia-tech",
-      "team2": "utah",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 10:30 AM",
-      "field": "219"
-    },
-    {
-      "game_id": "A-09",
-      "pool": "A",
-      "team1": "ucsc",
-      "team2": "texas",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 1:00 PM",
-      "field": "202"
-    },
-    {
-      "game_id": "A-10",
-      "pool": "A",
-      "team1": "oregon",
-      "team2": "georgia-tech",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 1:00 PM",
-      "field": "210"
-    },
-    {
-      "game_id": "B-11",
+      "game_id": "B-06",
       "pool": "B",
       "team1": "brown",
       "team2": "maryland",
       "score1": 12,
       "score2": 15,
       "status": "final",
-      "scheduled_at": "Fri 5/22 8:30 AM",
-      "field": "219"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "B-12",
+      "game_id": "B-07",
       "pool": "B",
       "team1": "colorado",
       "team2": "oregon-state",
       "score1": 15,
       "score2": 8,
       "status": "final",
-      "scheduled_at": "Fri 5/22 10:30 AM",
-      "field": "202"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "B-13",
+      "game_id": "B-08",
       "pool": "B",
       "team1": "brown",
       "team2": "michigan",
       "score1": 13,
       "score2": 15,
       "status": "final",
-      "scheduled_at": "Fri 5/22 1:00 PM",
-      "field": "206"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "B-14",
+      "game_id": "B-09",
       "pool": "B",
       "team1": "colorado",
       "team2": "maryland",
       "score1": 15,
       "score2": 5,
       "status": "final",
-      "scheduled_at": "Fri 5/22 3:00 PM",
-      "field": "207"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "B-15",
+      "game_id": "B-10",
       "pool": "B",
       "team1": "oregon-state",
       "team2": "michigan",
       "score1": 13,
       "score2": 12,
       "status": "final",
-      "scheduled_at": "Fri 5/22 5:00 PM",
-      "field": "202"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "B-16",
-      "pool": "B",
-      "team1": "colorado",
-      "team2": "michigan",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 8:30 AM",
-      "field": "202"
-    },
-    {
-      "game_id": "B-17",
-      "pool": "B",
-      "team1": "colorado",
-      "team2": "brown",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 10:30 AM",
-      "field": "203"
-    },
-    {
-      "game_id": "B-18",
-      "pool": "B",
-      "team1": "oregon-state",
-      "team2": "maryland",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 10:30 AM",
-      "field": "207"
-    },
-    {
-      "game_id": "B-19",
-      "pool": "B",
-      "team1": "michigan",
-      "team2": "maryland",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 3:00 PM",
-      "field": "210"
-    },
-    {
-      "game_id": "B-20",
-      "pool": "B",
-      "team1": "oregon-state",
-      "team2": "brown",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 3:00 PM",
-      "field": "205"
-    },
-    {
-      "game_id": "C-21",
+      "game_id": "C-11",
       "pool": "C",
       "team1": "cal-poly-slo",
       "team2": "mcgill",
       "score1": 15,
       "score2": 7,
       "status": "final",
-      "scheduled_at": "Fri 5/22 8:30 AM",
-      "field": "207"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "C-22",
+      "game_id": "C-12",
       "pool": "C",
       "team1": "carleton",
       "team2": "washington",
       "score1": 15,
       "score2": 10,
       "status": "final",
-      "scheduled_at": "Fri 5/22 10:30 AM",
-      "field": "207"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "C-23",
+      "game_id": "C-13",
       "pool": "C",
       "team1": "penn-state",
       "team2": "mcgill",
       "score1": 15,
       "score2": 8,
       "status": "final",
-      "scheduled_at": "Fri 5/22 1:00 PM",
-      "field": "205"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "C-24",
+      "game_id": "C-14",
       "pool": "C",
       "team1": "carleton",
       "team2": "cal-poly-slo",
       "score1": 15,
       "score2": 10,
       "status": "final",
-      "scheduled_at": "Fri 5/22 3:00 PM",
-      "field": "219"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "C-25",
+      "game_id": "C-15",
       "pool": "C",
       "team1": "penn-state",
       "team2": "washington",
       "score1": 14,
       "score2": 13,
       "status": "final",
-      "scheduled_at": "Fri 5/22 5:00 PM",
-      "field": "207"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "C-26",
-      "pool": "C",
-      "team1": "carleton",
-      "team2": "penn-state",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 10:30 AM",
-      "field": "202"
-    },
-    {
-      "game_id": "C-27",
-      "pool": "C",
-      "team1": "cal-poly-slo",
-      "team2": "washington",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 10:30 AM",
-      "field": "206"
-    },
-    {
-      "game_id": "C-28",
-      "pool": "C",
-      "team1": "carleton",
-      "team2": "mcgill",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 1:00 PM",
-      "field": "204"
-    },
-    {
-      "game_id": "C-29",
-      "pool": "C",
-      "team1": "washington",
-      "team2": "mcgill",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 3:00 PM",
-      "field": "206"
-    },
-    {
-      "game_id": "C-30",
-      "pool": "C",
-      "team1": "cal-poly-slo",
-      "team2": "penn-state",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 3:00 PM",
-      "field": "219"
-    },
-    {
-      "game_id": "D-31",
+      "game_id": "D-16",
       "pool": "D",
       "team1": "pittsburgh",
       "team2": "yale",
       "score1": 15,
       "score2": 9,
       "status": "final",
-      "scheduled_at": "Fri 5/22 8:30 AM",
-      "field": "210"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "D-32",
+      "game_id": "D-17",
       "pool": "D",
       "team1": "massachusetts",
       "team2": "western-washington",
       "score1": 15,
       "score2": 10,
       "status": "final",
-      "scheduled_at": "Fri 5/22 10:30 AM",
-      "field": "203"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "D-33",
+      "game_id": "D-18",
       "pool": "D",
       "team1": "north-carolina",
       "team2": "yale",
       "score1": 15,
       "score2": 5,
       "status": "final",
-      "scheduled_at": "Fri 5/22 1:00 PM",
-      "field": "210"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "D-34",
+      "game_id": "D-19",
       "pool": "D",
       "team1": "pittsburgh",
       "team2": "western-washington",
       "score1": 15,
       "score2": 11,
       "status": "final",
-      "scheduled_at": "Fri 5/22 3:00 PM",
-      "field": "202"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "D-35",
+      "game_id": "D-20",
       "pool": "D",
       "team1": "north-carolina",
       "team2": "massachusetts",
       "score1": 10,
       "score2": 15,
       "status": "final",
-      "scheduled_at": "Fri 5/22 5:00 PM",
-      "field": "205"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "D-36",
+      "game_id": "A-21",
+      "pool": "A",
+      "team1": "oregon",
+      "team2": "texas",
+      "score1": 15,
+      "score2": 9,
+      "status": "final",
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "A-22",
+      "pool": "A",
+      "team1": "ucsc",
+      "team2": "utah",
+      "score1": 15,
+      "score2": 10,
+      "status": "final",
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "B-23",
+      "pool": "B",
+      "team1": "colorado",
+      "team2": "michigan",
+      "score1": 15,
+      "score2": 11,
+      "status": "final",
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "D-24",
       "pool": "D",
       "team1": "north-carolina",
       "team2": "pittsburgh",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 8:30 AM",
-      "field": "219"
+      "score1": 14,
+      "score2": 15,
+      "status": "final",
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "D-37",
+      "game_id": "D-25",
       "pool": "D",
       "team1": "massachusetts",
       "team2": "yale",
-      "score1": null,
-      "score2": null,
-      "status": "scheduled",
-      "scheduled_at": "Sat 5/23 8:30 AM",
-      "field": "207"
+      "score1": 15,
+      "score2": 7,
+      "status": "final",
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "D-38",
+      "game_id": "A-26",
+      "pool": "A",
+      "team1": "georgia-tech",
+      "team2": "utah",
+      "score1": 15,
+      "score2": 12,
+      "status": "final",
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "B-27",
+      "pool": "B",
+      "team1": "colorado",
+      "team2": "brown",
+      "score1": 15,
+      "score2": 8,
+      "status": "final",
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "B-28",
+      "pool": "B",
+      "team1": "oregon-state",
+      "team2": "maryland",
+      "score1": 13,
+      "score2": 11,
+      "status": "final",
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "C-29",
+      "pool": "C",
+      "team1": "carleton",
+      "team2": "penn-state",
+      "score1": 15,
+      "score2": 13,
+      "status": "final",
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "C-30",
+      "pool": "C",
+      "team1": "cal-poly-slo",
+      "team2": "washington",
+      "score1": 15,
+      "score2": 11,
+      "status": "final",
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "A-31",
+      "pool": "A",
+      "team1": "ucsc",
+      "team2": "texas",
+      "score1": 11,
+      "score2": 13,
+      "status": "in_progress",
+      "scheduled_at": "Sat 5/23 1:00 PM",
+      "field": "202"
+    },
+    {
+      "game_id": "A-32",
+      "pool": "A",
+      "team1": "oregon",
+      "team2": "georgia-tech",
+      "score1": 13,
+      "score2": 9,
+      "status": "in_progress",
+      "scheduled_at": "Sat 5/23 1:00 PM",
+      "field": "210"
+    },
+    {
+      "game_id": "C-33",
+      "pool": "C",
+      "team1": "carleton",
+      "team2": "mcgill",
+      "score1": 15,
+      "score2": 7,
+      "status": "final",
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "D-34",
       "pool": "D",
       "team1": "massachusetts",
       "team2": "pittsburgh",
       "score1": null,
       "score2": null,
       "status": "scheduled",
-      "scheduled_at": "Sat 5/23 1:00 PM",
-      "field": "205"
+      "scheduled_at": null,
+      "field": null
     },
     {
-      "game_id": "D-39",
+      "game_id": "D-35",
       "pool": "D",
       "team1": "north-carolina",
       "team2": "western-washington",
       "score1": null,
       "score2": null,
       "status": "scheduled",
-      "scheduled_at": "Sat 5/23 1:00 PM",
-      "field": "208"
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "B-36",
+      "pool": "B",
+      "team1": "michigan",
+      "team2": "maryland",
+      "score1": null,
+      "score2": null,
+      "status": "scheduled",
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "B-37",
+      "pool": "B",
+      "team1": "oregon-state",
+      "team2": "brown",
+      "score1": null,
+      "score2": null,
+      "status": "scheduled",
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "C-38",
+      "pool": "C",
+      "team1": "washington",
+      "team2": "mcgill",
+      "score1": null,
+      "score2": null,
+      "status": "scheduled",
+      "scheduled_at": null,
+      "field": null
+    },
+    {
+      "game_id": "C-39",
+      "pool": "C",
+      "team1": "cal-poly-slo",
+      "team2": "penn-state",
+      "score1": null,
+      "score2": null,
+      "status": "scheduled",
+      "scheduled_at": null,
+      "field": null
     },
     {
       "game_id": "D-40",
@@ -606,8 +606,8 @@
       "score1": null,
       "score2": null,
       "status": "scheduled",
-      "scheduled_at": "Sat 5/23 3:00 PM",
-      "field": "202"
+      "scheduled_at": null,
+      "field": null
     }
   ],
   "standings": [
@@ -623,43 +623,43 @@
       "rows": {
         "oregon": {
           "team_id": "oregon",
-          "wins": 2,
+          "wins": 4,
           "losses": 0,
-          "pf": 30,
-          "pa": 20,
-          "pd": 10
+          "pf": 58,
+          "pa": 38,
+          "pd": 20
         },
         "ucsc": {
           "team_id": "ucsc",
-          "wins": 1,
-          "losses": 1,
-          "pf": 24,
-          "pa": 25,
-          "pd": -1
+          "wins": 2,
+          "losses": 2,
+          "pf": 50,
+          "pa": 48,
+          "pd": 2
         },
         "georgia-tech": {
           "team_id": "georgia-tech",
-          "wins": 1,
-          "losses": 1,
-          "pf": 23,
-          "pa": 27,
-          "pd": -4
+          "wins": 2,
+          "losses": 2,
+          "pf": 47,
+          "pa": 52,
+          "pd": -5
         },
         "texas": {
           "team_id": "texas",
-          "wins": 1,
-          "losses": 1,
-          "pf": 26,
-          "pa": 22,
-          "pd": 4
+          "wins": 2,
+          "losses": 2,
+          "pf": 48,
+          "pa": 48,
+          "pd": 0
         },
         "utah": {
           "team_id": "utah",
           "wins": 0,
-          "losses": 2,
-          "pf": 20,
-          "pa": 29,
-          "pd": -9
+          "losses": 4,
+          "pf": 42,
+          "pa": 59,
+          "pd": -17
         }
       },
       "tiebreak_trace": [
@@ -673,100 +673,81 @@
           "metric_values": {
             "ucsc": 1.0,
             "georgia-tech": 1.0,
-            "texas": 0.0
+            "texas": 1.0
           },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
+          "outcome": "all_still_tied",
+          "note": ""
         },
         {
-          "rule": 2,
+          "rule": 3,
           "tied_team_ids": [
             "georgia-tech",
+            "texas",
             "ucsc"
           ],
           "metric_values": {
-            "georgia-tech": 0.0,
-            "ucsc": 1.0
+            "ucsc": 3.0,
+            "georgia-tech": -4.0,
+            "texas": 1.0
           },
           "outcome": "split",
-          "note": "split into 2 subgroup(s)"
+          "note": "split into 3 subgroup(s)"
         }
       ],
-      "usau_tie_hints": {
-        "oregon": "",
-        "ucsc": "1-0,5[-1]",
-        "georgia-tech": "1-1,-4[-4]",
-        "texas": "0-1,-1[+4]",
-        "utah": ""
-      }
+      "usau_tie_hints": {}
     },
     {
       "pool": "B",
       "ordered_team_ids": [
         "colorado",
         "oregon-state",
-        "maryland",
         "michigan",
+        "maryland",
         "brown"
       ],
       "rows": {
         "colorado": {
           "team_id": "colorado",
-          "wins": 2,
+          "wins": 4,
           "losses": 0,
-          "pf": 30,
-          "pa": 13,
-          "pd": 17
+          "pf": 60,
+          "pa": 32,
+          "pd": 28
         },
         "oregon-state": {
           "team_id": "oregon-state",
-          "wins": 1,
+          "wins": 2,
           "losses": 1,
-          "pf": 21,
-          "pa": 27,
-          "pd": -6
+          "pf": 34,
+          "pa": 38,
+          "pd": -4
         },
         "maryland": {
           "team_id": "maryland",
           "wins": 1,
-          "losses": 1,
-          "pf": 20,
-          "pa": 27,
-          "pd": -7
+          "losses": 2,
+          "pf": 31,
+          "pa": 40,
+          "pd": -9
         },
         "michigan": {
           "team_id": "michigan",
           "wins": 1,
-          "losses": 1,
-          "pf": 27,
-          "pa": 26,
-          "pd": 1
+          "losses": 2,
+          "pf": 38,
+          "pa": 41,
+          "pd": -3
         },
         "brown": {
           "team_id": "brown",
           "wins": 0,
-          "losses": 2,
-          "pf": 25,
-          "pa": 30,
-          "pd": -5
+          "losses": 3,
+          "pf": 33,
+          "pa": 45,
+          "pd": -12
         }
       },
       "tiebreak_trace": [
-        {
-          "rule": 2,
-          "tied_team_ids": [
-            "maryland",
-            "michigan",
-            "oregon-state"
-          ],
-          "metric_values": {
-            "oregon-state": 1.0,
-            "maryland": 0.0,
-            "michigan": 0.0
-          },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
-        },
         {
           "rule": 2,
           "tied_team_ids": [
@@ -800,82 +781,76 @@
             "michigan"
           ],
           "metric_values": {
-            "maryland": 3.0,
-            "michigan": 2.0
+            "maryland": -9.0,
+            "michigan": -3.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
         }
       ],
-      "usau_tie_hints": {
-        "colorado": "",
-        "oregon-state": "1-0,1[-6]",
-        "maryland": "0-0,0[-7]",
-        "michigan": "0-1,-1[+1]",
-        "brown": ""
-      }
+      "usau_tie_hints": {}
     },
     {
       "pool": "C",
       "ordered_team_ids": [
         "carleton",
-        "penn-state",
         "cal-poly-slo",
+        "penn-state",
         "washington",
         "mcgill"
       ],
       "rows": {
         "carleton": {
           "team_id": "carleton",
-          "wins": 2,
+          "wins": 4,
           "losses": 0,
-          "pf": 30,
-          "pa": 20,
-          "pd": 10
+          "pf": 60,
+          "pa": 40,
+          "pd": 20
         },
         "penn-state": {
           "team_id": "penn-state",
           "wins": 2,
-          "losses": 0,
-          "pf": 29,
-          "pa": 21,
-          "pd": 8
+          "losses": 1,
+          "pf": 42,
+          "pa": 36,
+          "pd": 6
         },
         "cal-poly-slo": {
           "team_id": "cal-poly-slo",
-          "wins": 1,
+          "wins": 2,
           "losses": 1,
-          "pf": 25,
-          "pa": 22,
-          "pd": 3
+          "pf": 40,
+          "pa": 33,
+          "pd": 7
         },
         "washington": {
           "team_id": "washington",
           "wins": 0,
-          "losses": 2,
-          "pf": 23,
-          "pa": 29,
-          "pd": -6
+          "losses": 3,
+          "pf": 34,
+          "pa": 44,
+          "pd": -10
         },
         "mcgill": {
           "team_id": "mcgill",
           "wins": 0,
-          "losses": 2,
-          "pf": 15,
-          "pa": 30,
-          "pd": -15
+          "losses": 3,
+          "pf": 22,
+          "pa": 45,
+          "pd": -23
         }
       },
       "tiebreak_trace": [
         {
           "rule": 2,
           "tied_team_ids": [
-            "carleton",
+            "cal-poly-slo",
             "penn-state"
           ],
           "metric_values": {
-            "carleton": 0.0,
-            "penn-state": 0.0
+            "penn-state": 0.0,
+            "cal-poly-slo": 0.0
           },
           "outcome": "all_still_tied",
           "note": ""
@@ -883,12 +858,12 @@
         {
           "rule": 3,
           "tied_team_ids": [
-            "carleton",
+            "cal-poly-slo",
             "penn-state"
           ],
           "metric_values": {
-            "carleton": 0.0,
-            "penn-state": 0.0
+            "penn-state": 0.0,
+            "cal-poly-slo": 0.0
           },
           "outcome": "all_still_tied",
           "note": ""
@@ -896,12 +871,12 @@
         {
           "rule": 4,
           "tied_team_ids": [
-            "carleton",
+            "cal-poly-slo",
             "penn-state"
           ],
           "metric_values": {
-            "carleton": 5.0,
-            "penn-state": 1.0
+            "penn-state": 6.0,
+            "cal-poly-slo": 7.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -939,20 +914,14 @@
             "washington"
           ],
           "metric_values": {
-            "washington": -1.0,
-            "mcgill": -7.0
+            "washington": -10.0,
+            "mcgill": -23.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
         }
       ],
-      "usau_tie_hints": {
-        "carleton": "0-0,0[+10]",
-        "penn-state": "0-0,0[+8]",
-        "cal-poly-slo": "",
-        "washington": "0-0,0",
-        "mcgill": "0-0,0"
-      }
+      "usau_tie_hints": {}
     },
     {
       "pool": "D",
@@ -966,27 +935,27 @@
       "rows": {
         "pittsburgh": {
           "team_id": "pittsburgh",
-          "wins": 2,
+          "wins": 3,
           "losses": 0,
-          "pf": 30,
-          "pa": 20,
-          "pd": 10
+          "pf": 45,
+          "pa": 34,
+          "pd": 11
         },
         "massachusetts": {
           "team_id": "massachusetts",
-          "wins": 2,
+          "wins": 3,
           "losses": 0,
-          "pf": 30,
-          "pa": 20,
-          "pd": 10
+          "pf": 45,
+          "pa": 27,
+          "pd": 18
         },
         "north-carolina": {
           "team_id": "north-carolina",
           "wins": 1,
-          "losses": 1,
-          "pf": 25,
-          "pa": 20,
-          "pd": 5
+          "losses": 2,
+          "pf": 39,
+          "pa": 35,
+          "pd": 4
         },
         "western-washington": {
           "team_id": "western-washington",
@@ -999,10 +968,10 @@
         "yale": {
           "team_id": "yale",
           "wins": 0,
-          "losses": 2,
-          "pf": 14,
-          "pa": 30,
-          "pd": -16
+          "losses": 3,
+          "pf": 21,
+          "pa": 45,
+          "pd": -24
         }
       },
       "tiebreak_trace": [
@@ -1039,59 +1008,14 @@
             "pittsburgh"
           ],
           "metric_values": {
-            "pittsburgh": 4.0,
-            "massachusetts": 5.0
-          },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
-        },
-        {
-          "rule": 2,
-          "tied_team_ids": [
-            "western-washington",
-            "yale"
-          ],
-          "metric_values": {
-            "western-washington": 0.0,
-            "yale": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 3,
-          "tied_team_ids": [
-            "western-washington",
-            "yale"
-          ],
-          "metric_values": {
-            "western-washington": 0.0,
-            "yale": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 4,
-          "tied_team_ids": [
-            "western-washington",
-            "yale"
-          ],
-          "metric_values": {
-            "western-washington": -4.0,
-            "yale": -6.0
+            "pittsburgh": 11.0,
+            "massachusetts": 18.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
         }
       ],
-      "usau_tie_hints": {
-        "pittsburgh": "0-0,0 || 0-0,0[+10]",
-        "massachusetts": "0-0,0 || 0-0,0[+10]",
-        "north-carolina": "",
-        "western-washington": "0-0,0",
-        "yale": "0-0,0"
-      }
+      "usau_tie_hints": {}
     }
   ]
 }
