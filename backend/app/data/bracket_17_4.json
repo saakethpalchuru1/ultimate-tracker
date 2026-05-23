@@ -1,7 +1,7 @@
 {
   "bracket_id": "17.4",
   "name": "20 teams, four teams advance (D-I College Nationals)",
-  "description": "Standard USAU 20-team format per Bracket 17.4 of the UPA Manual of Tournament Formats. Pool 1st seeds go direct to quarters; pool 2nd and 3rd play prequarters with A<->D and B<->C crossovers. Verified against the published 2026 D-I Men's bracket diagram.",
+  "description": "USAU 20-team format. Pool 1st seeds go direct to quarters; pool 2nd and 3rd play prequarters with A<->D and B<->C crossovers (per 2026 D-I Men's bracket diagram).",
   "rounds": [
     {
       "name": "Prequarterfinals",
@@ -31,7 +31,7 @@
     {
       "name": "Final",
       "games": [
-        {"id": "F",   "home": "W:SF1", "away": "W:SF2"}
+        {"id": "F", "home": "W:SF1", "away": "W:SF2"}
       ]
     }
   ]
