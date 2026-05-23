@@ -204,9 +204,9 @@
                 "utah"
               ],
               "metric_values": {
-                "georgia-tech": 0.0,
+                "georgia-tech": -1.0,
                 "texas": 4.0,
-                "utah": -4.0
+                "utah": -3.0
               },
               "outcome": "split",
               "note": "split into 3 subgroup(s)"
@@ -445,8 +445,8 @@
                 "oregon-state"
               ],
               "metric_values": {
-                "oregon-state": -1.0,
-                "maryland": 1.0,
+                "oregon-state": -2.0,
+                "maryland": 2.0,
                 "brown": 0.0
               },
               "outcome": "split",
@@ -516,24 +516,11 @@
               ],
               "metric_values": {
                 "penn-state": -2.0,
-                "cal-poly-slo": 1.0,
-                "washington": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "cal-poly-slo",
-                "washington"
-              ],
-              "metric_values": {
                 "cal-poly-slo": 0.0,
-                "washington": 1.0
+                "washington": 2.0
               },
               "outcome": "split",
-              "note": "split into 2 subgroup(s)"
+              "note": "split into 3 subgroup(s)"
             }
           ]
         },
@@ -682,8 +669,8 @@
                 "washington"
               ],
               "metric_values": {
-                "cal-poly-slo": 6.0,
-                "washington": -1.0,
+                "cal-poly-slo": 5.0,
+                "washington": 0.0,
                 "mcgill": -5.0
               },
               "outcome": "split",
@@ -746,24 +733,11 @@
               ],
               "metric_values": {
                 "penn-state": -2.0,
-                "cal-poly-slo": 1.0,
-                "washington": 1.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "cal-poly-slo",
-                "washington"
-              ],
-              "metric_values": {
                 "cal-poly-slo": 0.0,
-                "washington": 1.0
+                "washington": 2.0
               },
               "outcome": "split",
-              "note": "split into 2 subgroup(s)"
+              "note": "split into 3 subgroup(s)"
             }
           ]
         },
@@ -1371,9 +1345,9 @@
                 "utah"
               ],
               "metric_values": {
-                "georgia-tech": 0.0,
+                "georgia-tech": -1.0,
                 "texas": 4.0,
-                "utah": -4.0
+                "utah": -3.0
               },
               "outcome": "split",
               "note": "split into 3 subgroup(s)"
