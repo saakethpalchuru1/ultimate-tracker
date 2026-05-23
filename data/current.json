@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T20:46:08+00:00",
+  "generated_at": "2026-05-23T20:48:09+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -383,7 +383,7 @@
       "pool": "B",
       "team1": "oregon-state",
       "team2": "brown",
-      "score1": 1,
+      "score1": 0,
       "score2": 1,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
@@ -702,8 +702,8 @@
       "pool": "B",
       "ordered_team_ids": [
         "colorado",
-        "oregon-state",
         "michigan",
+        "oregon-state",
         "brown",
         "maryland"
       ],
@@ -719,10 +719,10 @@
         "oregon-state": {
           "team_id": "oregon-state",
           "wins": 2,
-          "losses": 1,
-          "pf": 37,
+          "losses": 2,
+          "pf": 36,
           "pa": 41,
-          "pd": -4
+          "pd": -5
         },
         "maryland": {
           "team_id": "maryland",
@@ -742,14 +742,45 @@
         },
         "brown": {
           "team_id": "brown",
-          "wins": 1,
+          "wins": 2,
           "losses": 2,
           "pf": 41,
-          "pa": 40,
-          "pd": 1
+          "pa": 39,
+          "pd": 2
         }
       },
-      "tiebreak_trace": [],
+      "tiebreak_trace": [
+        {
+          "rule": 2,
+          "tied_team_ids": [
+            "brown",
+            "michigan",
+            "oregon-state"
+          ],
+          "metric_values": {
+            "oregon-state": 1.0,
+            "michigan": 1.0,
+            "brown": 1.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 3,
+          "tied_team_ids": [
+            "brown",
+            "michigan",
+            "oregon-state"
+          ],
+          "metric_values": {
+            "oregon-state": 0.0,
+            "michigan": 1.0,
+            "brown": -1.0
+          },
+          "outcome": "split",
+          "note": "split into 3 subgroup(s)"
+        }
+      ],
       "usau_tie_hints": {
         "colorado": "",
         "oregon-state": "",
