@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T16:42:10+00:00",
+  "generated_at": "2026-05-23T16:44:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -251,7 +251,7 @@
       "pool": "A",
       "team1": "georgia-tech",
       "team2": "utah",
-      "score1": 11,
+      "score1": 12,
       "score2": 13,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
@@ -362,7 +362,7 @@
       "team1": "oregon-state",
       "team2": "maryland",
       "score1": 13,
-      "score2": 10,
+      "score2": 11,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "207"
@@ -461,7 +461,7 @@
       "team1": "cal-poly-slo",
       "team2": "washington",
       "score1": 10,
-      "score2": 10,
+      "score2": 11,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "206"
@@ -641,9 +641,9 @@
           "team_id": "georgia-tech",
           "wins": 1,
           "losses": 2,
-          "pf": 34,
+          "pf": 35,
           "pa": 40,
-          "pd": -6
+          "pd": -5
         },
         "texas": {
           "team_id": "texas",
@@ -658,8 +658,8 @@
           "wins": 2,
           "losses": 2,
           "pf": 48,
-          "pa": 50,
-          "pd": -2
+          "pa": 51,
+          "pd": -3
         }
       },
       "tiebreak_trace": [
@@ -723,16 +723,16 @@
           "wins": 2,
           "losses": 1,
           "pf": 34,
-          "pa": 37,
-          "pd": -3
+          "pa": 38,
+          "pd": -4
         },
         "maryland": {
           "team_id": "maryland",
           "wins": 1,
           "losses": 2,
-          "pf": 30,
+          "pf": 31,
           "pa": 40,
-          "pd": -10
+          "pd": -9
         },
         "michigan": {
           "team_id": "michigan",
@@ -800,21 +800,11 @@
             "michigan"
           ],
           "metric_values": {
-            "maryland": -10.0,
+            "maryland": -9.0,
             "michigan": -10.0
           },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 4,
-          "tied_team_ids": [
-            "maryland",
-            "michigan"
-          ],
-          "metric_values": {},
-          "outcome": "all_still_tied",
-          "note": "exhausted implemented rules; fell back to deterministic order"
+          "outcome": "split",
+          "note": "split into 2 subgroup(s)"
         }
       ],
       "usau_tie_hints": {
@@ -830,8 +820,8 @@
       "ordered_team_ids": [
         "carleton",
         "penn-state",
-        "cal-poly-slo",
         "washington",
+        "cal-poly-slo",
         "mcgill"
       ],
       "rows": {
@@ -854,18 +844,18 @@
         "cal-poly-slo": {
           "team_id": "cal-poly-slo",
           "wins": 1,
-          "losses": 1,
+          "losses": 2,
           "pf": 35,
-          "pa": 32,
-          "pd": 3
+          "pa": 33,
+          "pd": 2
         },
         "washington": {
           "team_id": "washington",
-          "wins": 0,
+          "wins": 1,
           "losses": 2,
-          "pf": 33,
+          "pf": 34,
           "pa": 39,
-          "pd": -6
+          "pd": -5
         },
         "mcgill": {
           "team_id": "mcgill",
@@ -880,38 +870,12 @@
         {
           "rule": 2,
           "tied_team_ids": [
-            "mcgill",
+            "cal-poly-slo",
             "washington"
           ],
           "metric_values": {
-            "washington": 0.0,
-            "mcgill": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 3,
-          "tied_team_ids": [
-            "mcgill",
-            "washington"
-          ],
-          "metric_values": {
-            "washington": 0.0,
-            "mcgill": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 4,
-          "tied_team_ids": [
-            "mcgill",
-            "washington"
-          ],
-          "metric_values": {
-            "washington": -1.0,
-            "mcgill": -15.0
+            "cal-poly-slo": 0.0,
+            "washington": 1.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
