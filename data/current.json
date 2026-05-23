@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T16:30:05+00:00",
+  "generated_at": "2026-05-23T16:32:10+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -252,7 +252,7 @@
       "team1": "georgia-tech",
       "team2": "utah",
       "score1": 10,
-      "score2": 11,
+      "score2": 12,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "219"
@@ -350,7 +350,7 @@
       "pool": "B",
       "team1": "colorado",
       "team2": "brown",
-      "score1": 7,
+      "score1": 8,
       "score2": 12,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
@@ -361,7 +361,7 @@
       "pool": "B",
       "team1": "oregon-state",
       "team2": "maryland",
-      "score1": 10,
+      "score1": 11,
       "score2": 9,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
@@ -450,7 +450,7 @@
       "team1": "carleton",
       "team2": "penn-state",
       "score1": 14,
-      "score2": 6,
+      "score2": 7,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "202"
@@ -642,8 +642,8 @@
           "wins": 1,
           "losses": 2,
           "pf": 33,
-          "pa": 38,
-          "pd": -5
+          "pa": 39,
+          "pd": -6
         },
         "texas": {
           "team_id": "texas",
@@ -657,9 +657,9 @@
           "team_id": "utah",
           "wins": 2,
           "losses": 2,
-          "pf": 46,
+          "pf": 47,
           "pa": 49,
-          "pd": -3
+          "pd": -2
         }
       },
       "tiebreak_trace": [
@@ -714,25 +714,25 @@
           "team_id": "colorado",
           "wins": 3,
           "losses": 1,
-          "pf": 52,
+          "pf": 53,
           "pa": 29,
-          "pd": 23
+          "pd": 24
         },
         "oregon-state": {
           "team_id": "oregon-state",
           "wins": 2,
           "losses": 1,
-          "pf": 31,
+          "pf": 32,
           "pa": 36,
-          "pd": -5
+          "pd": -4
         },
         "maryland": {
           "team_id": "maryland",
           "wins": 1,
           "losses": 2,
           "pf": 29,
-          "pa": 37,
-          "pd": -8
+          "pa": 38,
+          "pd": -9
         },
         "michigan": {
           "team_id": "michigan",
@@ -747,8 +747,8 @@
           "wins": 1,
           "losses": 2,
           "pf": 37,
-          "pa": 37,
-          "pd": 0
+          "pa": 38,
+          "pd": -1
         }
       },
       "tiebreak_trace": [
@@ -800,7 +800,7 @@
             "michigan"
           ],
           "metric_values": {
-            "maryland": -8.0,
+            "maryland": -9.0,
             "michigan": -10.0
           },
           "outcome": "split",
@@ -830,16 +830,16 @@
           "wins": 3,
           "losses": 0,
           "pf": 44,
-          "pa": 26,
-          "pd": 18
+          "pa": 27,
+          "pd": 17
         },
         "penn-state": {
           "team_id": "penn-state",
           "wins": 2,
           "losses": 1,
-          "pf": 35,
+          "pf": 36,
           "pa": 35,
-          "pd": 0
+          "pd": 1
         },
         "cal-poly-slo": {
           "team_id": "cal-poly-slo",
