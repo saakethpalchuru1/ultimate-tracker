@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T20:28:08+00:00",
+  "generated_at": "2026-05-23T20:30:19+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -373,7 +373,7 @@
       "team1": "michigan",
       "team2": "maryland",
       "score1": 5,
-      "score2": 5,
+      "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
       "field": "219"
@@ -384,7 +384,7 @@
       "team1": "oregon-state",
       "team2": "brown",
       "score1": 4,
-      "score2": 5,
+      "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
       "field": "205"
@@ -493,7 +493,7 @@
       "pool": "C",
       "team1": "cal-poly-slo",
       "team2": "penn-state",
-      "score1": 4,
+      "score1": 5,
       "score2": 6,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 3:00 PM",
@@ -702,9 +702,9 @@
       "pool": "B",
       "ordered_team_ids": [
         "colorado",
-        "brown",
-        "oregon-state",
         "maryland",
+        "oregon-state",
+        "brown",
         "michigan"
       ],
       "rows": {
@@ -721,32 +721,32 @@
           "wins": 2,
           "losses": 2,
           "pf": 40,
-          "pa": 45,
-          "pd": -5
+          "pa": 46,
+          "pd": -6
         },
         "maryland": {
           "team_id": "maryland",
-          "wins": 1,
+          "wins": 2,
           "losses": 2,
-          "pf": 38,
+          "pf": 39,
           "pa": 47,
-          "pd": -9
+          "pd": -8
         },
         "michigan": {
           "team_id": "michigan",
           "wins": 1,
-          "losses": 2,
+          "losses": 3,
           "pf": 36,
-          "pa": 46,
-          "pd": -10
+          "pa": 47,
+          "pd": -11
         },
         "brown": {
           "team_id": "brown",
           "wins": 2,
           "losses": 2,
-          "pf": 45,
+          "pf": 46,
           "pa": 43,
-          "pd": 2
+          "pd": 3
         }
       },
       "tiebreak_trace": [
@@ -754,24 +754,13 @@
           "rule": 2,
           "tied_team_ids": [
             "brown",
+            "maryland",
             "oregon-state"
           ],
           "metric_values": {
-            "oregon-state": 0.0,
+            "oregon-state": 1.0,
+            "maryland": 1.0,
             "brown": 1.0
-          },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
-        },
-        {
-          "rule": 2,
-          "tied_team_ids": [
-            "maryland",
-            "michigan"
-          ],
-          "metric_values": {
-            "maryland": 0.0,
-            "michigan": 0.0
           },
           "outcome": "all_still_tied",
           "note": ""
@@ -779,28 +768,17 @@
         {
           "rule": 3,
           "tied_team_ids": [
+            "brown",
             "maryland",
-            "michigan"
+            "oregon-state"
           ],
           "metric_values": {
-            "maryland": 0.0,
-            "michigan": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 4,
-          "tied_team_ids": [
-            "maryland",
-            "michigan"
-          ],
-          "metric_values": {
-            "maryland": -9.0,
-            "michigan": -10.0
+            "oregon-state": 0.0,
+            "maryland": 1.0,
+            "brown": -1.0
           },
           "outcome": "split",
-          "note": "split into 2 subgroup(s)"
+          "note": "split into 3 subgroup(s)"
         }
       ],
       "usau_tie_hints": {
@@ -834,16 +812,16 @@
           "wins": 3,
           "losses": 1,
           "pf": 42,
-          "pa": 40,
-          "pd": 2
+          "pa": 41,
+          "pd": 1
         },
         "cal-poly-slo": {
           "team_id": "cal-poly-slo",
           "wins": 2,
           "losses": 2,
-          "pf": 44,
+          "pf": 45,
           "pa": 42,
-          "pd": 2
+          "pd": 3
         },
         "washington": {
           "team_id": "washington",
