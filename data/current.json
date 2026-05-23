@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T18:36:07+00:00",
+  "generated_at": "2026-05-23T18:38:09+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -273,7 +273,7 @@
       "pool": "A",
       "team1": "oregon",
       "team2": "georgia-tech",
-      "score1": 8,
+      "score1": 9,
       "score2": 3,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -625,9 +625,9 @@
           "team_id": "oregon",
           "wins": 4,
           "losses": 0,
-          "pf": 53,
+          "pf": 54,
           "pa": 26,
-          "pd": 27
+          "pd": 28
         },
         "ucsc": {
           "team_id": "ucsc",
@@ -642,8 +642,8 @@
           "wins": 2,
           "losses": 2,
           "pf": 41,
-          "pa": 49,
-          "pd": -8
+          "pa": 50,
+          "pd": -9
         },
         "texas": {
           "team_id": "texas",
