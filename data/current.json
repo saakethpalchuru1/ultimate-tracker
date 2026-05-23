@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T15:54:05+00:00",
+  "generated_at": "2026-05-23T15:56:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -450,7 +450,7 @@
       "team1": "carleton",
       "team2": "penn-state",
       "score1": 7,
-      "score2": 1,
+      "score2": 2,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "202"
@@ -830,16 +830,16 @@
           "wins": 3,
           "losses": 0,
           "pf": 37,
-          "pa": 21,
-          "pd": 16
+          "pa": 22,
+          "pd": 15
         },
         "penn-state": {
           "team_id": "penn-state",
           "wins": 2,
           "losses": 1,
-          "pf": 30,
+          "pf": 31,
           "pa": 28,
-          "pd": 2
+          "pd": 3
         },
         "cal-poly-slo": {
           "team_id": "cal-poly-slo",
@@ -900,7 +900,7 @@
             "penn-state"
           ],
           "metric_values": {
-            "penn-state": 2.0,
+            "penn-state": 3.0,
             "cal-poly-slo": 6.0
           },
           "outcome": "split",
