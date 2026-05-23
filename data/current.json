@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T16:36:06+00:00",
+  "generated_at": "2026-05-23T16:38:09+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -252,7 +252,7 @@
       "team1": "georgia-tech",
       "team2": "utah",
       "score1": 11,
-      "score2": 12,
+      "score2": 13,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "219"
@@ -351,7 +351,7 @@
       "team1": "colorado",
       "team2": "brown",
       "score1": 9,
-      "score2": 13,
+      "score2": 14,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "203"
@@ -642,8 +642,8 @@
           "wins": 1,
           "losses": 2,
           "pf": 34,
-          "pa": 39,
-          "pd": -5
+          "pa": 40,
+          "pd": -6
         },
         "texas": {
           "team_id": "texas",
@@ -657,9 +657,9 @@
           "team_id": "utah",
           "wins": 2,
           "losses": 2,
-          "pf": 47,
+          "pf": 48,
           "pa": 50,
-          "pd": -3
+          "pd": -2
         }
       },
       "tiebreak_trace": [
@@ -715,8 +715,8 @@
           "wins": 3,
           "losses": 1,
           "pf": 54,
-          "pa": 30,
-          "pd": 24
+          "pa": 31,
+          "pd": 23
         },
         "oregon-state": {
           "team_id": "oregon-state",
@@ -746,9 +746,9 @@
           "team_id": "brown",
           "wins": 1,
           "losses": 2,
-          "pf": 38,
+          "pf": 39,
           "pa": 39,
-          "pd": -1
+          "pd": 0
         }
       },
       "tiebreak_trace": [
