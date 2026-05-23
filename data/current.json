@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T19:04:07+00:00",
+  "generated_at": "2026-05-23T19:06:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -263,7 +263,7 @@
       "team1": "ucsc",
       "team2": "texas",
       "score1": 10,
-      "score2": 9,
+      "score2": 10,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "219"
@@ -581,7 +581,7 @@
       "pool": "D",
       "team1": "massachusetts",
       "team2": "pittsburgh",
-      "score1": 11,
+      "score1": 12,
       "score2": 7,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -592,7 +592,7 @@
       "pool": "D",
       "team1": "north-carolina",
       "team2": "western-washington",
-      "score1": 9,
+      "score1": 10,
       "score2": 10,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -615,8 +615,8 @@
       "pool": "A",
       "ordered_team_ids": [
         "oregon",
-        "ucsc",
         "georgia-tech",
+        "ucsc",
         "texas",
         "utah"
       ],
@@ -631,11 +631,11 @@
         },
         "ucsc": {
           "team_id": "ucsc",
-          "wins": 2,
+          "wins": 1,
           "losses": 2,
           "pf": 44,
-          "pa": 49,
-          "pd": -5
+          "pa": 50,
+          "pd": -6
         },
         "georgia-tech": {
           "team_id": "georgia-tech",
@@ -648,10 +648,10 @@
         "texas": {
           "team_id": "texas",
           "wins": 1,
-          "losses": 3,
-          "pf": 38,
+          "losses": 2,
+          "pf": 39,
           "pa": 47,
-          "pd": -9
+          "pd": -8
         },
         "utah": {
           "team_id": "utah",
@@ -666,25 +666,38 @@
         {
           "rule": 2,
           "tied_team_ids": [
-            "georgia-tech",
+            "texas",
             "ucsc"
           ],
           "metric_values": {
-            "ucsc": 1.0,
-            "georgia-tech": 0.0
+            "ucsc": 0.0,
+            "texas": 0.0
           },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
+          "outcome": "all_still_tied",
+          "note": ""
         },
         {
-          "rule": 2,
+          "rule": 3,
           "tied_team_ids": [
             "texas",
-            "utah"
+            "ucsc"
           ],
           "metric_values": {
-            "texas": 1.0,
-            "utah": 0.0
+            "ucsc": 0.0,
+            "texas": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 4,
+          "tied_team_ids": [
+            "texas",
+            "ucsc"
+          ],
+          "metric_values": {
+            "ucsc": -6.0,
+            "texas": -8.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -957,8 +970,8 @@
       "ordered_team_ids": [
         "massachusetts",
         "pittsburgh",
-        "western-washington",
         "north-carolina",
+        "western-washington",
         "yale"
       ],
       "rows": {
@@ -967,32 +980,32 @@
           "wins": 3,
           "losses": 1,
           "pf": 52,
-          "pa": 43,
-          "pd": 9
+          "pa": 44,
+          "pd": 8
         },
         "massachusetts": {
           "team_id": "massachusetts",
           "wins": 4,
           "losses": 0,
-          "pf": 56,
+          "pf": 57,
           "pa": 33,
-          "pd": 23
+          "pd": 24
         },
         "north-carolina": {
           "team_id": "north-carolina",
           "wins": 1,
-          "losses": 3,
-          "pf": 46,
+          "losses": 2,
+          "pf": 47,
           "pa": 45,
-          "pd": 1
+          "pd": 2
         },
         "western-washington": {
           "team_id": "western-washington",
-          "wins": 1,
+          "wins": 0,
           "losses": 2,
           "pf": 31,
-          "pa": 39,
-          "pd": -8
+          "pa": 40,
+          "pd": -9
         },
         "yale": {
           "team_id": "yale",
