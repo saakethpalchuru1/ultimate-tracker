@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T17:00:17+00:00",
+  "generated_at": "2026-05-23T17:02:32+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -460,8 +460,8 @@
       "pool": "C",
       "team1": "cal-poly-slo",
       "team2": "washington",
-      "score1": 13,
-      "score2": 13,
+      "score1": 14,
+      "score2": 14,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "206"
@@ -856,16 +856,16 @@
           "team_id": "cal-poly-slo",
           "wins": 1,
           "losses": 1,
-          "pf": 38,
-          "pa": 35,
+          "pf": 39,
+          "pa": 36,
           "pd": 3
         },
         "washington": {
           "team_id": "washington",
           "wins": 0,
           "losses": 2,
-          "pf": 36,
-          "pa": 42,
+          "pf": 37,
+          "pa": 43,
           "pd": -6
         },
         "mcgill": {
