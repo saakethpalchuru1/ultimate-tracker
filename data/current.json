@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T19:02:06+00:00",
+  "generated_at": "2026-05-23T19:04:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -275,7 +275,7 @@
       "team2": "georgia-tech",
       "score1": 15,
       "score2": 6,
-      "status": "in_progress",
+      "status": "final",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "210"
     },
@@ -472,7 +472,7 @@
       "team1": "carleton",
       "team2": "mcgill",
       "score1": 12,
-      "score2": 6,
+      "score2": 7,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "204"
@@ -582,7 +582,7 @@
       "team1": "massachusetts",
       "team2": "pittsburgh",
       "score1": 11,
-      "score2": 6,
+      "score2": 7,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "205"
@@ -593,7 +593,7 @@
       "team1": "north-carolina",
       "team2": "western-washington",
       "score1": 9,
-      "score2": 9,
+      "score2": 10,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "202"
@@ -828,8 +828,8 @@
           "wins": 4,
           "losses": 0,
           "pf": 57,
-          "pa": 33,
-          "pd": 24
+          "pa": 34,
+          "pd": 23
         },
         "penn-state": {
           "team_id": "penn-state",
@@ -859,9 +859,9 @@
           "team_id": "mcgill",
           "wins": 0,
           "losses": 3,
-          "pf": 21,
+          "pf": 22,
           "pa": 42,
-          "pd": -21
+          "pd": -20
         }
       },
       "tiebreak_trace": [
@@ -938,7 +938,7 @@
           ],
           "metric_values": {
             "washington": -7.0,
-            "mcgill": -21.0
+            "mcgill": -20.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -957,8 +957,8 @@
       "ordered_team_ids": [
         "massachusetts",
         "pittsburgh",
-        "north-carolina",
         "western-washington",
+        "north-carolina",
         "yale"
       ],
       "rows": {
@@ -966,33 +966,33 @@
           "team_id": "pittsburgh",
           "wins": 3,
           "losses": 1,
-          "pf": 51,
+          "pf": 52,
           "pa": 43,
-          "pd": 8
+          "pd": 9
         },
         "massachusetts": {
           "team_id": "massachusetts",
           "wins": 4,
           "losses": 0,
           "pf": 56,
-          "pa": 32,
-          "pd": 24
+          "pa": 33,
+          "pd": 23
         },
         "north-carolina": {
           "team_id": "north-carolina",
           "wins": 1,
-          "losses": 2,
+          "losses": 3,
           "pf": 46,
-          "pa": 44,
-          "pd": 2
+          "pa": 45,
+          "pd": 1
         },
         "western-washington": {
           "team_id": "western-washington",
-          "wins": 0,
+          "wins": 1,
           "losses": 2,
-          "pf": 30,
+          "pf": 31,
           "pa": 39,
-          "pd": -9
+          "pd": -8
         },
         "yale": {
           "team_id": "yale",
