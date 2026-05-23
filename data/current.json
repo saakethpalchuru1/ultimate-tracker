@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T18:14:05+00:00",
+  "generated_at": "2026-05-23T18:16:07+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -262,7 +262,7 @@
       "pool": "A",
       "team1": "ucsc",
       "team2": "texas",
-      "score1": 2,
+      "score1": 3,
       "score2": 3,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -273,7 +273,7 @@
       "pool": "A",
       "team1": "oregon",
       "team2": "georgia-tech",
-      "score1": 3,
+      "score1": 5,
       "score2": 1,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -472,7 +472,7 @@
       "team1": "carleton",
       "team2": "mcgill",
       "score1": 3,
-      "score2": 2,
+      "score2": 3,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "204"
@@ -581,7 +581,7 @@
       "pool": "D",
       "team1": "massachusetts",
       "team2": "pittsburgh",
-      "score1": 2,
+      "score1": 3,
       "score2": 2,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -592,7 +592,7 @@
       "pool": "D",
       "team1": "north-carolina",
       "team2": "western-washington",
-      "score1": 2,
+      "score1": 3,
       "score2": 1,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -616,42 +616,42 @@
       "ordered_team_ids": [
         "oregon",
         "georgia-tech",
+        "ucsc",
         "texas",
-        "utah",
-        "ucsc"
+        "utah"
       ],
       "rows": {
         "oregon": {
           "team_id": "oregon",
           "wins": 4,
           "losses": 0,
-          "pf": 48,
+          "pf": 50,
           "pa": 24,
-          "pd": 24
+          "pd": 26
         },
         "ucsc": {
           "team_id": "ucsc",
           "wins": 1,
-          "losses": 3,
-          "pf": 36,
+          "losses": 2,
+          "pf": 37,
           "pa": 43,
-          "pd": -7
+          "pd": -6
         },
         "georgia-tech": {
           "team_id": "georgia-tech",
           "wins": 2,
           "losses": 2,
           "pf": 39,
-          "pa": 44,
-          "pd": -5
+          "pa": 46,
+          "pd": -7
         },
         "texas": {
           "team_id": "texas",
-          "wins": 2,
+          "wins": 1,
           "losses": 2,
           "pf": 32,
-          "pa": 39,
-          "pd": -7
+          "pa": 40,
+          "pd": -8
         },
         "utah": {
           "team_id": "utah",
@@ -666,25 +666,38 @@
         {
           "rule": 2,
           "tied_team_ids": [
-            "georgia-tech",
-            "texas"
-          ],
-          "metric_values": {
-            "georgia-tech": 1.0,
-            "texas": 0.0
-          },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
-        },
-        {
-          "rule": 2,
-          "tied_team_ids": [
-            "ucsc",
-            "utah"
+            "texas",
+            "ucsc"
           ],
           "metric_values": {
             "ucsc": 0.0,
-            "utah": 1.0
+            "texas": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 3,
+          "tied_team_ids": [
+            "texas",
+            "ucsc"
+          ],
+          "metric_values": {
+            "ucsc": 0.0,
+            "texas": 0.0
+          },
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 4,
+          "tied_team_ids": [
+            "texas",
+            "ucsc"
+          ],
+          "metric_values": {
+            "ucsc": -6.0,
+            "texas": -8.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
@@ -819,17 +832,17 @@
         "carleton",
         "cal-poly-slo",
         "penn-state",
-        "washington",
-        "mcgill"
+        "mcgill",
+        "washington"
       ],
       "rows": {
         "carleton": {
           "team_id": "carleton",
-          "wins": 4,
+          "wins": 3,
           "losses": 0,
           "pf": 48,
-          "pa": 29,
-          "pd": 19
+          "pa": 30,
+          "pd": 18
         },
         "penn-state": {
           "team_id": "penn-state",
@@ -858,10 +871,10 @@
         "mcgill": {
           "team_id": "mcgill",
           "wins": 0,
-          "losses": 3,
-          "pf": 17,
+          "losses": 2,
+          "pf": 18,
           "pa": 33,
-          "pd": -16
+          "pd": -15
         }
       },
       "tiebreak_trace": [
@@ -903,45 +916,6 @@
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
-        },
-        {
-          "rule": 2,
-          "tied_team_ids": [
-            "mcgill",
-            "washington"
-          ],
-          "metric_values": {
-            "washington": 0.0,
-            "mcgill": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 3,
-          "tied_team_ids": [
-            "mcgill",
-            "washington"
-          ],
-          "metric_values": {
-            "washington": 0.0,
-            "mcgill": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 4,
-          "tied_team_ids": [
-            "mcgill",
-            "washington"
-          ],
-          "metric_values": {
-            "washington": -7.0,
-            "mcgill": -16.0
-          },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
         }
       ],
       "usau_tie_hints": {
@@ -965,34 +939,34 @@
         "pittsburgh": {
           "team_id": "pittsburgh",
           "wins": 3,
-          "losses": 0,
+          "losses": 1,
           "pf": 47,
-          "pa": 34,
-          "pd": 13
+          "pa": 35,
+          "pd": 12
         },
         "massachusetts": {
           "team_id": "massachusetts",
-          "wins": 3,
+          "wins": 4,
           "losses": 0,
-          "pf": 47,
+          "pf": 48,
           "pa": 28,
-          "pd": 19
+          "pd": 20
         },
         "north-carolina": {
           "team_id": "north-carolina",
           "wins": 2,
           "losses": 2,
-          "pf": 39,
+          "pf": 40,
           "pa": 36,
-          "pd": 3
+          "pd": 4
         },
         "western-washington": {
           "team_id": "western-washington",
           "wins": 0,
           "losses": 3,
           "pf": 22,
-          "pa": 32,
-          "pd": -10
+          "pa": 33,
+          "pd": -11
         },
         "yale": {
           "team_id": "yale",
@@ -1007,45 +981,6 @@
         {
           "rule": 2,
           "tied_team_ids": [
-            "massachusetts",
-            "pittsburgh"
-          ],
-          "metric_values": {
-            "pittsburgh": 0.0,
-            "massachusetts": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 3,
-          "tied_team_ids": [
-            "massachusetts",
-            "pittsburgh"
-          ],
-          "metric_values": {
-            "pittsburgh": 0.0,
-            "massachusetts": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 4,
-          "tied_team_ids": [
-            "massachusetts",
-            "pittsburgh"
-          ],
-          "metric_values": {
-            "pittsburgh": 13.0,
-            "massachusetts": 19.0
-          },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
-        },
-        {
-          "rule": 2,
-          "tied_team_ids": [
             "western-washington",
             "yale"
           ],
@@ -1076,7 +1011,7 @@
             "yale"
           ],
           "metric_values": {
-            "western-washington": -10.0,
+            "western-washington": -11.0,
             "yale": -25.0
           },
           "outcome": "split",
