@@ -417,52 +417,12 @@
           "final_order": [
             "massachusetts",
             "pittsburgh",
-            "north-carolina",
             "western-washington",
+            "north-carolina",
             "yale"
           ],
-          "margin_sensitive": true,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "north-carolina",
-                "western-washington"
-              ],
-              "metric_values": {
-                "north-carolina": 0.0,
-                "western-washington": 0.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 3,
-              "tied_team_ids": [
-                "north-carolina",
-                "western-washington"
-              ],
-              "metric_values": {
-                "north-carolina": 0.0,
-                "western-washington": 0.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 4,
-              "tied_team_ids": [
-                "north-carolina",
-                "western-washington"
-              ],
-              "metric_values": {
-                "north-carolina": 2.0,
-                "western-washington": -6.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ]
+          "margin_sensitive": false,
+          "tiebreak_trace": []
         },
         {
           "id": 1,
@@ -478,11 +438,42 @@
             "massachusetts",
             "pittsburgh",
             "north-carolina",
-            "yale",
-            "western-washington"
+            "western-washington",
+            "yale"
           ],
-          "margin_sensitive": false,
-          "tiebreak_trace": []
+          "margin_sensitive": true,
+          "tiebreak_trace": [
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "north-carolina",
+                "western-washington",
+                "yale"
+              ],
+              "metric_values": {
+                "north-carolina": 1.0,
+                "western-washington": 1.0,
+                "yale": 1.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "north-carolina",
+                "western-washington",
+                "yale"
+              ],
+              "metric_values": {
+                "north-carolina": 9.0,
+                "western-washington": -2.0,
+                "yale": -7.0
+              },
+              "outcome": "split",
+              "note": "split into 3 subgroup(s)"
+            }
+          ]
         }
       ]
     }
