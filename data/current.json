@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T21:38:06+00:00",
+  "generated_at": "2026-05-23T21:40:17+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -385,7 +385,7 @@
       "team2": "brown",
       "score1": 15,
       "score2": 14,
-      "status": "in_progress",
+      "status": "final",
       "scheduled_at": "Sat 5/23 3:00 PM",
       "field": "205"
     },
@@ -778,11 +778,11 @@
         }
       ],
       "usau_tie_hints": {
-        "colorado": "",
-        "oregon-state": "",
+        "colorado": "1-0,7[+22]",
+        "oregon-state": "0-1,-7[-3]",
         "maryland": "",
-        "brown": "",
-        "michigan": ""
+        "michigan": "1-0,2[-11]",
+        "brown": "0-1,-2[0]"
       }
     },
     {
