@@ -252,7 +252,34 @@
             "brown"
           ],
           "margin_sensitive": false,
-          "tiebreak_trace": []
+          "tiebreak_trace": [
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "colorado",
+                "oregon-state"
+              ],
+              "metric_values": {
+                "colorado": 1.0,
+                "oregon-state": 0.0
+              },
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
+            },
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "brown",
+                "maryland"
+              ],
+              "metric_values": {
+                "maryland": 1.0,
+                "brown": 0.0
+              },
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
+            }
+          ]
         },
         {
           "id": 1,
@@ -277,30 +304,19 @@
             "oregon-state",
             "maryland"
           ],
-          "margin_sensitive": false,
+          "margin_sensitive": true,
           "tiebreak_trace": [
             {
               "rule": 2,
               "tied_team_ids": [
                 "brown",
-                "michigan"
-              ],
-              "metric_values": {
-                "michigan": 1.0,
-                "brown": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "maryland",
+                "michigan",
                 "oregon-state"
               ],
               "metric_values": {
-                "oregon-state": 0.0,
-                "maryland": 0.0
+                "oregon-state": 1.0,
+                "michigan": 1.0,
+                "brown": 1.0
               },
               "outcome": "all_still_tied",
               "note": ""
@@ -308,25 +324,27 @@
             {
               "rule": 3,
               "tied_team_ids": [
-                "maryland",
+                "brown",
+                "michigan",
                 "oregon-state"
               ],
               "metric_values": {
-                "oregon-state": 0.0,
-                "maryland": 0.0
+                "oregon-state": -2.0,
+                "michigan": 1.0,
+                "brown": 1.0
               },
-              "outcome": "all_still_tied",
-              "note": ""
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
             },
             {
-              "rule": 4,
+              "rule": 2,
               "tied_team_ids": [
-                "maryland",
-                "oregon-state"
+                "brown",
+                "michigan"
               ],
               "metric_values": {
-                "oregon-state": -9.0,
-                "maryland": -10.0
+                "brown": 0.0,
+                "michigan": 1.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
@@ -361,38 +379,12 @@
             {
               "rule": 2,
               "tied_team_ids": [
-                "maryland",
+                "colorado",
                 "oregon-state"
               ],
               "metric_values": {
-                "oregon-state": 0.0,
-                "maryland": 0.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 3,
-              "tied_team_ids": [
-                "maryland",
-                "oregon-state"
-              ],
-              "metric_values": {
-                "oregon-state": 0.0,
-                "maryland": 0.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 4,
-              "tied_team_ids": [
-                "maryland",
-                "oregon-state"
-              ],
-              "metric_values": {
-                "oregon-state": -3.0,
-                "maryland": -4.0
+                "colorado": 1.0,
+                "oregon-state": 0.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
@@ -435,8 +427,39 @@
             "oregon-state",
             "michigan"
           ],
-          "margin_sensitive": false,
-          "tiebreak_trace": []
+          "margin_sensitive": true,
+          "tiebreak_trace": [
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "brown",
+                "maryland",
+                "oregon-state"
+              ],
+              "metric_values": {
+                "oregon-state": 1.0,
+                "maryland": 1.0,
+                "brown": 1.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "brown",
+                "maryland",
+                "oregon-state"
+              ],
+              "metric_values": {
+                "oregon-state": -2.0,
+                "maryland": 2.0,
+                "brown": 0.0
+              },
+              "outcome": "split",
+              "note": "split into 3 subgroup(s)"
+            }
+          ]
         }
       ]
     },
