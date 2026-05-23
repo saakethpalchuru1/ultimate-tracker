@@ -1,42 +1,31 @@
-"""
-USAU schedule scraper.
+"""USAU schedule scraper.
 
-play.usaultimate.org is SERVER-rendered (not JS-rendered, despite first
-appearances): the HTML source contains the full schedule and pool standings.
-So we use plain httpx + BeautifulSoup, which means this works on Render's
-standard Python runtime with no Chromium install.
+play.usaultimate.org is server-rendered: a plain httpx GET with a real
+browser User-Agent returns the full schedule HTML, no JS needed.
 
-DOM shape (verified live against the 2026 D-I Men's page):
+DOM shape (verified live):
 
   <h3 class="col_title">Pool A</h3>
-  <div class="pool">
-    <table class="global_table">         <-- standings
-      <tr><th>Team</th><th>W - L</th><th>Tie</th></tr>
-      <tr><td>Oregon (1)</td><td>2 - 0</td><td></td></tr>
-      ...
-    </table>
-  </div>
-  ...
-  <table class="global_table scores_table">   <-- schedule + scores
+  <table class="global_table">         <-- standings (separate from schedule)
+    <tr><th>Team</th><th>W - L</th><th>Tie</th></tr>
+    ...
+  </table>
+  <table class="global_table scores_table">   <-- pool play schedule + scores
     <tr><th>Pool A Schedule & Scores</th></tr>
-    <tr><th>Date</th><th>Time</th><th>Field</th><th>Team 1</th>
-        <th>Team 2</th><th>Score</th><th>Status</th><th>Options</th></tr>
-    <tr><td>Fri 5/22</td><td>8:30 AM</td><td>202</td>
-        <td>Oregon (1)</td><td>Utah (17)</td>
-        <td>15  -  11</td><td>Final</td>...</tr>
+    <tr><th>Date</th>...<th>Score</th><th>Status</th>...</tr>
+    <tr><td>Fri 5/22</td>...<td>15  -  11</td><td>Final</td>...</tr>
     ...
   </table>
 
-Team display text embeds the overall seed in parens: "Oregon (1)". The Tie
-column is USAU's pre-computed tiebreaker data ("1-0,5" = head-to-head 1-0,
-PD +5); we capture it as a sanity-check signal against our own engine
-output.
-
-Live games:
-  * Status text is typically "In Progress" while the game is running.
-  * Score reflects the LIVE running tally (USAU updates as scorekeepers
-    post points). We preserve those running scores -- they're the input
-    to the live margin engine.
+DEFENSIVE STATUS DETECTION:
+USAU has been known to leave a row's status as "Scheduled" while the
+scoreboard is actively updating. We therefore treat any non-Final row
+with a non-zero score as in_progress, regardless of what USAU's status
+column says. Specifically:
+  status == "Final"          -> final
+  "in progress" in status    -> in_progress
+  score is non-zero          -> in_progress  (USAU's label is stale)
+  otherwise                  -> scheduled    (genuinely not started)
 """
 from __future__ import annotations
 
@@ -61,7 +50,6 @@ _SCORE_RE = re.compile(r"^\s*(\d+)\s*-\s*(\d+)\s*$")
 
 
 def fetch_html(url: str, *, timeout: float = 20.0) -> str:
-    """Plain HTTP GET. No Playwright, no JS execution required."""
     r = httpx.get(
         url,
         headers={"User-Agent": USER_AGENT, "Accept": "text/html"},
@@ -73,18 +61,10 @@ def fetch_html(url: str, *, timeout: float = 20.0) -> str:
 
 
 def parse_schedule_html(html: str, teams_by_name: dict[str, Team]) -> tuple[list[Game], dict[str, dict]]:
-    """
-    Returns:
-      - list[Game]: all parsed games (final, in_progress, scheduled)
-      - dict[pool -> {team_id -> tiecol_text}]: USAU's own pre-computed
-        tiebreaker hints from the standings table. Useful for sanity-checking
-        our engine output.
-    """
     soup = BeautifulSoup(html, "html.parser")
     games: list[Game] = []
     usau_tie_hints: dict[str, dict[str, str]] = {}
 
-    # ---- Schedule tables (one per pool) ---- #
     for tbl in soup.find_all("table", class_="scores_table"):
         pool = _extract_pool_from_header(tbl)
         if not pool:
@@ -97,13 +77,11 @@ def parse_schedule_html(html: str, teams_by_name: dict[str, Team]) -> tuple[list
             if game:
                 games.append(game)
 
-    # ---- Standings tables (USAU's tiebreaker hints) ---- #
     for h3 in soup.find_all("h3", class_="col_title"):
         m = re.match(r"Pool\s+([A-D])", h3.get_text(strip=True))
         if not m:
             continue
         pool = m.group(1)
-        # The standings table is the next <table class="global_table"> (without scores_table)
         tbl = h3.find_next("table", class_="global_table")
         if not tbl or "scores_table" in (tbl.get("class") or []):
             continue
@@ -127,7 +105,6 @@ def parse_schedule_html(html: str, teams_by_name: dict[str, Team]) -> tuple[list
 
 
 def _extract_pool_from_header(tbl: Tag) -> Optional[str]:
-    """The first <th> of a schedule table reads 'Pool X Schedule & Scores'."""
     first_th = tbl.find("th")
     if not first_th:
         return None
@@ -161,20 +138,18 @@ def _parse_schedule_row(
         return None
     s1, s2 = int(score_m.group(1)), int(score_m.group(2))
 
+    # DEFENSIVE: USAU sometimes leaves status="Scheduled" while scores
+    # are actively updating. Treat any non-Final row with a non-zero
+    # score as in_progress, regardless of USAU's status text.
     if "final" in status_raw:
         status = "final"
         score1, score2 = s1, s2
-    elif "progress" in status_raw or "in progress" in status_raw:
-        # Live game: preserve the running score
+    elif "in progress" in status_raw or "progress" in status_raw or (s1 + s2) > 0:
         status = "in_progress"
         score1, score2 = s1, s2
     else:
         status = "scheduled"
-        # When USAU shows 0 - 0 with status "Scheduled" the game hasn't started
-        if s1 == 0 and s2 == 0:
-            score1, score2 = None, None
-        else:
-            score1, score2 = s1, s2
+        score1, score2 = None, None
 
     return Game(
         game_id=f"{pool}-{line_id:02d}",
