@@ -8,20 +8,32 @@
       "target_team_id": "texas",
       "opponent_id": "ucsc",
       "current": {
-        "target_score": 0,
-        "opponent_score": 0,
-        "target_lead_by": 0
+        "target_score": 3,
+        "opponent_score": 2,
+        "target_lead_by": 1
       },
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "202",
       "summary": [
         {
+          "finish": 2,
+          "guaranteed_at_or_above_margin": 3,
+          "min_winning_margin_needed": 3,
+          "current_margin": 1,
+          "margin_delta_needed": 2,
+          "human_text": "Win by 3+ points to lock #2. Currently leading by 1; outscore opponent by 2+ from now.",
+          "example_score": [
+            15,
+            12
+          ]
+        },
+        {
           "finish": 3,
           "guaranteed_at_or_above_margin": 1,
           "min_winning_margin_needed": 1,
-          "current_margin": 0,
-          "margin_delta_needed": 1,
-          "human_text": "Win by 1+ points to lock #3. Currently leading by 0; outscore opponent by 1+ from now.",
+          "current_margin": 1,
+          "margin_delta_needed": 0,
+          "human_text": "Already locked: at the current score you're projected to finish #3. Just don't lose the lead.",
           "example_score": [
             15,
             14
@@ -29,32 +41,18 @@
         },
         {
           "finish": 4,
-          "guaranteed_at_or_above_margin": -14,
+          "guaranteed_at_or_above_margin": -12,
           "min_winning_margin_needed": null,
-          "current_margin": 0,
-          "margin_delta_needed": 14,
-          "human_text": "Even a loss by 14 or less locks #4.",
+          "current_margin": 1,
+          "margin_delta_needed": 12,
+          "human_text": "Even a loss by 12 or less locks #4.",
           "example_score": [
-            1,
+            3,
             15
           ]
         }
       ],
       "matrix": [
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": -14,
-          "target_finish": 4,
-          "projected_final_target": 1,
-          "projected_final_opp": 15
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": -13,
-          "target_finish": 4,
-          "projected_final_target": 2,
-          "projected_final_opp": 15
-        },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": -12,
@@ -163,86 +161,79 @@
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 3,
-          "target_finish": 3,
+          "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 12
         },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 4,
-          "target_finish": 3,
+          "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 11
         },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 5,
-          "target_finish": 3,
+          "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 10
         },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 6,
-          "target_finish": 3,
+          "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 9
         },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 7,
-          "target_finish": 3,
+          "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 8
         },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 8,
-          "target_finish": 3,
+          "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 7
         },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 9,
-          "target_finish": 3,
+          "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 6
         },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 10,
-          "target_finish": 3,
+          "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 5
         },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 11,
-          "target_finish": 3,
+          "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 4
         },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 12,
-          "target_finish": 3,
+          "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 3
         },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": 13,
-          "target_finish": 3,
+          "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 2
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": 14,
-          "target_finish": 3,
-          "projected_final_target": 15,
-          "projected_final_opp": 1
         }
       ]
     }
@@ -252,8 +243,8 @@
       "game_id": "A-32",
       "team1": "oregon",
       "team2": "georgia-tech",
-      "score1": 0,
-      "score2": 0,
+      "score1": 4,
+      "score2": 1,
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "210"
     }
