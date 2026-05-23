@@ -11,40 +11,53 @@
           "final_order": [
             "oregon",
             "georgia-tech",
+            "ucsc",
             "texas",
-            "utah",
-            "ucsc"
+            "utah"
           ],
           "margin_sensitive": false,
           "tiebreak_trace": [
             {
               "rule": 2,
               "tied_team_ids": [
-                "georgia-tech",
-                "texas"
-              ],
-              "metric_values": {
-                "georgia-tech": 1.0,
-                "texas": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "ucsc",
-                "utah"
+                "texas",
+                "ucsc"
               ],
               "metric_values": {
                 "ucsc": 0.0,
-                "utah": 1.0
+                "texas": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "texas",
+                "ucsc"
+              ],
+              "metric_values": {
+                "ucsc": 0.0,
+                "texas": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "texas",
+                "ucsc"
+              ],
+              "metric_values": {
+                "ucsc": -6.0,
+                "texas": -8.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
             }
           ],
-          "target_finish": 3
+          "target_finish": 4
         }
       ]
     },
@@ -422,47 +435,7 @@
             "yale"
           ],
           "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "massachusetts",
-                "pittsburgh"
-              ],
-              "metric_values": {
-                "pittsburgh": 0.0,
-                "massachusetts": 0.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 3,
-              "tied_team_ids": [
-                "massachusetts",
-                "pittsburgh"
-              ],
-              "metric_values": {
-                "pittsburgh": 0.0,
-                "massachusetts": 0.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 4,
-              "tied_team_ids": [
-                "massachusetts",
-                "pittsburgh"
-              ],
-              "metric_values": {
-                "pittsburgh": 13.0,
-                "massachusetts": 19.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ]
+          "tiebreak_trace": []
         },
         {
           "id": 1,
@@ -482,47 +455,7 @@
             "western-washington"
           ],
           "margin_sensitive": false,
-          "tiebreak_trace": [
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "massachusetts",
-                "pittsburgh"
-              ],
-              "metric_values": {
-                "pittsburgh": 0.0,
-                "massachusetts": 0.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 3,
-              "tied_team_ids": [
-                "massachusetts",
-                "pittsburgh"
-              ],
-              "metric_values": {
-                "pittsburgh": 0.0,
-                "massachusetts": 0.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 4,
-              "tied_team_ids": [
-                "massachusetts",
-                "pittsburgh"
-              ],
-              "metric_values": {
-                "pittsburgh": 13.0,
-                "massachusetts": 19.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            }
-          ]
+          "tiebreak_trace": []
         }
       ]
     }
@@ -530,50 +463,63 @@
   "target_summary": {
     "target_team_id": "texas",
     "finish_distribution": {
-      "3": 1
+      "4": 1
     },
     "scenarios_by_finish": {
-      "3": [
+      "4": [
         {
           "id": 0,
           "assumed_outcomes": [],
           "final_order": [
             "oregon",
             "georgia-tech",
+            "ucsc",
             "texas",
-            "utah",
-            "ucsc"
+            "utah"
           ],
           "margin_sensitive": false,
           "tiebreak_trace": [
             {
               "rule": 2,
               "tied_team_ids": [
-                "georgia-tech",
-                "texas"
-              ],
-              "metric_values": {
-                "georgia-tech": 1.0,
-                "texas": 0.0
-              },
-              "outcome": "split",
-              "note": "split into 2 subgroup(s)"
-            },
-            {
-              "rule": 2,
-              "tied_team_ids": [
-                "ucsc",
-                "utah"
+                "texas",
+                "ucsc"
               ],
               "metric_values": {
                 "ucsc": 0.0,
-                "utah": 1.0
+                "texas": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "texas",
+                "ucsc"
+              ],
+              "metric_values": {
+                "ucsc": 0.0,
+                "texas": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "texas",
+                "ucsc"
+              ],
+              "metric_values": {
+                "ucsc": -6.0,
+                "texas": -8.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
             }
           ],
-          "target_finish": 3
+          "target_finish": 4
         }
       ]
     }
