@@ -9,8 +9,8 @@
       "opponent_id": "oregon",
       "current": {
         "target_score": 3,
-        "opponent_score": 13,
-        "target_lead_by": -10
+        "opponent_score": 14,
+        "target_lead_by": -11
       },
       "scheduled_at": "Sat 5/23 8:30 AM",
       "field": "203",
@@ -19,7 +19,7 @@
           "finish": 1,
           "guaranteed_at_or_above_margin": null,
           "min_winning_margin_needed": null,
-          "current_margin": -10,
+          "current_margin": -11,
           "margin_delta_needed": null,
           "human_text": "Finish #1 not guaranteed; depends on other games.",
           "example_score": null
@@ -28,7 +28,7 @@
           "finish": 2,
           "guaranteed_at_or_above_margin": null,
           "min_winning_margin_needed": null,
-          "current_margin": -10,
+          "current_margin": -11,
           "margin_delta_needed": null,
           "human_text": "Finish #2 not guaranteed; depends on other games.",
           "example_score": null
@@ -37,7 +37,7 @@
           "finish": 3,
           "guaranteed_at_or_above_margin": null,
           "min_winning_margin_needed": null,
-          "current_margin": -10,
+          "current_margin": -11,
           "margin_delta_needed": null,
           "human_text": "Finish #3 not guaranteed; depends on other games.",
           "example_score": null
@@ -143,13 +143,6 @@
           "projected_final_opp": 14
         },
         {
-          "combo": "georgia-tech beats utah; ucsc beats texas; oregon beats georgia-tech",
-          "target_final_margin": 2,
-          "target_finish": 4,
-          "projected_final_target": 15,
-          "projected_final_opp": 13
-        },
-        {
           "combo": "georgia-tech beats utah; ucsc beats texas; georgia-tech beats oregon",
           "target_final_margin": -12,
           "target_finish": 4,
@@ -246,13 +239,6 @@
           "target_finish": 3,
           "projected_final_target": 15,
           "projected_final_opp": 14
-        },
-        {
-          "combo": "georgia-tech beats utah; ucsc beats texas; georgia-tech beats oregon",
-          "target_final_margin": 2,
-          "target_finish": 3,
-          "projected_final_target": 15,
-          "projected_final_opp": 13
         },
         {
           "combo": "georgia-tech beats utah; texas beats ucsc; oregon beats georgia-tech",
@@ -353,13 +339,6 @@
           "projected_final_opp": 14
         },
         {
-          "combo": "georgia-tech beats utah; texas beats ucsc; oregon beats georgia-tech",
-          "target_final_margin": 2,
-          "target_finish": 1,
-          "projected_final_target": 15,
-          "projected_final_opp": 13
-        },
-        {
           "combo": "georgia-tech beats utah; texas beats ucsc; georgia-tech beats oregon",
           "target_final_margin": -12,
           "target_finish": 3,
@@ -456,13 +435,6 @@
           "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 14
-        },
-        {
-          "combo": "georgia-tech beats utah; texas beats ucsc; georgia-tech beats oregon",
-          "target_final_margin": 2,
-          "target_finish": 2,
-          "projected_final_target": 15,
-          "projected_final_opp": 13
         },
         {
           "combo": "utah beats georgia-tech; ucsc beats texas; oregon beats georgia-tech",
@@ -563,13 +535,6 @@
           "projected_final_opp": 14
         },
         {
-          "combo": "utah beats georgia-tech; ucsc beats texas; oregon beats georgia-tech",
-          "target_final_margin": 2,
-          "target_finish": 2,
-          "projected_final_target": 15,
-          "projected_final_opp": 13
-        },
-        {
           "combo": "utah beats georgia-tech; ucsc beats texas; georgia-tech beats oregon",
           "target_final_margin": -12,
           "target_finish": 5,
@@ -666,13 +631,6 @@
           "target_finish": 2,
           "projected_final_target": 15,
           "projected_final_opp": 14
-        },
-        {
-          "combo": "utah beats georgia-tech; ucsc beats texas; georgia-tech beats oregon",
-          "target_final_margin": 2,
-          "target_finish": 2,
-          "projected_final_target": 15,
-          "projected_final_opp": 13
         },
         {
           "combo": "utah beats georgia-tech; texas beats ucsc; oregon beats georgia-tech",
@@ -773,13 +731,6 @@
           "projected_final_opp": 14
         },
         {
-          "combo": "utah beats georgia-tech; texas beats ucsc; oregon beats georgia-tech",
-          "target_final_margin": 2,
-          "target_finish": 1,
-          "projected_final_target": 15,
-          "projected_final_opp": 13
-        },
-        {
           "combo": "utah beats georgia-tech; texas beats ucsc; georgia-tech beats oregon",
           "target_final_margin": -12,
           "target_finish": 2,
@@ -876,13 +827,6 @@
           "target_finish": 1,
           "projected_final_target": 15,
           "projected_final_opp": 14
-        },
-        {
-          "combo": "utah beats georgia-tech; texas beats ucsc; georgia-tech beats oregon",
-          "target_final_margin": 2,
-          "target_finish": 1,
-          "projected_final_target": 15,
-          "projected_final_opp": 13
         }
       ]
     }
@@ -893,7 +837,7 @@
       "team1": "ucsc",
       "team2": "utah",
       "score1": 7,
-      "score2": 10,
+      "score2": 11,
       "scheduled_at": "Sat 5/23 8:30 AM",
       "field": "210"
     }
