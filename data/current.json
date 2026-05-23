@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T16:12:09+00:00",
+  "generated_at": "2026-05-23T16:14:12+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -351,7 +351,7 @@
       "team1": "colorado",
       "team2": "brown",
       "score1": 6,
-      "score2": 8,
+      "score2": 9,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "203"
@@ -450,7 +450,7 @@
       "team1": "carleton",
       "team2": "penn-state",
       "score1": 10,
-      "score2": 2,
+      "score2": 3,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "202"
@@ -461,7 +461,7 @@
       "team1": "cal-poly-slo",
       "team2": "washington",
       "score1": 6,
-      "score2": 6,
+      "score2": 7,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
       "field": "206"
@@ -715,8 +715,8 @@
           "wins": 3,
           "losses": 1,
           "pf": 51,
-          "pa": 25,
-          "pd": 26
+          "pa": 26,
+          "pd": 25
         },
         "oregon-state": {
           "team_id": "oregon-state",
@@ -746,9 +746,9 @@
           "team_id": "brown",
           "wins": 1,
           "losses": 2,
-          "pf": 33,
+          "pf": 34,
           "pa": 36,
-          "pd": -3
+          "pd": -2
         }
       },
       "tiebreak_trace": [
@@ -820,8 +820,8 @@
       "ordered_team_ids": [
         "carleton",
         "penn-state",
-        "cal-poly-slo",
         "washington",
+        "cal-poly-slo",
         "mcgill"
       ],
       "rows": {
@@ -830,32 +830,32 @@
           "wins": 3,
           "losses": 0,
           "pf": 40,
-          "pa": 22,
-          "pd": 18
+          "pa": 23,
+          "pd": 17
         },
         "penn-state": {
           "team_id": "penn-state",
           "wins": 2,
           "losses": 1,
-          "pf": 31,
+          "pf": 32,
           "pa": 31,
-          "pd": 0
+          "pd": 1
         },
         "cal-poly-slo": {
           "team_id": "cal-poly-slo",
           "wins": 1,
-          "losses": 1,
+          "losses": 2,
           "pf": 31,
-          "pa": 28,
-          "pd": 3
+          "pa": 29,
+          "pd": 2
         },
         "washington": {
           "team_id": "washington",
-          "wins": 0,
+          "wins": 1,
           "losses": 2,
-          "pf": 29,
+          "pf": 30,
           "pa": 35,
-          "pd": -6
+          "pd": -5
         },
         "mcgill": {
           "team_id": "mcgill",
@@ -870,38 +870,12 @@
         {
           "rule": 2,
           "tied_team_ids": [
-            "mcgill",
+            "cal-poly-slo",
             "washington"
           ],
           "metric_values": {
-            "washington": 0.0,
-            "mcgill": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 3,
-          "tied_team_ids": [
-            "mcgill",
-            "washington"
-          ],
-          "metric_values": {
-            "washington": 0.0,
-            "mcgill": 0.0
-          },
-          "outcome": "all_still_tied",
-          "note": ""
-        },
-        {
-          "rule": 4,
-          "tied_team_ids": [
-            "mcgill",
-            "washington"
-          ],
-          "metric_values": {
-            "washington": -1.0,
-            "mcgill": -15.0
+            "cal-poly-slo": 0.0,
+            "washington": 1.0
           },
           "outcome": "split",
           "note": "split into 2 subgroup(s)"
