@@ -150,7 +150,8 @@ def _summarize_thresholds(matrix, current_margin, target_current, opp_current, t
       - human_text: plain-English instruction
       - example_score: a concrete "X-Y" final that secures finish N
     """
-    finishes = sorted({row["target_finish"] for row in matrix})
+    # Only show top-3 finishes (4th/5th are bracket-out, no advancement implication)
+    finishes = sorted(f for f in {row["target_finish"] for row in matrix} if f <= 3)
     combos_seen = {row["combo"] for row in matrix}
     out = []
     for finish in finishes:

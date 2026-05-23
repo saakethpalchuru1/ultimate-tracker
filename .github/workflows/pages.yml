@@ -1,13 +1,6 @@
 # Build the Next.js static export and publish it to GitHub Pages.
-#
-# Workflow only fires on FRONTEND CODE changes (not data/*.json) -- the
-# frontend fetches JSON directly from jsdelivr's CDN at runtime, so cron
-# data pushes show up live without rebuilding the site.
-#
-# WHY jsdelivr instead of raw.githubusercontent.com: raw.gh has a 5-minute
-# CDN cache that ignores query-string cache-busters, which breaks any
-# faster-than-5-min update cadence (e.g. live in-game polling). jsdelivr
-# supports an explicit purge API so pushes propagate within seconds.
+# Workflow only fires on frontend code changes; data updates are picked up at
+# runtime by the frontend fetching JSON from raw.githubusercontent.com.
 
 name: Deploy frontend to GitHub Pages
 
@@ -36,32 +29,26 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-
       - name: Install
         working-directory: frontend
         run: npm install --no-audit --no-fund
-
       - name: Build static export
         working-directory: frontend
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-          NEXT_PUBLIC_DATA_BASE_URL: https://cdn.jsdelivr.net/gh/saakethpalchuru1/ultimate-tracker@main/data
+          NEXT_PUBLIC_DATA_BASE_URL: https://raw.githubusercontent.com/saakethpalchuru1/ultimate-tracker/main/data
         run: npm run build
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: frontend/out
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

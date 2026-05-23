@@ -1,6 +1,6 @@
-"""Render cron entry-point. Scrapes USAU, computes snapshots, pushes to GitHub, purges jsdelivr."""
+"""Render cron entry-point. Scrapes USAU, computes snapshots, pushes to GitHub."""
 from __future__ import annotations
-import logging, os, sys, urllib.request
+import logging, os, sys
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -36,21 +36,10 @@ def in_run_window():
     return True, "in window (" + now.isoformat() + ")"
 
 
-def purge_jsdelivr():
-    repo = os.environ.get("GITHUB_REPO", "saakethpalchuru1/ultimate-tracker")
-    for name in ("current.json", "scenarios.json", "bracket.json", "live.json"):
-        url = "https://purge.jsdelivr.net/gh/" + repo + "@main/data/" + name
-        try:
-            urllib.request.urlopen(url, timeout=5).read()
-        except Exception as e:
-            log.warning("jsdelivr purge %s failed: %s", name, e)
-
-
 def main():
     ok, reason = in_run_window()
     if not ok:
-        log.info("skipping: %s", reason)
-        return 0
+        log.info("skipping: %s", reason); return 0
     log.info("in window: %s", reason)
 
     tournament = store.load_tournament()
@@ -76,8 +65,6 @@ def main():
 
     push_files(files, commit_message="live update " + store.utcnow_iso())
     log.info("pushed %d files to %s", len(files), os.environ.get("GITHUB_REPO"))
-    purge_jsdelivr()
-    log.info("jsdelivr purged")
     return 0
 
 

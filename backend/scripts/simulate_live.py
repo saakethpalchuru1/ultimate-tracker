@@ -3,7 +3,7 @@
 Usage: cd backend && python -m scripts.simulate_live
 """
 from __future__ import annotations
-import json, subprocess, sys, time, urllib.request
+import json, subprocess, sys, time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -88,15 +88,6 @@ def run_git(*args):
     return r.returncode, (r.stdout + r.stderr).strip()
 
 
-def purge_jsdelivr():
-    """Force jsdelivr CDN to refetch from GitHub. Otherwise dashboards see stale data."""
-    for name in ("current.json", "scenarios.json", "bracket.json", "live.json"):
-        url = "https://purge.jsdelivr.net/gh/" + REPO_SLUG + "@main/data/" + name
-        try:
-            urllib.request.urlopen(url, timeout=5).read()
-        except Exception as e:
-            print("  purge warn " + name + ": " + str(e))
-
 
 def ensure_clean_start():
     rc, out = run_git("status", "--porcelain")
@@ -119,7 +110,6 @@ def push_tick(idx, blurb):
         if rc != 0:
             print("  PUSH FAILED tick " + str(idx) + ": " + out[:200])
             return
-    purge_jsdelivr()
 
 
 def main():
@@ -142,7 +132,7 @@ def main():
         for relpath, content in files.items():
             (DATA_DIR / Path(relpath).name).write_text(content, encoding="utf-8")
         push_tick(idx + 1, blurb)
-        print("           pushed + jsdelivr purged.  (waiting " + str(interval) + "s)\n")
+        print("           pushed.  (waiting " + str(interval) + "s)\n")
         if idx < len(TICKS) - 1:
             time.sleep(interval)
     print("Simulation complete.")
