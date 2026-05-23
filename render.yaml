@@ -1,15 +1,7 @@
-# Render Blueprint -- declares the cron job that scrapes USAU + pushes JSON to GitHub.
+# Render Blueprint — declares the cron job that scrapes USAU + pushes JSON to GitHub.
 #
-# To deploy:
-#   1. Connect this GitHub repo to Render
-#   2. Render auto-detects render.yaml and creates the cron service
-#   3. Add env vars in the Render dashboard: GITHUB_TOKEN, GITHUB_REPO
-#   4. The cron fires every 5 minutes; the in-window check in
-#      update_snapshots.py enforces game hours (08:30-20:00 America/Chicago)
-#
-# Cron schedule is set to "every 5 minutes". The script's RUN_WINDOW gate
-# is what enforces game-time. This avoids fragile timezone math in cron.
-
+# Schedule: every 2 minutes. The in_run_window gate inside update_snapshots.py
+# enforces game hours (08:30-20:00 America/Chicago Sat/Sun by default).
 services:
   - type: cron
     name: usau-snapshot-cron
@@ -17,7 +9,7 @@ services:
     plan: starter
     rootDir: backend
     buildCommand: ./build.sh
-    schedule: "*/5 * * * *"
+    schedule: "*/2 * * * *"
     startCommand: python -m scripts.update_snapshots
     envVars:
       - key: RUN_WINDOW_TZ
@@ -30,7 +22,6 @@ services:
         value: "Sat,Sun"
       - key: GITHUB_BRANCH
         value: main
-      # Required (set in Render dashboard, do NOT commit values):
       - key: GITHUB_TOKEN
         sync: false
       - key: GITHUB_REPO

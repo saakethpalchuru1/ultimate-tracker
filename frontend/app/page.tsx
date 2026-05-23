@@ -20,7 +20,7 @@ const TABS: { id: Tab; label: string }[] = [
 // Poll every 20s when the tab is foregrounded. Browsers throttle setInterval
 // in background tabs heavily, so we ALSO refetch on visibilitychange to catch
 // updates immediately when the user comes back.
-const POLL_INTERVAL_MS = 20_000;
+const POLL_INTERVAL_MS = 30_000;
 
 export default function Page() {
   const [tab, setTab] = useState<Tab>("pools");
