@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light dark; }
+
+html, body { height: 100%; }
+body {
+  background: #0b0d10;
+  color: #f5f7fa;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card { @apply rounded-xl bg-zinc-900 ring-1 ring-zinc-800 p-4; }
+.pill { @apply inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium; }
+.tab-btn { @apply flex-1 px-3 py-2 text-sm font-medium text-zinc-400; }
+.tab-btn-active { @apply text-white border-b-2 border-target; }
+.row-target { @apply bg-target/10 ring-1 ring-target/40; }

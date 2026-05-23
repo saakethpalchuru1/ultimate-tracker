@@ -1,0 +1,38 @@
+{
+  "bracket_id": "17.4",
+  "name": "20 teams, four teams advance (D-I College Nationals)",
+  "description": "Standard USAU 20-team format. Pool 1st seeds go direct to quarters; pool 2nd and 3rd play prequarters. The crossover pairings below match the published 2026 D-I Men's bracket; edit this file if USAU adjusts them.",
+  "rounds": [
+    {
+      "name": "Prequarterfinals",
+      "games": [
+        {"id": "PQ1", "home": "A2", "away": "B3"},
+        {"id": "PQ2", "home": "B2", "away": "A3"},
+        {"id": "PQ3", "home": "C2", "away": "D3"},
+        {"id": "PQ4", "home": "D2", "away": "C3"}
+      ]
+    },
+    {
+      "name": "Quarterfinals",
+      "games": [
+        {"id": "QF1", "home": "A1", "away": "W:PQ4"},
+        {"id": "QF2", "home": "D1", "away": "W:PQ1"},
+        {"id": "QF3", "home": "C1", "away": "W:PQ2"},
+        {"id": "QF4", "home": "B1", "away": "W:PQ3"}
+      ]
+    },
+    {
+      "name": "Semifinals",
+      "games": [
+        {"id": "SF1", "home": "W:QF1", "away": "W:QF2"},
+        {"id": "SF2", "home": "W:QF3", "away": "W:QF4"}
+      ]
+    },
+    {
+      "name": "Final",
+      "games": [
+        {"id": "F",   "home": "W:SF1", "away": "W:SF2"}
+      ]
+    }
+  ]
+}

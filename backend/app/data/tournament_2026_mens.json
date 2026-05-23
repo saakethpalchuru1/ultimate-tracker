@@ -1,0 +1,36 @@
+{
+  "id": "2026-di-college-mens",
+  "name": "2026 D-I College Championships",
+  "division": "Men",
+  "bracket_id": "17.4",
+  "target_team_id": "texas",
+  "source_url": "https://play.usaultimate.org/events/2026-D-I-College-Championships/schedule/Men/CollegeMen/",
+  "teams": [
+    {"id": "oregon",           "name": "Oregon",                "seed": 1,  "pool": "A"},
+    {"id": "colorado",         "name": "Colorado",              "seed": 2,  "pool": "B"},
+    {"id": "carleton",         "name": "Carleton College",      "seed": 3,  "pool": "C"},
+    {"id": "north-carolina",   "name": "North Carolina",        "seed": 4,  "pool": "D"},
+    {"id": "massachusetts",    "name": "Massachusetts",         "seed": 5,  "pool": "D"},
+    {"id": "cal-poly-slo",     "name": "Cal Poly-SLO",          "seed": 6,  "pool": "C"},
+    {"id": "oregon-state",     "name": "Oregon State",          "seed": 7,  "pool": "B"},
+    {"id": "ucsc",             "name": "California-Santa Cruz", "seed": 8,  "pool": "A"},
+    {"id": "pittsburgh",       "name": "Pittsburgh",            "seed": 9,  "pool": "D"},
+    {"id": "penn-state",       "name": "Penn State",            "seed": 10, "pool": "C"},
+    {"id": "brown",            "name": "Brown",                 "seed": 11, "pool": "B"},
+    {"id": "texas",            "name": "Texas",                 "seed": 12, "pool": "A"},
+    {"id": "georgia-tech",     "name": "Georgia Tech",          "seed": 13, "pool": "A"},
+    {"id": "michigan",         "name": "Michigan",              "seed": 14, "pool": "B"},
+    {"id": "washington",       "name": "Washington",            "seed": 15, "pool": "C"},
+    {"id": "western-washington","name": "Western Washington",   "seed": 16, "pool": "D"},
+    {"id": "utah",             "name": "Utah",                  "seed": 17, "pool": "A"},
+    {"id": "maryland",         "name": "Maryland",              "seed": 18, "pool": "B"},
+    {"id": "mcgill",           "name": "McGill",                "seed": 19, "pool": "C"},
+    {"id": "yale",             "name": "Yale",                  "seed": 20, "pool": "D"}
+  ],
+  "pools": [
+    {"name": "A", "team_ids": ["oregon", "ucsc", "georgia-tech", "texas", "utah"]},
+    {"name": "B", "team_ids": ["colorado", "oregon-state", "maryland", "michigan", "brown"]},
+    {"name": "C", "team_ids": ["carleton", "penn-state", "cal-poly-slo", "washington", "mcgill"]},
+    {"name": "D", "team_ids": ["pittsburgh", "massachusetts", "north-carolina", "western-washington", "yale"]}
+  ]
+}

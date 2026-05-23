@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+node_modules/
+.next/
+data/*.json
+!data/.gitkeep
+.DS_Store
+.env
+.env.local
