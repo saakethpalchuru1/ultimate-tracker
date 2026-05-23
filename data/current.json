@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T16:34:13+00:00",
+  "generated_at": "2026-05-23T16:36:06+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -251,7 +251,7 @@
       "pool": "A",
       "team1": "georgia-tech",
       "team2": "utah",
-      "score1": 10,
+      "score1": 11,
       "score2": 12,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
@@ -361,7 +361,7 @@
       "pool": "B",
       "team1": "oregon-state",
       "team2": "maryland",
-      "score1": 11,
+      "score1": 12,
       "score2": 9,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 10:30 AM",
@@ -641,9 +641,9 @@
           "team_id": "georgia-tech",
           "wins": 1,
           "losses": 2,
-          "pf": 33,
+          "pf": 34,
           "pa": 39,
-          "pd": -6
+          "pd": -5
         },
         "texas": {
           "team_id": "texas",
@@ -658,8 +658,8 @@
           "wins": 2,
           "losses": 2,
           "pf": 47,
-          "pa": 49,
-          "pd": -2
+          "pa": 50,
+          "pd": -3
         }
       },
       "tiebreak_trace": [
@@ -722,17 +722,17 @@
           "team_id": "oregon-state",
           "wins": 2,
           "losses": 1,
-          "pf": 32,
+          "pf": 33,
           "pa": 36,
-          "pd": -4
+          "pd": -3
         },
         "maryland": {
           "team_id": "maryland",
           "wins": 1,
           "losses": 2,
           "pf": 29,
-          "pa": 38,
-          "pd": -9
+          "pa": 39,
+          "pd": -10
         },
         "michigan": {
           "team_id": "michigan",
@@ -800,11 +800,21 @@
             "michigan"
           ],
           "metric_values": {
-            "maryland": -9.0,
+            "maryland": -10.0,
             "michigan": -10.0
           },
-          "outcome": "split",
-          "note": "split into 2 subgroup(s)"
+          "outcome": "all_still_tied",
+          "note": ""
+        },
+        {
+          "rule": 4,
+          "tied_team_ids": [
+            "maryland",
+            "michigan"
+          ],
+          "metric_values": {},
+          "outcome": "all_still_tied",
+          "note": "exhausted implemented rules; fell back to deterministic order"
         }
       ],
       "usau_tie_hints": {
