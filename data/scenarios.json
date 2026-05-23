@@ -60,11 +60,38 @@
             "colorado",
             "oregon-state",
             "maryland",
-            "brown",
-            "michigan"
+            "michigan",
+            "brown"
           ],
           "margin_sensitive": false,
-          "tiebreak_trace": []
+          "tiebreak_trace": [
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "colorado",
+                "oregon-state"
+              ],
+              "metric_values": {
+                "colorado": 1.0,
+                "oregon-state": 0.0
+              },
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
+            },
+            {
+              "rule": 2,
+              "tied_team_ids": [
+                "brown",
+                "michigan"
+              ],
+              "metric_values": {
+                "michigan": 1.0,
+                "brown": 0.0
+              },
+              "outcome": "split",
+              "note": "split into 2 subgroup(s)"
+            }
+          ]
         }
       ]
     },
