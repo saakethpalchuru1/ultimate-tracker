@@ -3,7 +3,7 @@
   "name": "2026 D-I College Championships",
   "division": "Men",
   "target_team_id": "texas",
-  "generated_at": "2026-05-23T18:48:09+00:00",
+  "generated_at": "2026-05-23T18:50:09+00:00",
   "teams": [
     {
       "id": "oregon",
@@ -263,7 +263,7 @@
       "team1": "ucsc",
       "team2": "texas",
       "score1": 8,
-      "score2": 6,
+      "score2": 7,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "219"
@@ -274,7 +274,7 @@
       "team1": "oregon",
       "team2": "georgia-tech",
       "score1": 12,
-      "score2": 3,
+      "score2": 4,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "210"
@@ -593,7 +593,7 @@
       "team1": "north-carolina",
       "team2": "western-washington",
       "score1": 8,
-      "score2": 6,
+      "score2": 7,
       "status": "in_progress",
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "202"
@@ -626,32 +626,32 @@
           "wins": 4,
           "losses": 0,
           "pf": 57,
-          "pa": 26,
-          "pd": 31
+          "pa": 27,
+          "pd": 30
         },
         "ucsc": {
           "team_id": "ucsc",
           "wins": 2,
           "losses": 2,
           "pf": 42,
-          "pa": 46,
-          "pd": -4
+          "pa": 47,
+          "pd": -5
         },
         "georgia-tech": {
           "team_id": "georgia-tech",
           "wins": 2,
           "losses": 2,
-          "pf": 41,
+          "pf": 42,
           "pa": 53,
-          "pd": -12
+          "pd": -11
         },
         "texas": {
           "team_id": "texas",
           "wins": 1,
           "losses": 3,
-          "pf": 35,
+          "pf": 36,
           "pa": 45,
-          "pd": -10
+          "pd": -9
         },
         "utah": {
           "team_id": "utah",
@@ -983,16 +983,16 @@
           "wins": 2,
           "losses": 2,
           "pf": 45,
-          "pa": 41,
-          "pd": 4
+          "pa": 42,
+          "pd": 3
         },
         "western-washington": {
           "team_id": "western-washington",
           "wins": 0,
           "losses": 3,
-          "pf": 27,
+          "pf": 28,
           "pa": 38,
-          "pd": -11
+          "pd": -10
         },
         "yale": {
           "team_id": "yale",
@@ -1037,7 +1037,7 @@
             "yale"
           ],
           "metric_values": {
-            "western-washington": -11.0,
+            "western-washington": -10.0,
             "yale": -25.0
           },
           "outcome": "split",
