@@ -1,11 +1,13 @@
 import type { BracketSnapshot, CurrentSnapshot, LiveSnapshot, ScenariosSnapshot } from "./types";
 
-// In production (GitHub Pages), JSON files sit at <basePath>/data/*.json
-// because the cron-job pushes them to /data in the same repo.
-// In local dev, we read from a `data/` directory served by `next dev`.
+// Where to fetch live JSON from. In production we use a raw.githubusercontent
+// URL so every cron push is immediately visible without rebuilding the static
+// site. In local dev (next dev) we fall back to a relative /data/ path.
 function dataUrl(name: string): string {
-  const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
-  return `${base}/data/${name}`;
+  const base = process.env.NEXT_PUBLIC_DATA_BASE_URL;
+  if (base) return `${base}/${name}?t=${Date.now()}`;
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  return `${prefix}/data/${name}?t=${Date.now()}`;
 }
 
 async function jget<T>(name: string): Promise<T> {

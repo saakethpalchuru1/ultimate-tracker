@@ -1,13 +1,20 @@
 # Build the Next.js static export and publish it to GitHub Pages.
-# Trigger: on push to main (so a fresh data/*.json push from the Render
-# cron re-deploys the site), plus a manual trigger. Concurrency cancels
-# in-flight runs so back-to-back data pushes don't stack up.
+#
+# IMPORTANT: this workflow only fires when FRONTEND CODE or the workflow
+# itself changes. It does NOT fire on the cron's data/*.json pushes --
+# those changes are picked up at runtime because the frontend fetches
+# JSON directly from raw.githubusercontent.com (which auto-updates on
+# every cron commit). This avoids the cancel-in-progress loop where a
+# Next.js build (~60-90s) gets interrupted by the next 5-min cron tick.
 
 name: Deploy frontend to GitHub Pages
 
 on:
   push:
     branches: [main]
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:
@@ -17,7 +24,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
@@ -32,8 +39,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          # No cache config: the repo doesn't ship a package-lock.json
-          # (kept out so `npm install` resolves fresh on each run).
 
       - name: Setup Pages
         id: pages
@@ -46,16 +51,12 @@ jobs:
       - name: Build static export
         working-directory: frontend
         env:
-          # GitHub Pages serves the site at <user>.github.io/<repo>/, so
-          # asset URLs must be prefixed. configure-pages sets base_path
-          # to "/<repo>" for project pages.
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          # Tell the frontend where to fetch live data from. We use the
+          # raw.githubusercontent.com CDN so the latest cron commit is
+          # always visible without rebuilding the static site.
+          NEXT_PUBLIC_DATA_BASE_URL: https://raw.githubusercontent.com/saakethpalchuru1/ultimate-tracker/main/data
         run: npm run build
-
-      - name: Copy live data JSONs into the build output
-        run: |
-          mkdir -p frontend/out/data
-          cp -v data/*.json frontend/out/data/ 2>/dev/null || echo "(no data files yet — site will still build)"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
