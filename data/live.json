@@ -8,8 +8,8 @@
       "target_team_id": "texas",
       "opponent_id": "ucsc",
       "current": {
-        "target_score": 7,
-        "opponent_score": 9,
+        "target_score": 8,
+        "opponent_score": 10,
         "target_lead_by": -2
       },
       "scheduled_at": "Sat 5/23 1:00 PM",
@@ -29,13 +29,6 @@
         }
       ],
       "matrix": [
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": -8,
-          "target_finish": 4,
-          "projected_final_target": 7,
-          "projected_final_opp": 15
-        },
         {
           "combo": "(no scheduled games remaining)",
           "target_final_margin": -7,
@@ -126,13 +119,6 @@
           "target_finish": 3,
           "projected_final_target": 15,
           "projected_final_opp": 10
-        },
-        {
-          "combo": "(no scheduled games remaining)",
-          "target_final_margin": 6,
-          "target_finish": 3,
-          "projected_final_target": 15,
-          "projected_final_opp": 9
         }
       ]
     }
@@ -142,7 +128,7 @@
       "game_id": "A-10",
       "team1": "oregon",
       "team2": "georgia-tech",
-      "score1": 13,
+      "score1": 14,
       "score2": 5,
       "scheduled_at": "Sat 5/23 1:00 PM",
       "field": "210"
