@@ -60,8 +60,8 @@
             "colorado",
             "oregon-state",
             "maryland",
-            "brown",
-            "michigan"
+            "michigan",
+            "brown"
           ],
           "margin_sensitive": false,
           "tiebreak_trace": [
@@ -70,27 +70,12 @@
               "tied_team_ids": [
                 "brown",
                 "maryland",
-                "oregon-state"
+                "michigan"
               ],
               "metric_values": {
-                "oregon-state": 1.0,
                 "maryland": 1.0,
-                "brown": 1.0
-              },
-              "outcome": "all_still_tied",
-              "note": ""
-            },
-            {
-              "rule": 3,
-              "tied_team_ids": [
-                "brown",
-                "maryland",
-                "oregon-state"
-              ],
-              "metric_values": {
-                "oregon-state": 1.0,
-                "maryland": 1.0,
-                "brown": -2.0
+                "michigan": 1.0,
+                "brown": 0.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
@@ -99,11 +84,37 @@
               "rule": 2,
               "tied_team_ids": [
                 "maryland",
-                "oregon-state"
+                "michigan"
               ],
               "metric_values": {
                 "maryland": 0.0,
-                "oregon-state": 1.0
+                "michigan": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 3,
+              "tied_team_ids": [
+                "maryland",
+                "michigan"
+              ],
+              "metric_values": {
+                "maryland": 0.0,
+                "michigan": 0.0
+              },
+              "outcome": "all_still_tied",
+              "note": ""
+            },
+            {
+              "rule": 4,
+              "tied_team_ids": [
+                "maryland",
+                "michigan"
+              ],
+              "metric_values": {
+                "maryland": -9.0,
+                "michigan": -10.0
               },
               "outcome": "split",
               "note": "split into 2 subgroup(s)"
